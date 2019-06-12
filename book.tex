@@ -1,0 +1,303 @@
+\documentclass[10pt,a4paper,twocolumn,openany]{book}
+%\documentclass[10pt,a4paper,openany]{book}
+
+\usepackage[bg-letter]{lib/rpg-book} % Options: bg-a4, bg-letter, bg-full, bg-print, bg-none.
+\usepackage[english]{babel}
+%\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+
+
+% Start document
+\begin{document}
+\fontfamily{ppl}
+\selectfont % Set text font
+\frontmatter
+
+\rpgMakeCover[
+    image = img/cover,
+    logo = img/logo,
+    title = Rpg Template,
+    subtitle = Created by Krozark the \today\\with XeTeX\\\url{https://github.com/Krozark/RPG-LaTeX-Template}
+]
+
+
+\tableofcontents
+
+% Your content goes here
+\mainmatter
+\part{Part name}
+\chapter{Chapter name}
+
+\section{First Section}
+\lipsum[2]
+
+\subsection{a subsection}
+\lipsum[1]
+\subsubsection{a subsubsection}
+\lipsum[1]
+
+
+\section{Some boxes}
+\begin{rpg-titlebox}{title}
+	rpg-titlebox
+\end{rpg-titlebox}
+
+\begin{rpg-commentbox}
+	rpg-commentbox
+\end{rpg-commentbox}
+
+\begin{rpg-warnbox}
+	you can add some warnings using this box
+\end{rpg-warnbox}
+
+\begin{rpg-suggestionbox}
+	rgp-suggestionbox
+\end{rpg-suggestionbox}
+
+\begin{rpg-quotebox}
+    rpg-quotebox
+\end{rpg-quotebox}
+
+\begin{rpg-examplebox}
+	rgp-examplebox
+\end{rpg-examplebox}
+
+%\newpage % Acts as columbreak because of twocolumn option; for pagebreak use \clearpage
+
+\section{Some tables}
+\header{default rpg-table (2 column)}
+\begin{rpg-table}
+   	\textbf{Table head 1}  & \textbf{Table head 2} \\
+   	Some value  & Some value \\
+   	Some value  & Some value \\
+   	Some value  & Some value
+\end{rpg-table}
+
+% For more columns, you can say \begin{rpg-table}[your options here].
+% For instance, if you wanted three columns, you could say
+% \begin{rpg-table}[XXX]. The usual host of tabular parameters are
+% aailable as well.
+\header{rpg-table with more columns}
+\begin{rpg-table}[XXX]
+    \textbf{Table head 1}  & \textbf{Table head 2} & \textbf{Table head 3}\\
+   	Some value  & Some value & Some value\\
+   	Some value  & Some value & Some value\\
+   	Some value  & Some value & Some value
+\end{rpg-table}
+
+\header{default rpg-table2 (2 column)}
+\begin{rpg-table2}
+   	\textbf{Table head 1}  & \textbf{Table head 2} \\
+   	Some value  & Some value \\
+   	Some value  & Some value \\
+   	Some value  & Some value
+\end{rpg-table2}
+
+\header{rpg-longtable}
+\tablehead{%
+    \hline
+    \textbf{first column} & \textbf{second column} & \textbf{third column} \\
+    \hline
+}
+\begin{rpg-longtable}[ccc]
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+    1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \\
+\end{rpg-longtable}
+
+\section{List}
+\begin{rpg-list}
+    \item first list item
+    \item second list item
+\end{rpg-list}
+
+
+\section{Monster}
+% You can optionally not include the background by saying
+%\begin{rpg-monsterboxnobg}{monsterboxnob}
+\begin{monsterbox}{rpg-monsterbox}
+	\textit{Small metasyntatic variable (golbinoid), neutral evil}\\
+	\rpghline
+	\basics[%
+	armorclass = 12,
+    hitpoints  = \rpgdice{3d8 + 3},
+	speed      = 50 t
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+    STR = 12, 
+    DEX = 7
+	]
+	\rpghline%
+	\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	languages = {Common Lisp, Erlang},
+	]
+	\rpghline%
+	\begin{rpg-monsteraction}[rpg-monsteraction]
+		This Monster has some serious superpowers!
+	\end{rpg-monsteraction}
+
+	\rpgmonstersection{rpgmonstersection}
+	\begin{rpg-monsteraction}[rpg-monsteraction]
+		This one can generate tremendous amounts of text! Though only when it wants to.
+	\end{rpg-monsteraction}
+
+	\begin{rpg-monsteraction}[rpg-monsteraction]
+    See, here he goes again! Yet more text.
+	\end{rpg-monsteraction}
+\end{monsterbox}
+
+
+\section{Spell}
+\begin{rpg-spell}
+	{Beautiful Typesetting}
+	{4th-level illusion}
+	{1 action}
+	{5 feet}
+	{S, M (ink and parchment, which the spell consumes)}
+	{Until dispelled}
+	You are able to transform a written message of any length into a beautiful scroll. All creatures within range that can see the scroll must make a wisdom saving throw or be charmed by you until the spell ends.
+
+	While the creature is charmed by you, they cannot take their eyes off the scroll and cannot willingly move away from the scroll. Also, the targets can make a wisdom saving throw at the end of each of their turns. On a success, they are no longer charmed.
+\end{rpg-spell}
+
+\section{Arts}
+
+\rpgart{t}{img/art-top}
+\rpgart{b}{img/art-bottom}
+
+\lipsum
+\lipsum
+
+\chapter{Colors}
+
+This package provides several global color variables to style \lstinline!rpg-commentbox!, \lstinline!rpg-quotebox!, \lstinline!rpg-examplebox!, and \lstinline!rpg-table! environments.
+
+
+TODO
+
+%\begin{rpgtable}[lX]
+%  \textbf{Color}         & \textbf{Description} \\
+%  \lstinline!commentboxcolor! & Controls \lstinline!commentbox! background. \\
+%  \lstinline!paperboxcolor!   & Controls \lstinline!paperbox! background. \\
+%  \lstinline!quoteboxcolor!   & Controls \lstinline!quotebox! background. \\
+%  \lstinline!tablecolor!      & Controls background of even \lstinline!rpgtable! rows. \\
+%\end{rpgtable}
+%
+%See Table~\ref{tab:colors} for a list of accent colors that match the core books.
+%
+%\begin{table*}
+%  \begin{rpgtable}[XX]
+%    \textbf{Color}                            & \textbf{Description} \\
+%    \lstinline!commentgreen!                      & Light green used in PHB Part 1 \\
+%    \lstinline!commentblue!                       & Light cyan used in PHB Part 2 \\
+%    \lstinline!PhbMauve!                           & Pale purple used in PHB Part 3 \\
+%    \lstinline!PhbTan!                             & Light brown used in PHB appendix \\
+%    \lstinline!DmgLavender!                        & Pale purple used in DMG Part 1 \\
+%    \lstinline!DmgCoral!                           & Orange-pink used in DMG Part 2 \\
+%    \lstinline!DmgSlateGray! (\lstinline!DmgSlateGrey!) & Blue-gray used in PHB Part 3 \\
+%    \lstinline!DmgLilac!                           & Purple-gray used in DMG appendix \\
+%  \end{rpgtable}
+%  \caption{Colors supported by this package}%
+%  \label{tab:colors}
+%\end{table*}
+%
+%\begin{itemize}
+%  \item Use \lstinline!\setthemecolor[<color>]! to set \lstinline!themecolor!, \lstinline!commentcolor!, \lstinline!paperboxcolor!, and \lstinline!tablecolor! to a specific color.
+%  \item Calling \lstinline!\setthemecolor! without an argument sets those colors to the current \lstinline!themecolor!.
+%  \item \lstinline!commentbox!, \lstinline!rpgtable!, \lstinline!paperbox!, and \lstinline!quoteboxcolor! also accept an optional color argument to set the color for a single instance.
+%\end{itemize}
+%
+%\subsection{Examples}
+%
+%\subsubsection{Using \lstinline!themecolor!}
+%
+%\begin{lstlisting}
+%\setthemecolor[PhbMauve]
+%
+%\begin{paperbox}{Example}
+%  \lipsum[2]
+%\end{paperbox}
+%
+%\setthemecolor[PhbLightCyan]
+%
+%\header{Example}
+%\begin{rpg-table}[cX]
+%  \textbf{d8} & \textbf{Item} \\
+%  1           & Small wooden button \\
+%  2           & Red feather \\
+%  3           & Human tooth \\
+%  4           & Vial of green liquid \\
+%  6           & Tasty biscuit \\
+%  7           & Broken axe handle \\
+%  8           & Tarnished silver locket \\
+%\end{rpg-table}
+%\end{lstlisting}
+%
+%\begingroup
+%\setthemecolor[PhbMauve]
+%
+%\begin{paperbox}{Example}
+%  \lipsum[2]
+%\end{paperbox}
+%
+%\setthemecolor[PhbLightCyan]
+%
+%\header{Example}
+%\begin{rpgtable}[cX]
+%  \textbf{d8} & \textbf{Item} \\
+%  1           & Small wooden button \\
+%  2           & Red feather \\
+%  3           & Human tooth \\
+%  4           & Vial of green liquid \\
+%  6           & Tasty biscuit \\
+%  7           & Broken axe handle \\
+%  8           & Tarnished silver locket \\
+%\end{rpgtable}
+%\endgroup
+%
+%\subsubsection{Using element color arguments}
+%
+%\begin{lstlisting}
+%\begin{rpgtable}[cX][DmgCoral]
+%  \textbf{d8} & \textbf{Item} \\
+%  1           & Small wooden button \\
+%  2           & Red feather \\
+%  3           & Human tooth \\
+%  4           & Vial of green liquid \\
+%  6           & Tasty biscuit \\
+%  7           & Broken axe handle \\
+%  8           & Tarnished silver locket \\
+%\end{rpgtable}
+%\end{lstlisting}
+%
+%\begin{rpgtable}[cX][DmgCoral]
+%  \textbf{d8} & \textbf{Item} \\
+%  1           & Small wooden button \\
+%  2           & Red feather \\
+%  3           & Human tooth \\
+%  4           & Vial of green liquid \\
+%  6           & Tasty biscuit \\
+%  7           & Broken axe handle \\
+%  8           & Tarnished silver locket \\
+%\end{rpgtable}
+
+
+
+% End document
+\end{document}

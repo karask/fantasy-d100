@@ -1,0 +1,143 @@
+
+% define sizes
+\pgfmathsetmacro{\cardwidth}{6}
+\pgfmathsetmacro{\cardheight}{9}
+\pgfmathsetmacro{\imagewidth}{\cardwidth}
+\pgfmathsetmacro{\imageheight}{0.75*\cardheight}
+\pgfmathsetmacro{\stripwidth}{0.7}
+\pgfmathsetmacro{\strippadding}{0.2}
+\pgfmathsetmacro{\textpadding}{0.1}
+\pgfmathsetmacro{\titley}{\cardheight-\strippadding-1.5*\textpadding-0.5*\stripwidth}
+
+
+%define card shape and margin and area
+\def\shapeCard{(0,0) rectangle (\cardwidth,\cardheight)}
+\def\shapeLeftStripLong{(\strippadding,-0.2) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding-\strippadding-1)}
+\def\shapeLeftStripShort{(\strippadding,\cardheight-\strippadding-1) rectangle (\strippadding+\stripwidth,\cardheight+0.2)}
+\def\shapeRightStripShort{(\cardwidth-\stripwidth-\strippadding,\cardheight-\strippadding-1) rectangle (\cardwidth-\strippadding,\cardheight+0.2)}
+\def\shapeTitleArea{(2*\strippadding+\stripwidth,\cardheight-\strippadding) rectangle (\cardwidth-2*\strippadding-\stripwidth,\cardheight-2*\stripwidth)}
+\def\shapeContentAreaHeight{0.50*\cardheight}
+\def\shapeContentArea{(2*\strippadding+\stripwidth,\shapeContentAreaHeight) rectangle (\cardwidth+0.2,-0.2)}
+
+
+% define style for tikz lib
+\tikzset{
+    %   Round corners for the cards
+    cardcorners/.style={
+        rounded corners=0.2cm
+    },
+    %   runde Ecken für die "Fähnchen"
+    elementcorners/.style={
+        rounded corners=0.1cm
+    },
+    %   Round corners for the "flag"
+    stripshadow/.style={
+        drop shadow={
+            opacity=.5,
+            %shadow,
+            color=black
+        }
+    },
+    %   Style for the "flag"
+    strip/.style={
+        elementcorners,
+        stripshadow
+    },
+    colorbg/.style={
+        elementcorners,
+        opacity=0.5
+    },
+    %   Image for the map motif
+    cardimage/.style={
+        path picture={
+            \node[below=-1.5mm] at (0.5*\cardwidth,\cardheight) {
+                \includegraphics[width=\imagewidth cm]{#1}
+            };
+        }
+    },
+    %   Image for the default background
+    cardbackground/.style={
+        path picture={
+                \node at (0.5*\cardwidth,0.5*\cardheight) {
+                    \includegraphics[width=\cardwidth cm, height=\cardheight cm]{lib/card/img/bg.jpg}
+            };
+        }
+    },
+}
+
+%   TikZ grid
+\newcommand{\carddebug}{
+    \draw [step=1,help lines] (0,0) grid (\cardwidth,\cardheight);
+}
+
+%   Frame of the card
+\newcommand{\cardborder}{
+    \draw[lightgray,cardcorners] \shapeCard;
+}
+
+% Background of the card
+\newcommand{\cardbackground}[1]{
+    \draw[cardcorners, cardimage=#1] \shapeCard;
+}
+
+%   Category of the card
+\newcommand{\cardtype}[4]{
+    %   First we fill the intersecting area
+    %   The \clip command does not allow options, therefore 
+    %   we have to use a scope to set the even odd rule.
+    \begin{scope}[even odd rule]
+        %   Define a clipping path. All paths outside shapeCard will
+        %   be cut because the even odd rule is set.
+        \clip[cardcorners] \shapeCard;
+        % Fill shapeLeftStripLong and shapeLeftStripShort.
+        % Since the even odd rule is set, only the card will be filled.
+        \fill[strip,cardbackground] \shapeLeftStripLong;
+        \fill[colorbg,#1] \shapeLeftStripLong;
+        \node[rotate=90,above left=0.9mm,font=\normalsize] at (\strippadding+\stripwidth,\cardheight-\strippadding-\strippadding-1){
+            \color{white}\textsc{#2}\scriptsize{#4}
+        };
+
+        \fill[strip,cardbackground] \shapeLeftStripShort;
+        \fill[colorbg,#1] \shapeLeftStripShort;
+    \end{scope}
+
+    \node at (\strippadding+\stripwidth-0.3,\cardheight-\strippadding-\strippadding-0.37) {\color{white}#3};
+}
+
+
+%   Title of the card
+\newcommand{\cardtitle}[1]{
+    %\draw[pattern=soft crosshatch,rounded corners=0.1cm] \shapeTitleArea;
+    \fill[elementcorners,rpg_card_titlebg,opacity=.85] \shapeTitleArea;
+    \node[text width=3.75cm] at (0.5*\cardwidth,\titley) {
+        \begin{center}
+            \color{white}\normalsize #1
+        \end{center}
+    };
+}
+
+%   Contents of the card
+\newcommand{\cardcontent}[2]{
+    \begin{scope}[even odd rule]
+        \clip[cardcorners] \shapeCard;
+        \fill[elementcorners,rpg_card_contentbg,opacity=.85] \shapeContentArea;
+    \end{scope}
+    \node[below right, text width=(\cardwidth-2*\strippadding-\stripwidth-2*\textpadding-0.3)*1cm] at (2*\strippadding+\stripwidth+\textpadding,\shapeContentAreaHeight-\textpadding) {
+        \textit{\footnotesize #1}
+    };
+    \node[below right, text width=(\cardwidth-2*\strippadding-\stripwidth-2*\textpadding-0.3)*1cm] at (2*\strippadding+\stripwidth+\textpadding,0.73*\shapeContentAreaHeight) {
+        \vrule width \textwidth height 2pt \\[-2pt]
+        \vspace{0.2cm}
+        {\scriptsize #2}
+    };
+}
+
+%   Price of the card
+\newcommand{\cardprice}[1]{
+    \begin{scope}[even odd rule]
+        \clip[cardcorners] \shapeCard;
+        \fill[strip,cardbackground] \shapeRightStripShort;
+        \fill[colorbg,rpg_card_pricebg] \shapeRightStripShort;
+    \end{scope}
+    \node at (\cardwidth-0.5*\stripwidth-\strippadding,\titley-0.1) {\color{white}\textbf{#1}};
+}

@@ -1,0 +1,29 @@
+\ProvidesPackage{lib/rpg-card}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% dependencies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[margin=6mm,top=5mm]{geometry}
+\usepackage{anttor}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows}
+\usepackage{pifont}
+\usepackage{fourier-orns}
+
+%%% internal
+\usepackage{lib/card/style}
+\usepackage{lib/card/colors}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% style
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\cardtypeEquipement}[2]{\cardtype{rpg_card_equipementbg}{Équipement}{\includegraphics[width=0.5cm]{\detokenize{#1}}}{ - #2}}
+\newcommand{\cardtypeObject}[1]{\cardtype{rpg_card_objetbg}{Objet}{\includegraphics[width=0.5cm]{lib/card/img/backpack.png}}{ - #1}}
+\newcommand{\cardtypeMonster}{\cardtype{rpg_card_monsterbg}{Monster}{\includegraphics[width=0.5cm]{lib/card/img/monster-grasp.png}}{}}

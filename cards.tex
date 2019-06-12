@@ -1,0 +1,39 @@
+\documentclass[a4paper,landscape]{article}
+
+\usepackage{lib/rpg-card}
+
+
+\begin{document}
+\begin{center}
+    \pagestyle{empty}
+
+    \begin{tikzpicture}
+        \cardbackground{img/cat.jpg}
+        \cardtypeMonster{Object type}
+        \cardtitle{Mad cat}
+        \cardcontent{I will destroy you!}{Let me catch you ...}
+        \cardprice{2} % this line is optional
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/olw.jpg}
+        \cardtypeObject{object type}
+        \cardtitle{Slipper Chapel}
+        \cardcontent{}{}
+        \cardprice{42}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/axe.png}
+        \cardtypeEquipement{img/gloves.png}{Hand}
+        \cardtitle{Axe}
+        \cardcontent{}{}
+        \cardprice{12}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    
+\end{center}
+\end{document}
