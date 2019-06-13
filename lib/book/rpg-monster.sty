@@ -149,18 +149,19 @@
 
 % Taubular enviornment for stats-block
 \newkeycommand\stats[STR=\stat{10},
-                        DEX=\stat{10},
                         CON=\stat{10},
+                        DEX=\stat{10},
+                        SIZ=\stat{10},
                         INT=\stat{10},
-                        WIS=\stat{10},
+                        POW=\stat{10},
                         CHA=\stat{10}]{%
     \begingroup
 		\small\centering\color{title1}
 		\resizebox{\linewidth}{\height}{%
-			\begin{tabular}{cccccc}
+			\begin{tabular}{ccccccc}
 				\rule{0pt}{3.7mm} %adds space between hline and table
-				\textbf{\strstatname} & \textbf{\dexstatname} & \textbf{\constatname} & \textbf{\intstatname} & \textbf{\wisstatname} & \textbf{\chastatname}\\
-				\commandkey{STR} & \commandkey{DEX} & \commandkey{CON} & \commandkey{INT} & \commandkey{WIS} & \commandkey{CHA}
+				\textbf{\strstatname} & \textbf{\constatname} & \textbf{\dexstatname} & \textbf{\powstatname} & \textbf{\intstatname} & \textbf{\powstatname} & \textbf{\chastatname}\\
+				\commandkey{STR} & \commandkey{CON} & \commandkey{DEX} & \commandkey{SIZ} & \commandkey{INT} & \commandkey{POW} & \commandkey{CHA}
 			\end{tabular}
 		}%
 		\\[0.4em] %adds space after table

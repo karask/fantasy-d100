@@ -35,10 +35,17 @@
     \end{rpg-box}
 }
 
+\newenvironment{rpg-optionalbox}{
+    \begin{rpg-box}[\rpg@optionalboxname]{commentblue}
+}{
+    \end{rpg-box}
+}
+
+
 \newtcolorbox{rpg-titlebox}[2][]{
     title=#2,
     left=1mm,
-	right=1mm,
+    right=1mm,
     enhanced,
     attach boxed title to top center={yshift=-0.25mm-\tcboxedtitleheight/2,yshifttext=2mm-\tcboxedtitleheight/2},
     boxed title style={

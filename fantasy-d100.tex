@@ -1,0 +1,48 @@
+%\documentclass[10pt,a4paper,twocolumn,openany]{book}
+\documentclass[10pt,a4paper,openany]{book}
+
+\usepackage[bg-a4]{lib/rpg-book} % Options: bg-a4, bg-letter, bg-full, bg-print, bg-none.
+\usepackage[english]{babel}
+%\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+
+
+% Start document
+\begin{document}
+\fontfamily{ppl}
+\selectfont % Set text font
+\frontmatter
+
+\rpgMakeCover[
+    image = img/cover,
+    logo = img/logo,
+    title = Fantasy D100,
+    subtitle = Created by Konstantinos Karasavvas \\\today\\based on OpenQuest and Age of Shadows 
+]
+
+
+\tableofcontents
+
+% Your content goes here
+\mainmatter
+%\part{~~~~~~Game Mechanics}
+%\part{~~~~~~Game Magic}
+%\part{~~~~~~Game Master}
+%\part{~~~~~~Game Creatures}
+
+% include chapters
+\include{ch01-characters}
+\include{ch02-skills}
+\include{ch03-equipment}
+\include{ch04-combat}
+\include{ch05-battle-magic}
+\include{ch06-spot-rules}
+\include{ch07-divine-magic}
+\include{ch08-sorcery}
+\include{ch09-plunder}
+\include{ch10-creatures}
+
+\include{examples}
+
+% End document
+\end{document}

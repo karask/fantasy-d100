@@ -23,10 +23,11 @@ vv ------ TEMPLATE ------ vv
   \def\hitpointsname{...}%
   \def\speedname{...}%
   \def\strstatname{...}%
-  \def\dexstatname{...}%
   \def\constatname{...}%
+  \def\dexstatname{...}%
+  \def\sizstatname{...}%
   \def\intstatname{...}%
-  \def\wisstatname{...}%
+  \def\powstatname{...}%
   \def\chastatname{...}%
   \def\skillsname{...}%
   \def\dimmname{...}%
