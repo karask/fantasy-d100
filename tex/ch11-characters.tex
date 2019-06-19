@@ -80,10 +80,14 @@ You can also end up with characters with high and low characteristics using the 
 
 Such characters may at first glance look undesirable, on account of how base skills are affected, but actually they present good opportunities for roleplaying the flaws of the character, and actually makes the character more interesting as a result.
 
-\begin{rpg-box}[Optional: Random Characteristics]{commentblue}
+\vspace{3mm}
+\begin{rpg-titlebox}{Random Characteristics}
 Players can also roll for characteristics. For human characters roll 3D6 for STR, CON, DEX, POW and CHA and 2D6+6 for INT and SIZE. Reroll 1's to prevent very low scores.
-\end{rpg-box}
+\end{rpg-titlebox}
 
+%\begin{rpg-box}[Optional: Random Characteristics]{commentblue}
+%Players can also roll for characteristics. For human characters roll 3D6 for STR, CON, DEX, POW and CHA and 2D6+6 for INT and SIZE. Reroll 1's to prevent very low scores.
+%\end{rpg-box}
 
 \subsubsection{Using Characteristics in Roleplaying}
 As well as being numbers that are used to calculate the skills and attributes that influence the dice rolls that are made during the game, characteristics can also be used to give rough ideas as to what the character is like. The average human has scores between 10 and 11 in most characteristics, except Size and Intelligence which weigh in around 13. So a character with Strength of 16 will be of above average Strength and a toned physique.  A character with a Charisma of 7 is well below average, perhaps being shy or obnoxious and socially inept. 
@@ -93,7 +97,7 @@ As well as being numbers that are used to calculate the skills and attributes th
 Attributes are a set of secondary scores that define the character’s potential to do and take physical damage, how quickly they move, and the amount of extraordinary talents available to the character.  Attributes are determined from the character’s characteristic scores. 
 
 \begin{description}
-	\item[Damage Modifier (DM):] The Damage Modifier applies whenever the character uses a melee or thrown weapon.  It is calculated by adding the character’s Strength and Size together, since bigger, stronger, characters deal out more damage than smaller, weaker characters (see `Damage Modifier' table). 
+	\item[Damage Modifier (DM):] The Damage Modifier applies whenever the character uses a melee or thrown weapon. It is calculated by adding the character’s Strength and Size together, since bigger, stronger, characters deal out more damage than smaller, weaker characters (see table~\ref{tab:damage-modifier}). 
 	\item[Hit Points (HP):] These determine how much damage the character can sustain before reaching unconsciousness or death.
 	\item[Major Wound Level:] When the character takes this amount of damage in one go, they suffer a Major Wound. Major Wounds are injuries, such as a severed limb, broken ribcage or broken skull, which may render the character unconscious immediately and leave permanent affects if not healed by powerful magic.
 	\item[Talent Points (TP):] These are used to activate any talents the character knows. 
@@ -101,7 +105,9 @@ Attributes are a set of secondary scores that define the character’s potential
 \end{description}
 
 \begin{center}
-\header{Damage Modifier table}
+\begin{table}
+\caption{Damage Modifier table}
+\label{tab:damage-modifier}
 \begin{rpg-table}[|Y|Y|]
 	\hline
     	\textbf{STR + SIZ}  & \textbf{Damage Modifier}\\
@@ -116,11 +122,12 @@ Attributes are a set of secondary scores that define the character’s potential
    	Every additional +15  & +1D6\\
 	\hline
 \end{rpg-table}
+\end{table}
 \end{center}
 
 
 \subsubsection{Step 3: Determine Attributes}
-To work out your character’s Damage Modifier, add Strength and Size together and look at the Damage Modifier table.
+To work out your character’s Damage Modifier, add Strength and Size together and look at table~\ref{tab:damage-modifier}.
 
 Hit Points equal Size plus Constitution divided by 2, rounded up. 
 
@@ -143,6 +150,9 @@ Skills are things that the character can do. They represent very specific areas 
 \end{rpg-examplebox}
 
 The following table translates the skill percentage into a ‘real world’ description of the level of expertise.
+\begin{table}
+\caption{Skill and Expertise}
+\label{tab:skill-and-expertise}
 \begin{rpg-table}[|l|c|X|]
 	\hline
 	\textbf{Skill}  & \textbf{Expertise} & \textbf{Description}\\
@@ -154,6 +164,7 @@ The following table translates the skill percentage into a ‘real world’ desc
 	100+     & Master & The acknowledged best in that skill, and regularly performs the impossible in extremely difficult conditions.\\
 	\hline
 \end{rpg-table}
+\end{table}
 
 From looking at the above table you can see that Rurik with his Dodge of 52\% is quite proficient, having an expertise level of Veteran, probably from being in actual combat as a warrior in the Ducal Wars and learning by necessity to get out of the way of weapon attacks.
 
@@ -172,7 +183,9 @@ Some skills like Lore (Type), Religion (other religion) and Culture (other) all 
 This denotes that at time of points allocation the player must decide what ‘type’ or ‘other’ is. For example Religion (other) could be Religion (Earth Mother) or Religion (Burning Heart) in the Empire of Gatan setting.
 
 \begin{center}
-\header{Resistances}
+\begin{table}
+\caption{Resistances}
+\label{tab:resistances}
 \begin{rpg-table}[|l|c|X|]
 	\hline
 	\textbf{Skill}  & \textbf{Base} & \textbf{Description}\\
@@ -182,13 +195,16 @@ This denotes that at time of points allocation the player must decide what ‘ty
 	Resilience  & CON+POW & Is a measure of your character’s health and their ability to survive exposure, hunger and thirst. It is also their chance to resist the effects of diseases.\\
 	\hline
 \end{rpg-table}
+\end{table}
 \end{center}
 
 It’s worth putting the majority of your points into Dodge if you are going down the route of the Warrior with your character. If you are thinking more of a magic using character, Persistence is probably more appropriate. Resilience is good for hardy characters that can shrug off disease and stay conscious when they take damage.
 
 
 \begin{center}
-\header{Combat Skills}
+\begin{table}
+\caption{Combat Skills}
+\label{tab:resistances}
 \begin{rpg-table}[|p{1.5cm}|c|X|]
 	\hline
 	\textbf{Skill}  & \textbf{Base} & \textbf{Description}\\
@@ -198,13 +214,16 @@ It’s worth putting the majority of your points into Dodge if you are going dow
 	Unarmed Combat  & DEX+STR & A character’s skill with natural weapons such as bite, fist, kick, grapple and claws.\\
 	\hline
 \end{rpg-table}
+\end{table}
 \end{center}
 
 It goes without saying that all these skills are appropriate for characters who want to be warriors.  A few points however in either close or unarmed combat are useful even for non-combative characters since these skills can be used for self-defence.
 
 
 \begin{center}
-\header{Knowledge Skills}
+\begin{table}
+\caption{Knowledge Skills}
+\label{tab:resistances}
 \begin{rpg-table}[|l|c|X|]
 	\hline
 	\textbf{Skill}  & \textbf{Base} & \textbf{Description}\\
@@ -217,13 +236,16 @@ It goes without saying that all these skills are appropriate for characters who 
 	Lore (Type)      & INT    & Other specialist knowledge skills, such as Lore (Herbalist), Lore (Heraldry) not covered by the above.\\
 	\hline
 \end{rpg-table}
+\end{table}
 \end{center}
 
 
 Knowledge skills are good for characters that are sages or scholars and who make their living from obscure information that other people do not have the time to learn. Culture (other) and Language (other) are also useful to characters whose abilities revolve around communications, such as merchants and diplomats.
 
 \begin{center}
-\header{Practical Skills}
+\begin{table}
+\caption{Practical Skills}
+\label{tab:resistances}
 \begin{rpg-table}[|p{1.8cm}|c|X|]
 	\hline
 	\textbf{Skill}  & \textbf{Base} & \textbf{Description}\\
@@ -246,6 +268,7 @@ Knowledge skills are good for characters that are sages or scholars and who make
 	%Wealth              & INT+CHA & An optional skill that measures a character’s ability to manage their resources.\\
 	\hline
 \end{rpg-table}
+\end{table}
 \end{center}
 
 On the face of it,  it is tempting to see the Practical category as a big grab bag of miscellaneous skills. However it is worth spending some points on one to three of the skills, even if you want to be a big muscled warrior.  These skills allow the character to do things in game, and Athletics, Influence and Perception get called upon reasonably frequently. Also if your character’s concept is that of a rogue Deception, Mechanisms and Streetwise also deserve some points. If your character is someone who makes stuff, Craft and Engineering are skills to increase. If your character has a background of entertaining people Performance is a skill to pick. If your character concept is any form of merchant Trade is a must buy.
@@ -278,22 +301,19 @@ During character generation the player gets a pool of points to spend on each gr
 	Combat        & Spend 50 points between the three skills.\\
 	Knowledge     & Spend 50 points between the skills.\\
 	Practical     & Spend 75 points between skills.\\
-%	Magic         & Special, refer to Step 5 below.\\
 	\hline
 \end{rpg-table}
 
 
 \subsection{Disciplines and Talents}
-A Discipline embodies a group of extraordinary or supernatural abilities called Talents. A character might be knowledgeable to several disciplines. Disciplines can vary from special combat techniques that require extensive training to the ability to channel mystical energies (magic, divine and sorcery). The Disciplines are:
-
-\begin{rpg-table}[|l|X|]
-	\hline
-	Battle     & Talents related to battle techniques.\\
-	Arcane     & Talents related to magic.\\
-	Divine     & Talents related to divine channeling.\\
-	%Psionic    & Talents related to raw personal power.\\
-	\hline
-\end{rpg-table}
+A Discipline embodies a group of extraordinary or supernatural abilities called Talents. A character might be knowledgeable to several disciplines. Disciplines can vary from special combat techniques that require extensive training to the ability to channel mystical energies. The Disciplines are:
+\begin{rpg-list}
+\item Battle: talents related to battle techniques.
+\item Magic: Talents related to lesser magic (change).
+%Sorcery: Talents related to greater magic (change).
+%Divine: Talents related to divine channeling.
+%Psionic: Talents related to raw personal power.
+\end{rpg-list}
 
 Which disciplines are available depends on the world that the game is being played in. Fantasy D100 provides a flexible system were adding or removing a Discipline is seamless to the rest of rules. The Disciplines and Talents are described in part II.
 
@@ -303,7 +323,7 @@ Talents represent the extraordinary abilities of a character. Each time a talent
 
 
 \subsubsection{Step 5: Select Disciplines and Talents}
-Look in part II for several different choices for Disciplines and Talents and pick ten points of Magnitude worth. Access to a Discipline also costs some Magnitude. You then need to consult the respective Discipline's chapter that describes the talents and their Magnitude costs in more detail.
+Look in part II for several different choices for Disciplines and Talents and pick ten points of Magnitude worth. Access to a Discipline also costs some Magnitude. After, selecting a Discipline you can consult the respective chapter for a list of talents and their Magnitude costs.
 
 \subsection{Equipment}
 Each character typically starts off with some money and the tools of their trade.
