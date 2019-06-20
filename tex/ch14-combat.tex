@@ -88,7 +88,7 @@ The actions a character may take when it is his turn to act are detailed here. 
 		-20\% & if the enemy is fewer than the player’s side and has taken some wounds.\\
 		-40\% & if the enemy has taken more than half hit points in wounds and/or has seen half his group incapacitated by the players.\\
 		\hline
-		\multicolumn{2}{|X|}{Note: these modifiers are not cumulative. Apply the one that best describes the situation.}\\
+		\multicolumn{2}{|p{\linewidth-4.5mm}|}{Note: these modifiers are not cumulative. Apply the one that best describes the situation.}\\
 		\hline
 	\end{rpg-table}
 
@@ -118,3 +118,157 @@ The character need not speak the same language as the opponent they are trying t
 
 \item Damage Application: Apply any remaining damage to the defender’s hit points. 
 \end{rpg-list}
+
+\begin{table}
+\begin{center}
+\caption{Close Combat Situational Modifiers}
+\label{tab:close-combat-situational-modifiers}
+\begin{rpg-table}[|X|c|]
+        \hline
+        \textbf{Situation} & \textbf{Skill Modifier}\\
+        \hline
+        Target is helpless  & Automatic Critical\\
+        Target is prone or attacked from behind & +20\%\\
+        Attacking or defending while on higher ground or on mount & +20\%\\
+        Attacking or defending while prone & -20\%\\
+        Attacking or defending while on unstable ground & -20\%\\
+        Attacking or defending while underwater & -40\%\\
+        Defending while on lower ground or against mounted foe & -20\%\\
+        Fighting in partial darkness & -20\%\\
+        Fighting in darkness & -40\%\\
+        \hline
+\end{rpg-table}
+\end{center}
+\end{table}
+
+
+\begin{table*}
+\begin{center}
+\caption{Combat Results}
+\label{tab:combat-results}
+\begin{rpg-table}[|l|l|X|]
+        \hline
+        \textbf{Attacker} & \textbf{Defender's Reaction} & \textbf{Result}\\
+        \hline
+        Fumble   & No need to roll & Attacker funbles.\\
+        Failure  & No need to roll & Attacker fails to hit defender.\\
+        Success  & Fumble          & Attacker hits, defender takes damage rolled minus armour points and fumbles.\\
+        Success  & Failure         & Attacker hits, defender takes damage rolled minus armour points.\\
+        Success  & Success         & If dodging defender avoids the attack. If parrying then if attacker’s weapon smaller or equal in size to defender’s weapon all damage avoided. If parrying weapon is a rank smaller half damage, if two ranks smaller then no damage can be avoided.\\
+        Success  & Critical        & Defender avoids attack and takes no damage. If parrying the weapon size penalty does not come into it.\\
+        Critical & Fumble          & Attacker does maximum damage and ignores defender’s armour. Defender fumbles.\\
+        Critical & Failure         & Attacker does maximum damage and ignores defender’s armour.\\
+        Critical & Success         & Attacker does maximum damage minus defender’s armour points.\\
+        Critical & Critical        & Similar to Success:Success above.\\
+        \hline
+\end{rpg-table}
+\end{center}
+\end{table*}
+
+
+\subsection{Unarmed Combat Actions}
+The following are potential actions:
+\begin{description}
+\item[Unarmed Combat Attack:] The character can make a single Unarmed Combat Attack.
+\item[Natural Weapon attack:] Using the characters’s natural weapons be it claw, bite, kick or fist.
+\item[Grapple Attack:] The attacker attempts to grab an opponent and an opposed Unarmed Combat Attack is made. If the attacker wins they may chose to inflict pain, immobilise or throw their opponent.
+\end{description}
+
+\subsubsection{Making Unarmed Combat Attacks}
+Roll against Unarmed Combat skill to determine if the attack is successful. If an Unarmed Attack is parried by a crafted or natural weapon, then the attacker will immediately suffer the rolled damage of the parrying weapon, with no damage modifier. This is in addition to the normal effect of the parry. 
+
+\subsubsection{Natural Weapons}
+Natural Weapons such as the teeth and claws of monsters are counted as weapons and not Unarmed Attacks. The damage they deal is listed in the monster’s description. They may parry other Natural Weapons or Unarmed Attacks, but not crafted weapon attacks.
+
+\subsubsection{Grappling}
+Grapple Attack is made in the same way as a normal Unarmed or Natural Weapon attack but must be declared as such before any dice are rolled. Should the attacker hit with his grapple attack, no damage is initially caused. Instead, the attacker then opposes his Unarmed Combat Skill to the target’s Unarmed Combat Skill, in a roll similar to an opposed skill test:
+\begin{rpg-list}
+\item \textbf{Grapple Fails:} The grapple attempt fails and the attack is considered to have missed. 
+\item \textbf{Grapple Succeeds:} The two combatants are now grappling and the attacker may immediately follow up on this success by Throwing, Inflicting pain or Immobilise the target.
+\end{rpg-list}
+
+\begin{description}
+\item[Break Free:] To break out of a grapple, the character makes an opposed Grapple Attack. The characters may only use the Unarmed Combat Skill in this case. If the character succeeds his roll while his opponent fails then the character has succeeded in breaking free and the combatants are no longer grappling, though they will be adjacent.
+\item[Immobilise:] While immobilised, enemies are considered helpless. Once per round the defender may attempt to break free.
+\item[Inflict Pain:] The grappler inflicts damage of 1D4 + damage modifiers.  Armour does not help. Once per round the defender may attempt to break free or may attempt to turn the tables on their attacker by counter grappling.
+\item[Throw:] The opponent is thrown 2 metres and suffers 1D4 damage. Armour does not help. The grapple ends in this case.
+\end{description}
+
+
+\subsection{Ranged Combat Actions}
+
+The following are potential actions:
+\begin{description}
+\item[Ranged Combat Attack:] The character can make a single ranged combat attack. As well as a normal attack, there is the following special attacks.
+\item[Aim:] Every round spent aiming adds a +20\% bonus to the character’s Ranged Combat skill. This bonus only applies to the first attack the character makes with the weapon, which must be fired at the target being aimed at. A character can aim a maximum of 2 rounds and can take no other Reaction while aiming without losing the aim bonus.
+\end{description}
+
+\subsubsection{Throwing Close Combat Weapons}
+If a close combat weapon that isn’t designed to be thrown is hurled at an enemy then it has a range of 8m and suffers a penalty to the attack equal to its ENC x 10. Ranged Combat skill is used. 
+
+\subsubsection{Using Ranged Weapons}
+All ranged attacks are handled in same manner as close combat attacks, with the following exceptions: 
+\begin{description}
+\item[Charge:] Ranged attacks may not be used as part of a charge.
+\item[Loading Ranged Weapons:] Most ranged weapons only take a single combat round to ready. Others take more than one combat round to reload. See weapon description in the equipment chapter. 
+\item[Range:] A target within the weapon’s range may be attacked without penalty. A target within double the weapon’s range may be attacked, but the attacker’s weapon skill is halved before other modifiers are applied. Attacks cannot be made at a distance beyond twice/double the weapon’s range.
+\item[Dodging and Parrying:] The target may attempt to Parry or Dodge a hand thrown ranged attack at -20\% but may not normally Dodge or Parry ranged missile weapons (such as Bows and Crossbow fire). Shield-carrying characters may Parry hand thrown missile weapons with no penalty.
+\item[Disarming:] A character may not attempt to disarm targets with ranged attacks, nor may he attempt to strike a target’s weapon or shield.
+\end{description}
+
+\subsubsection{Cover}
+Cover affects both ranged and close combat attacks. For missile attacks the defender benefits from the best of the shield modifier in the table above and the cover modifier below.
+
+\begin{description}
+	\item[Partial cover (-20\%):] For example a low wall that leaves only head and torso exposed.
+	\item[Very good cover (-40\%):] For example Defender on a castle wall, firing from protected battlements.
+	\item[Virtual total cover (-80\%):] For example castle wall with arrow slits for defenders to shot through.
+\end{description}
+
+
+\begin{table}
+\begin{center}
+\caption{Ranged Attack Situational Modifiers}
+\label{tab:ranged-attack-situational-modifiers}
+	\begin{rpg-table}[|p{5cm}|Y|]
+	\hline
+        \textbf{Situation} & \textbf{Skill Modifier}\\
+	\hline
+	\multicolumn{2}{|p{\linewidth-4.5mm}|}{Wind$^{1}$}\\
+	\hline
+        High wind    & -20\%\\
+        Fierce wind  & -60\%\\
+        Hurricane    & Attack automatically fails\\
+	\hline
+	\multicolumn{2}{|p{\linewidth-4.5mm}|}{Target Movement$^{1}$}\\
+	\hline
+        Target has moved 10m or more since attacker's last Combat Action  & -20\%\\
+        Target has moved 30m or more since attacker's last Combat Action  & -40\%\\
+	\hline
+	\multicolumn{2}{|p{\linewidth-4.5mm}|}{Target Visibility$^{1}$}\\
+	\hline
+        Target obscured by smoke, mist or is in partial darkness          & -20\%\\
+        Target obscured by thick smoke, fog or is in darkness             & -40\%\\
+        Target is above SIZ 20                                            & +20\%\\
+	\hline
+	\multicolumn{2}{|p{\linewidth-4.5mm}|}{Target Condition$^{1}$}\\
+	\hline
+        Target is helpless                                                & +40\%\\
+        Target is prone                                                   & -20\%\\
+	\hline
+	\multicolumn{2}{|p{\linewidth-4.5mm}|}{Attacker Condition$^{2}$}\\
+	\hline
+        Attacker is prone                                                 & -40\%\\
+	Attacker is underwater$^{3}$                                      & -20\%\\
+	Attacker is on unstable ground                                    & -20\%\\
+	Attacker is blinded                                               & -40\%\\
+	\hline
+	\multicolumn{2}{|p{\linewidth-4.5mm}|}{1. Modifiers within these sections are not cumulative. However, modifiers from different sections are cumulative. Therefore, shooting at a target within a mist that has moved more than 10m since the attacker’s last Combat Action imparts a –40\% penalty.}\\
+	\multicolumn{2}{|p{\linewidth-4.5mm}|}{2. Attacker condition modifiers are cumulative.}\\
+	\multicolumn{2}{|p{\linewidth-4.5mm}|}{3. Only crossbows may be used underwater.}\\
+	\cline{1-2}
+\end{rpg-table}
+\end{center}
+\end{table}
+
+
