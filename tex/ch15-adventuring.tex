@@ -83,7 +83,7 @@ This test is usually made after the activity has been completed, unless the acti
 \begin{center}
 \caption{Illuminating Items}
 \label{tab:illuminating-items}
-\begin{rpg-table}[|l|X|]
+\begin{rpg-table}[|X|Y|]
         \hline
 	\textbf{Example} & \textbf{Radius}\\
         \hline
@@ -109,4 +109,100 @@ A character who completely rests for 20-CON hours will remove the effects of any
 
 
 \subsection{Exposure, Starvation and Thirst}
+
+\subsubsection{Exposure}
+A character can normally survive for a number of hours equal to his CON before suffering from exposure. 
+
+\subsubsection{Starvation}
+A character can survive for a number of days equal to his CON before becoming starved, though after three days they will begin to suffer a –10\% penalty to Fatigue tests. 
+
+\subsubsection{Thirst}
+A character can survive for a number of hours equal to his CON x 2 before becoming chronically thirsty, though particularly arid environments may reduce this to CON x 1 or even CON x 1/2. 
+
+\subsubsection{Effects and Remedy}
+Whenever a character is suffering from exposure, starvation or thirst, the Fatigue test penalty immediately doubles to –20\%. In addition, the character will automatically suffer one 1D6 of damage every day, for every condition he is experiencing. Natural healing will not heal this damage – only sufficient shelter, food or water can remedy the problem and allow natural healing to take place. 
+
+
+\subsection{Healing}
+Healing can be performed in one of two ways – using the First Aid skill or through natural healing, resting while the injuries heal themselves. 
+
+Natural Healing 
+A character’s Minor injuries regain CON/4 (round up) hit point per 24 hours, as long as the character does not engage in anything more than light activity. 
+
+Natural healing will not improve Major Wounds. A Major Wound requires treatment with a successful Healing test. Once this is done Major Wounds heal at a rate of one hit point per day, as long as the character does not engage in anything more than light activity, and the character succeeds a daily Resilience test. 
+
+\subsection{Encumbrance}
+Every piece of equipment in the Equipment chapter has an Encumbrance (ENC) score, apart from those items that are too small or light. Characters can usually ignore the effects on Encumbrance that these light items have until they start to carry a lot of them – assume that an average of 20 such items will equal 1 ENC, on the basis that the character has a suitable means of carrying them, such as a sack or backpack. 
+
+A character can carry equipment whose total ENC is less than or equal to his STR+SIZ without penalty. 
+
+Encumbrance is a measure of not only weight but also bulk of the item, reflecting the awkwardness of handling the item. Roughly 1 ENC is equal to 1/4 of a SIZ point.
+
+\subsubsection{Overloading}
+A character carrying total ENC greater than his STR+SIZ is Overloaded. 
+\begin{rpg-list}
+\item Overloaded characters suffer a –20\% penalty to all tests that require physical actions, including Weapon skill tests and most tests that have DEX or STR as a Characteristic. 
+
+\item Overloaded characters have their Movement halved. They also suffer a –20\% penalty to all Fatigue tests. 
+\end{rpg-list}
+
+A character cannot carry more than twice his STR+SIZ in ENC. 
+
+\subsection{Falling}
+A character that takes damage from a fall ends up prone. Armour points do not reduce falling damage. 
+A character takes 1D6 damage per full 3m fallen.
+
+As long as the character was not surprised, they may attempt an Athletics test to mitigate falling damage. A successful test allows the character to treat the fall as if it were two metres shorter than it actually is. In addition, as long as this test is a success and the character is not reduced to 0 hit points due to the fall, the character lands safely and is not prone. If the roll is a critical then miraculously no damage is taken. If the roll is a fumble then the maximum possible damage is taken.
+
+Characters falling onto soft surfaces may have the distance they fall effectively halved for the purposes of damage. 
+
+
+\subsection{Suffocation}
+While underwater or moving through a poison gas cloud a character can hold his breath for a number of Combat Rounds equal to his CON. 
+
+Once a character has surpassed the time for which he can hold his breath, he must make a Resilience test every round with a cumulative –10\% penalty. If he fails, he automatically starts inhaling the suffocating substance.
+
+\begin{table}
+\begin{center}
+\caption{Suffocating Substance}
+\label{tab:suffocating-substance}
+\begin{rpg-table}[|l|YX]
+        \hline
+	\textbf{Substance Inhaled} & \textbf{Damage Taken}\\
+        \hline
+	Water         & 2D6\\
+	Vacuum        & 2D6\\
+	Thick Smoke   & 1D6\\
+	Poison Gas    & Character is exposed to the poison. If the gas is also a thick smoke, then 1D6 damage is incurred in addition to the poison’s effect.\\
+        \hline
+\end{rpg-table}
+\end{center}
+\end{table}
+
+Armour points do not reduce suffocation damage. The damage will only cease once the character can draw breathable air once more. Even then, the character will require a Resilience test to be able to do anything other than wretch or gasp for breath for 1D4 Combat Rounds. 
+
+
+\subsection{Burning}
+The amount of damage per Combat Round suffered from fire or heat will depend on its intensity, as shown on table~\ref{tab:fire-and-heat}. Metal armour, such as Plate or Chain mail, does not subtract from the rolled damage.
+
+\begin{table}
+\begin{center}
+\caption{Fire and Heat}
+\label{tab:fire-and-heat}
+\begin{rpg-table}[|l|X|l|]
+        \hline
+	\textbf{Damage Source} & \textbf{Example} & \textbf{Damage/CR}\\
+        \hline
+	Flame            & Candle       & 1 point\\
+	Large Flame      & Torch        & 1D4 points\\
+	Small Fire       & Camp fire    & 1D6 points\\
+	Large Fire       & Scolding steam, large bonfires, burning rooms & 2D6 points\\
+	Inferno          & Lava, inside a blast furnace & 3D6 points\\
+        \hline
+\end{rpg-table}
+\end{center}
+\end{table}
+
+
+\subsection{Poison}
 
