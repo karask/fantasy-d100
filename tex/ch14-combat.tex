@@ -25,14 +25,14 @@ These harsh realities mean that players tend to avoid combats where they do not 
 
 	\item[Drop into Combat time:] Combat is divided into rounds. A single round has a duration of five seconds of time, giving 12 rounds in every minute. During a round every character can perform one action. Combat rounds cycle through the following steps:
 	\begin{rpg-list}
-	\item Determine Order: At the start of every combat, check each character’s Combat Order,  calculated as $(DEX+INT)/2 + 1D6$. Combat Order is in the character sheet; only the dice needs to be rolled to determine final Combat Order.
+	\item Determine Order: At the start of every combat, check each character’s `Combat Order', calculated as $DEX + 1D6$. The dice needs to be rolled only once in the beginning of combat to account for the unpredictability of battle.
 	\item Characters Take Action \& Reaction: In a combat round each character gets one Combat Action and one Defensive Reaction. Combat Actions, such as attacks, take place in Combat Order. The character with the highest order will act first, followed by the character with the second-highest order, and so on until the character with the lowest order acts. Reactions, such as parries or dodges, are made during this process as they are needed.
 	\item End of Combat Round: Once all eligible characters have acted in the combat round, it is over. If there are characters still engaged in combat with enemies, another combat round begins. 
 	\end{rpg-list}
 \end{description}
 
 \begin{rpg-examplebox}
-For example: Lura has a Combat Order of 15 (13 Dex + 17 Int) and rolled a 3 thus having a final of 18. A Goblin has 13 Combat Order (14 Dex + 11 Int) and rolled a 4 for a total of 17. Thus the Combat Order is Lura acting before the Goblin.
+For example: Lura has DEX 15 and rolled a 3 for a total of 18 Combat Order. A Goblin has DEX 13 and rolled a 4 for a total of 17. Thus the Combat Order is Lura acting before the Goblin.
 \end{rpg-examplebox}
 
 \section{Encounter Distance}
@@ -40,7 +40,7 @@ Not all combats start with the two sides, the players and their opponents, direc
 
 Close is a range of two metres or less and is the distance at which a character can engage in either Close or Unarmed combat. 
 
-Ranged, beyond two metres up to double the range of the missile weapon a character is holding, is the distance at which the character can engage in ranged combat.  Ranged combat typically happens out in the open countryside where groups of combatants can see each over coming over the horizon or emerging in the distance from old ruined buildings.
+Ranged, beyond two metres up to double the range of the missile weapon a character is holding, is the distance at which the character can engage in ranged combat. Ranged combat typically happens out in the open countryside where groups of combatants can see each over coming over the horizon or emerging in the distance from old ruined buildings.
 
 
 \subsection{Some Basic Rules}
@@ -129,11 +129,11 @@ The character need not speak the same language as the opponent they are trying t
         \hline
         Target is helpless  & Automatic Critical\\
         Target is prone or attacked from behind & +20\%\\
-        Attacking or defending while on higher ground or on mount & +20\%\\
+	Attacking or defending while on higher ground or on mount (unless wielding a weapon two size categories smaller) & +20\%\\
         Attacking or defending while prone & -20\%\\
         Attacking or defending while on unstable ground & -20\%\\
         Attacking or defending while underwater & -40\%\\
-        Defending while on lower ground or against mounted foe & -20\%\\
+	Defending while on lower ground or against mounted foe (unless wielding a weapon two size categories larger) & -20\%\\
         Fighting in partial darkness & -20\%\\
         Fighting in darkness & -40\%\\
         \hline
@@ -200,7 +200,7 @@ Grapple Attack is made in the same way as a normal Unarmed or Natural Weapon att
 The following are potential actions:
 \begin{description}
 \item[Ranged Combat Attack:] The character can make a single ranged combat attack. As well as a normal attack, there is the following special attacks.
-\item[Aim:] Every round spent aiming adds a +20\% bonus to the character’s Ranged Combat skill. This bonus only applies to the first attack the character makes with the weapon, which must be fired at the target being aimed at. A character can aim a maximum of 2 rounds and can take no other Reaction while aiming without losing the aim bonus.
+\item[Aim:] Every round spent aiming adds a +20\% bonus to the character’s Ranged Combat skill. This bonus only applies to the first attack the character makes with the weapon, which must be fired at the target being aimed at. A character can use aim a maximum of two rounds and can take no Reaction while aiming without losing the aim bonus.
 \end{description}
 
 \subsubsection{Throwing Close Combat Weapons}
@@ -210,7 +210,6 @@ If a close combat weapon that isn’t designed to be thrown is hurled at an enem
 All ranged attacks are handled in same manner as close combat attacks, with the following exceptions: 
 \begin{description}
 \item[Charge:] Ranged attacks may not be used as part of a charge.
-\item[Loading Ranged Weapons:] Most ranged weapons only take a single combat round to ready. Others take more than one combat round to reload. See weapon description in the equipment chapter. 
 \item[Range:] A target within the weapon’s range may be attacked without penalty. A target within double the weapon’s range may be attacked, but the attacker’s weapon skill is halved before other modifiers are applied. Attacks cannot be made at a distance beyond twice/double the weapon’s range.
 \item[Dodging and Parrying:] The target may attempt to Parry or Dodge a hand thrown ranged attack at -20\% but may not normally Dodge or Parry ranged missile weapons (such as Bows and Crossbow fire). Shield-carrying characters may Parry hand thrown missile weapons with no penalty.
 \item[Disarming:] A character may not attempt to disarm targets with ranged attacks, nor may he attempt to strike a target’s weapon or shield.
@@ -286,6 +285,7 @@ A character may make one of the following Move Actions for Free and unless noted
 \item[Fighting Retreat:] A character may move their full Movement directly away from an enemy he is fighting. He may only defend at +20\% (+40\% with a Medium and Large shield).
 \item[Standard Move:] The character may move a distance up to his Movement Rate.
 \item[Sprint:] The character may move a distance up to twice their Movement Rate, forsaking their attack and only being able to dodge as a defensive reaction.
+\item[Ready Weapon:] Drawing a sword from its sheath, unhooking an axe from one’s belt, nocking an arrow to one’s bow – all these actions take half of available movement. A single Ready Weapon action can also include dropping a weapon currently held to the floor and then drawing a new one. Sheathing one weapon and drawing another takes requires the full movement as does readying two weapons. 
 \end{description}
 
 
@@ -294,7 +294,7 @@ A character may make one of the following Move Actions for Free and unless noted
 \begin{description}
 \item[Powers:] This depends on which Discipline the Power belongs to. Consult the appropriate Discipline chapter.
 \item[Delay:] A character may pause to assess the tactical situation around him. If a delaying character merely wishes to act after a specific character has acted, they wait until that character has finished their Combat Action. If a delaying character wishes to interrupt a specific character’s action as it occurs, the character must make a test appropriate to his interrupting action (a weapon skill test if the character wishes to attack, for instance). Whoever wins the test acts first. 
-\item[Ready Weapon:] Drawing a sword from its sheath, unhooking an axe from one’s belt, nocking an arrow to one’s bow – all these actions take one combat round. A single Ready Weapon action can also include dropping a weapon currently held to the floor and then drawing a new one. Sheathing one weapon and drawing another takes two Combat Rounds as does readying two weapons. Ranged weapons can be reloaded with this action – this takes as many Combat Rounds as noted in the weapon’s description. 
+\item[Load Crossbow:] A light crossbow requires a full combat round to load while a heavy requires two full combat rounds.
 \item[Skill Use:] The character performs one action which requires the use of a skill, such as opening a locked door with the Mechanisms skill.
 \end{description}
 

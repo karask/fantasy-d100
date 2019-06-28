@@ -46,13 +46,13 @@ For ease of use here’s a simple coin based currency that will be used througho
 \end{rpg-table}
 
 \section{The Equipment Lists}
-The rest of this chapter is given over to equipment lists. These lists provide the cost of the item and details any game effects.  They also where appropriate give an Encumbrance value (ENC) for the item in question. This is a value which rates both the weight and how physically unwieldy an item is. This is for the Encumbrance rules given in The Adventure and Spot Rules chapter in page~\pageref{}.
+The rest of this chapter is given over to equipment lists. These lists provide the cost of the item and details any game effects.  They also where appropriate give an Encumbrance value (ENC) for the item in question. This is a value which rates both the weight and how physically unwieldy an item is. This is for the `Encumbrance' rules given in page~\pageref{ssec:encumbrance}.
 
 \section{Close Combat Weapons}
 All Close Combat weapons use the Close Combat skill.  Each close combat weapon is characterised by the following qualities: 
 
 \begin{description}
-	\item[Type:] This shows how the weapon is wielded and other special rules (see `Weapon Types' in page~\pageref{}).
+	\item[Type:] This shows how the weapon is wielded and other special rules (see `Close Combat Weapon Types' below).
 	\item[Damage Dice:] The damage the weapon deals on a successful attack. 
 	\item[STR/DEX:] The minimum STR and DEX scores needed to easily wield this weapon. If either of the Characteristics are below these minimums, a –20\% maximum penalty is applied to a character’s skill when attacking and parrying with this weapon. 
 	\item[ENC:] The weapon’s Encumbrance. The weight and bulk of the weapon. 
@@ -70,11 +70,11 @@ All Close Combat weapons use the Close Combat skill.  Each close combat weapon 
 	\hline
 	%\multicolumn{7}{|l|}{\textbf{Swords and Knives}}\\
 	%\hline
+	Arming Sword    & 1H             & 1D8   &  9/9  & 2 & Medium & 150 SP\\
 	Ball and Chain  & 1H             & 1D8   &  9/9  & 2 & Medium & 120 SP\\
 	Battleaxe       & 1H             & 1D8   &  9/9  & 2 & Medium & 120 SP\\
-	Broadsword      & 1H             & 1D8   &  9/9  & 2 & Medium & 150 SP\\
 	Club            & Flex           & 1D6   &  5/9  & 1 & Light  & 20 SP\\
-	Dagger          & 1H/Ragne       & 1D4+1 &  -/-  & - & Light  & 20 SP\\
+	Dagger          & 1H/Ragne       & 1D4   &  -/-  & - & Light  & 20 SP\\
 	Great Axe       & 2H             & 2D8   & 13/5  & 4 & Heavy  & 200 SP\\
 	Great Hammer    & 2H             & 2D8   & 13/5  & 4 & Heavy  & 200 SP\\
 	Greatsword      & 2H             & 2D8   & 13/9  & 4 & Heavy  & 300 SP\\
@@ -100,6 +100,7 @@ All Close Combat weapons use the Close Combat skill.  Each close combat weapon 
 \end{table*}
 
 \subsubsection{Close Combat Weapon Types}
+\label{sssec:close-combat-weapon-types}
 \begin{description}
 	\item[1H:] This weapon must be used one-handed.
 	\item[2H:] This weapon must be used two-handed.
@@ -117,7 +118,6 @@ Each ranged weapon is characterised by the following qualities:
 	\item[Type:] This shows how the weapon is wielded and other special rules (see `Weapon Types' in page~\pageref{}).
 	\item[Damage Dice:] The damage the weapon deals on a successful attack. 
 	\item[Range:] This is the effective range of the weapon.  A target within the weapon’s range may be attacked without penalty. A target within double the weapon’s range may be attacked, but the attacker’s effective Weapon skill is halved (before other modifiers are applied). Attacks against targets beyond double the weapon’s range automatically fail.
-	\item[Rate:] This shows how many missiles can be fired per Combat Rounds, taking into consideration the time to load the weapon. For example 1 CR, means 1 missile can be fired every combat round, while 1/3 CR means one 1 missile every 3 combat rounds. 
 	\item[STR/DEX:] The minimum STR and DEX scores needed to easily wield this weapon. If either of the Characteristics are below these minimums, a maximum –20\% penalty is applied to a character’s skill when attacking and parrying with this weapon.
 	\item[ENC:] The weapon’s Encumbrance. The weight and bulk of the weapon. 
 	\item[Cost:] The cost in silver pieces to purchase this weapon.
@@ -128,22 +128,22 @@ Each ranged weapon is characterised by the following qualities:
 \begin{center}
 \caption{Ranged Combat Weapons}
 \label{tab:ranged-combat-weapons}
-\begin{rpg-table}[|X||c|c|c|c|c|c|c|]
+\begin{rpg-table}[|X|c|c|c|c|c|c|]
 	\hline
-	\textbf{Weapon} & \textbf{Type} & \textbf{Damage Dice} & \textbf{Range} & \textbf{Rate} & \textbf{STR/DEX} & \textbf{ENC} & \textbf{Cost}\\
+	\textbf{Weapon} & \textbf{Type} & \textbf{Damage Dice} & \textbf{Range} & \textbf{STR/DEX} & \textbf{ENC} & \textbf{Cost}\\
 	\hline
-	Dagger            & Close/Thrown   & 1D6   & STR x m  & 1 CR   & -/9  & -  & 30 SP\\
-	Dart              & Thrown         & 1D4   & STR x m  & 1 CR   & -/9  & -  & 15 SP\\
-	Crossbow (Heavy)  & 2H             & 2D6   & 150m     & 1/3 CR & 9/9  & 2  & 350 SP\\
-	Crossbow (Light)  & 2H             & 1D8   & 125m     & 1/2 CR & 5/9  & 1  & 150 SP\\
-	Hatchet           & Close/Thrown   & 1D6   & STR x m  & 1 CR   & -/9  & 1  & 25 SP\\
-	Improvised (Rock) & Thrown         & 1d4   & STR x m  & 1 CR   & 5/5  & 1  & -\\
-	Javelin           & Thrown         & 1d6   & STR x 2m & 1 CR   & 5/9  & 1  & 20 SP\\
-	Longbow           & 2H             & 1d10  & 150m     & 1 CR   & 13/9 & 1  & 150 SP\\
-	Shortbow          & 2H             & 1d8   & 75m      & 1 CR   & 9/9  & 1  & 75 SP\\
-	Shortspear        & Close/Thrown   & 1d6   & STR x 2m & 1 CR   & 5/9  & 2  & 20 SP\\
-	Sling             & 1H             & 1d6   & 50m      & 1 CR   & -/9  & -  & 5 SP\\
-	Whip              & Close          & 1d3   & 5m       & 1 CR   & -/9  & -  & 50 SP\\
+	Dagger            & Close/Thrown   & 1D6   & STR x m  & -/9  & -  & 30 SP\\
+	Dart              & Thrown         & 1D4   & STR x m  & -/9  & -  & 15 SP\\
+	Crossbow (Heavy)  & 2H             & 2D6   & 150m     & 9/9  & 2  & 350 SP\\
+	Crossbow (Light)  & 2H             & 1D8   & 125m     & 5/9  & 1  & 150 SP\\
+	Hatchet           & Close/Thrown   & 1D6   & STR x m  & -/9  & 1  & 25 SP\\
+	Improvised (Rock) & Thrown         & 1d4   & STR x m  & 5/5  & 1  & -\\
+	Javelin           & Thrown         & 1d6   & STR x 2m & 5/9  & 1  & 20 SP\\
+	Longbow           & 2H             & 1d10  & 150m     & 13/9 & 1  & 150 SP\\
+	Shortbow          & 2H             & 1d8   & 75m      & 9/9  & 1  & 75 SP\\
+	Shortspear        & Close/Thrown   & 1d6   & STR x 2m & 5/9  & 2  & 20 SP\\
+	Sling             & 1H             & 1d6   & 50m      & -/9  & -  & 5 SP\\
+	Whip              & Close          & 1d3   & 5m       & -/9  & -  & 50 SP\\
 	\hline
 \end{rpg-table}
 \end{center}
