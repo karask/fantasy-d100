@@ -75,10 +75,9 @@ The actions a character may take when it is his turn to act are detailed here. 
 	\item[Close Combat Attack:]  The character can make a single close combat attack. As well as a normal attack, there are the following special attacks.
 		\begin{rpg-list}
 		\item All out Attack: The attacker gives up their Reaction for the round but gains a second attack, which happens straight after the first attack. Both attacks are at -20\% due to the loss of skill during this frenzied attack. This type of attack cannot be combined with Great Attack or Disarming Attack.
-
-\item Disarming Attack:  Attacker attacks at -20\% to his weapon skill with the aim of disarming their opponent either of their weapon or shield. If the attack is successful and the opponent fails to parry or dodge, the weapon or shield is thrown 1D6 metres away from the owner. 
-
 \item Great Attack: This attack is made using swords, axes or maces where the attacker has enough room to wind up the weapon for a really forceful blow. The attacker gains a +20\% to attack and automatically does the maximum damage bonus value but loses his reaction for that combat round.
+\item Disarming Attack: Attacker attacks at -20\% to his weapon skill with the aim of disarming their opponent either of their weapon or shield. If the attack is successful and the opponent fails to parry or dodge, the weapon or shield is thrown 1D6 metres away from the owner. 
+\item Knockout Attack: Attacker attacks at -20\% to his weapon skill with the aim of knocking out their opponent. If the attack is successful and the opponent fails to parry or dodge, and the damage done is equal to a major wound then the opponent is knocked out without suffering any damage. If the damage is equal to a minor wound the opponent takes the minimum damage of the weapon but is not knocked out.
 		\end{rpg-list}
 	\item[Intimidate/Persuade:]  The character tries to get the other side to surrender or flee. This can either be targeted at a single enemy or a group.  Do an Opposed roll using the character’s Influence vs. the enemies’ Persistence, modified as listed below. Groups roll once using the Persistence of the group leader. If the group leader’s Influence skill is higher than his Persistence, then they may use that skill instead. Apply the following modifiers to the enemy’s skill depending on the state of the enemy.
 	\begin{rpg-table}[|c|X|]
@@ -187,6 +186,8 @@ Grapple Attack is made in the same way as a normal Unarmed or Natural Weapon att
 \item \textbf{Grapple Succeeds:} The two combatants are now grappling and the attacker may immediately follow up on this success by Throwing, Inflicting pain or Immobilise the target.
 \end{rpg-list}
 
+
+
 \begin{description}
 \item[Break Free:] To break out of a grapple, the character makes an opposed Grapple Attack. The characters may only use the Unarmed Combat Skill in this case. If the character succeeds his roll while his opponent fails then the character has succeeded in breaking free and the combatants are no longer grappling, though they will be adjacent.
 \item[Immobilise:] While immobilised, enemies are considered helpless. Once per round the defender may attempt to break free.
@@ -194,13 +195,33 @@ Grapple Attack is made in the same way as a normal Unarmed or Natural Weapon att
 \item[Throw:] The opponent is thrown 2 metres and suffers 1D4 damage. Armour does not help. The grapple ends in this case.
 \end{description}
 
+The difference in SIZ between characters matters considerably. Consult table~\ref{tab:grappling-modifiers} for some guidelines. For greater differences the Games Master will determine if it makes sense to roll dice.
+
+\begin{table}
+\begin{center}
+\caption{Grappling Modifiers}
+\label{tab:grappling-modifiers}
+	\begin{rpg-table}[|X|c|]
+	\hline
+        \textbf{Situation} & \textbf{Skill Modifier}\\
+	\hline
+        Attacker is $1/3$ larger in SIZ   & +20\%\\
+        Attacker is $1/2$ larger in SIZ   & +40\%\\
+        Defender is $1/3$ smaller in SIZ  & -20\%\\
+        Defender is $1/2$ smaller in SIZ  & -40\%\\
+	\hline
+\end{rpg-table}
+\end{center}
+\end{table}
+
+
 
 \subsection{Ranged Combat Actions}
 
 The following are potential actions:
 \begin{description}
 \item[Ranged Combat Attack:] The character can make a single ranged combat attack. As well as a normal attack, there is the following special attacks.
-\item[Aim:] Every round spent aiming adds a +20\% bonus to the character’s Ranged Combat skill. This bonus only applies to the first attack the character makes with the weapon, which must be fired at the target being aimed at. A character can use aim a maximum of two rounds and can take no Reaction while aiming without losing the aim bonus.
+\item[Aim:] If a character aims for a round he adds a +20\% bonus to the character’s Ranged Combat skill. This bonus only applies to the first attack the character makes with the weapon, which must be fired at the target being aimed at. A character can take no Reaction while aiming without losing the aim bonus.
 \end{description}
 
 \subsubsection{Throwing Close Combat Weapons}
@@ -451,12 +472,14 @@ Murgan parries one of his attackers and chooses to use 75\% of his skill. This m
         All Out Attack       & Two attacks at -20\%. Gives up Reaction for round.\\
         Great Attack         & One attack at +20\% at maximum damage. Gives up Reaction for round.\\
         Disarming Attack     & Attack at -20\% to disarm opponent.\\
+        Knockout Attack      & Attack at -20\% to knock out opponent. If the damage is equal to a major wound the target is knocked out. Otherwise minimum weapon damage.\\
         Set Weapon           & Character sets spear or polearm in anticipation of charge. When charge occurs character attacks first with +20\% to weapon skill.\\
         Standard Move        & The character moves their Movement Rate in metres as a FREE action, once per round.\\
         Change Stance        & May move from prone to standing and vice versa.\\
 	Fighting Retreat     & Moves their Movement Rate and defends at +20\% (+40\% if using a Medium or Large Shield).\\
 	Sprint               & Moves twice Movement Rate. May not attack and may only Dodge as a reaction.\\
 	Ranged Combat Attack & Character attacks opponent with weapon, tests vs. Ranged Combat skill if successful then does weapon damage (plus damage modifier for thrown weapons only).\\
+	Ranged Combat Aim    & Character aims for a combat round to gain +20\% to the next ranged attack.\\
 	Use Power            & Character uses a Power.\\
 	Delay                & Character either waits until after another character’s action or tries to interrupt it.\\
 	Intimidate/Persuade  & The character uses their Influence skill vs the enemies’ Persistence to either intimidate, or persuade foes who are facing defeat, to flee or surrender.\\
