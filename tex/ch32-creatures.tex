@@ -1,2 +1,60 @@
 \chapter{Creatures}
 \label{ch:creatures}
+
+\begin{monsterbox}{Goblin}
+	\textit{Sneakier crueller cousins of the Orcs, goblins are a quarrelsome bunch of green-skinned humanoids. They stand as tall as a human child and their smiling faces are dominated by large hooked noses and mouth full of razor-sharp teeth. Constantly in the shadow of the larger humanoid races, often used as slaves or cannon fodder, these diminutive psychopaths take out their frustration on any other creatures unlucky enough to be outnumbered by them or in their power.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 9, %\rpgdice{3d8 + 3},
+	majorwound = 5,
+	damagemodifier = 0,
+	powerpoints = 10,
+	movementrate = 15m,
+	armor = Leather (2AP),
+	plunderrating = 1
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D6+3 (10),
+		CON = 2D6+3 (10),
+		DEX = 5D6   (17),
+		SIZ = 2D6   (7),
+		INT = 3D6   (10),
+		POW = 2D6+3 (10),
+		CHA = 2D6   (7)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~50\%, Persistence~20\%, Resilience~35\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+    		Natural lore~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~50\%, Perception~35\%, Deception~75\%, Mechanisms~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 40\%]
+		Shortspear (1D6), Buckler (1D4)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ranged Combat 50\%]
+		Sling (1D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Supernatural]
+		On their own, Goblins can sometimes learn Battle and Magic disciplines (leaders and shamans). When they are exposed to bigger evil cultures they tend to get press-ganged into the service of Evil Cults.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Night Sight]
+		Goblins can see at night as if it was day, by seeing heat and cold.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+

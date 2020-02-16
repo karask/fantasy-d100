@@ -139,11 +139,15 @@
 %
 % Macros for use within the monster environment
 %
-\newkeycommand\basics[armorclass=0, hitpoints=0, speed=0]{%
+\newkeycommand\basics[hitpoints=0, majorwound=0, damagemodifier=0, powerpoints=0, movementrate=0, armor=0, plunderrating=0]{%
   \begin{rpg@monsterattrs}
-    \rpg@monsterattr{armorclass}{\armorclassname}
     \rpg@monsterattr{hitpoints}{\hitpointsname}
-    \rpg@monsterattr{speed}{\speedname}
+    \rpg@monsterattr{majorwound}{\majorwoundname}
+    \rpg@monsterattr{damagemodifier}{\damagemodifiername}
+    \rpg@monsterattr{powerpoints}{\powerpointsname}
+    \rpg@monsterattr{movementrate}{\movementratename}
+    \rpg@monsterattr{armor}{\armorname}
+    \rpg@monsterattr{plunderrating}{\plunderratingname}
   \end{rpg@monsterattrs}%
 }
 
