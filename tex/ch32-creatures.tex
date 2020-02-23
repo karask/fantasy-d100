@@ -1,6 +1,207 @@
 \chapter{Creatures}
 \label{ch:creatures}
 
+In Fantasy D100, monsters can be as richly detailed as the characters themselves. As well as characteristics they have skills, weapons and supernatural abilities. They are not mere cannon fodder to be killed and looted. They have their own motives that often bring them into conflict with the player characters, and if sentient can be used to create player characters.
+
+This chapter is split into two lists. The first is the Monster List, which is full of creatures fantastic and magical. The second is the Animals List, a smaller list which details more mundane creatures, which the characters may encounter or commonly use as mounts and beasts of burden. Note that just only a sample of the most characteristic monsters are described here. Game masters should consult other D100 supplements (e.g. from Open Quest) to get more ready-made monsters. It is encouraged that Game Masters create campaign-specific monsters using this section's material as examples.
+\vspace{1em}
+
+\begin{rpg-titlebox}{Monsters as Player Characters}
+Although in theory many of the monsters in this chapter can be used as player characters the following are especially suited: Dwarf, Elf, Centaur, Goblin, Merman, Orc, Ogre, Lizard Man.
+\end{rpg-titlebox}
+  
+The following characteristics, attributes, skills, and special rules, collectively known as a ‘Stat block’, for each of the creatures listed on the Monsters List, are the bare bones of a creature. You can use them straight away to give an average non-descript member of that race.
+
+To create creatures that truly fit the adage “Monsters are People too”, take the Stat block and use it as a base for a complete character. Think of a concept for the character and then add the skills, characteristics and supernatural abilities that the character needs. You may want to generate the creature character as if it was a player character. This often creates good opposition for the players, since the creature will be of comparable experience. 
+
+Note that you should be careful with increasing encounter difficulty by increasing numbers of monsters. A much better way is to increase the power of individual monsters, by increasing skills and supernatural abilities, to be closer to the player character power level.  Fantasy D100 combat works best when there is roughly the same amount of monsters as player characters.
+
+\section{The Monster List}
+
+\begin{monsterbox}{Centaur}
+	\textit{Atop of the body of a well-bred and strong horse, this creature has the body of a strong athletic human where the horse’s head should be. The centaur is the raw power and nobility of nature incarnate. Often they act as the self styled protectors of the wilderness, which brings them into conflict with more settled races who encroach on their territory.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 19, %\rpgdice{3d8 + 3},
+	majorwound = 10,
+	damagemodifier = +1D6,
+	powerpoints = 11,
+	movementrate = 23m,
+	armor = Leather (2AP),
+	plunderrating = 2
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6+6 (17),
+		CON = 3D6   (11),
+		DEX = 3D6+3 (14),
+		SIZ = 4D6+12 (26),
+		INT = 2D6+6 (13),
+		POW = 3D6   (11),
+		CHA = 3D6   (11)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~30\%, Persistence~45\%, Resilience~60\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+    		Natural lore~60\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~60\%, Performance~50\%, Perception~40\%, Deception~30\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ranged Combat 70\%]
+		Large Longbow (1D10+1D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 40\%]
+		Lance (1D10+1D6), Shield (1D6+1D6), Arming Sword (1D8+1D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 40\%]
+		Kick (1D6+1D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Supernatural]
+		Typically supernatural abilities that are related to Battle, Earth and Nature are available to Centaurs.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Exceptional Archers]
+		Centaurs can use their damage modifier when using bows.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
+\begin{monsterbox}{Dwarf}
+	\textit{These short, stocky and bearded, human-like creatures, live underground in vast halls, meticulously carved out of the rock by their highly skilled hands.  Long lived and proud of their work, Dwarfs are the natural enemies of Orcs and Goblins, who often encroach upon their realms.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 15, %\rpgdice{3d8 + 3},
+	majorwound = 8,
+	damagemodifier = 0,
+	powerpoints = 11,
+	movementrate = 12m,
+	armor = Chainmail (5AP),
+	plunderrating = 3
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 4D6   (14),
+		CON = 2D6+12 (19),
+		DEX = 3D6   (11),
+		SIZ = 1D6   (7),
+		INT = 2D6+6 (13),
+		POW = 3D6   (11),
+		CHA = 3D6   (11)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~20\%, Persistence~40\%, Resilience~55\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+    		Craft~70\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~50\%, Engineering~35\%, Trade~60\%, Mechanisms~40\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 65\%]
+		War Hammer (1D8), Battleaxe (1D8), Shield (1D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ranged Combat 45\%]
+		Light Crossbow (1D8)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Supernatural]
+		Typically supernatural abilities that are related to Battle, Earth and Metals are available to Dwarves.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Thermoception]
+		Dwarves can see at dark as if it was day, by detecting heat and cold.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Earth Sense]
+		Dwarfs can automatically sense how far they are underground and whether or not the tunnels or chambers they are in are structurally sound.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
+\begin{monsterbox}{Elf}
+	\textit{Forest dwellers, these creatures are slender and tall, with ears that end in a point. Haughty and proud, they do not suffer the ravages of time like other mortal races. Tightly bound to their forest realms in ways no human can understand, they often come into conflict with those who despoil their lands.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 11, 
+	majorwound = 6,
+	damagemodifier = 0,
+	powerpoints = 13,
+	movementrate = 15m,
+	armor = Leather (2AP),
+	plunderrating = 1
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D6+3 (10),
+		CON = 3D6   (11),
+		DEX = 3D6+6 (17),
+		SIZ = 2D6+3 (10),
+		INT = 3D6+6 (17),
+		POW = 2D6+6 (13),
+		CHA = 3D6   (11)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~55\%, Persistence~55\%, Resilience~20\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+    		Nature lore~80\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~55\%, Deception~55\%, Perception~30\%, Healing~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 60\%]
+		Longspear (1D8)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ranged Combat 80\%]
+		Shortbow (1D8)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Supernatural]
+		Typically supernatural abilities that are related to Battle, Healing and Nature are available to Elves.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Night Sight]
+		Elves treat partial darkness as illuminated and darkness as only partial darkness.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Exceptional Archers]
+		Elves can use their damage modifier when using bows.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
+
 \begin{monsterbox}{Goblin}
 	\textit{Sneakier crueller cousins of the Orcs, goblins are a quarrelsome bunch of green-skinned humanoids. They stand as tall as a human child and their smiling faces are dominated by large hooked noses and mouth full of razor-sharp teeth. Constantly in the shadow of the larger humanoid races, often used as slaves or cannon fodder, these diminutive psychopaths take out their frustration on any other creatures unlucky enough to be outnumbered by them or in their power.}\\
 	\rpghline
@@ -19,7 +220,7 @@
 		CON = 2D6+3 (10),
 		DEX = 5D6   (17),
 		SIZ = 2D6   (7),
-		INT = 3D6   (10),
+		INT = 3D6   (11),
 		POW = 2D6+3 (10),
 		CHA = 2D6   (7)
 	]
@@ -42,19 +243,76 @@
 		Athletics~50\%, Perception~35\%, Deception~75\%, Mechanisms~50\%
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Close Combat 40\%]
-		Shortspear (1D6), Buckler (1D4)
+		Shortspear (1D6), Small Shield (1D4)
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Ranged Combat 50\%]
 		Sling (1D6)
 	\end{rpg-monsteraction}
 	\rpgmonstersection{Abilities}
 	\begin{rpg-monsteraction}[Supernatural]
-		On their own, Goblins can sometimes learn Battle and Magic disciplines (leaders and shamans). When they are exposed to bigger evil cultures they tend to get press-ganged into the service of Evil Cults.
+		On their own, Goblins can sometimes learn Battle and Magic disciplines (leaders and shamans).
 	\end{rpg-monsteraction}
-	\begin{rpg-monsteraction}[Night Sight]
+	\begin{rpg-monsteraction}[Thermoception]
 		Goblins can see at night as if it was day, by seeing heat and cold.
 	\end{rpg-monsteraction}
 
 \end{monsterbox}
+
+\newpage
+
+\begin{monsterbox}{Orc}
+	\textit{Foul green-skinned humanoids with pig-like snouts and a foul temper. Orcs live for violence and have a society where the strong dominate the weak. Orc clans, known as warbands, regularly war on each other and other races that they come across.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 11, %\rpgdice{3d8 + 3},
+	majorwound = 6,
+	damagemodifier = 0,
+	powerpoints = 10,
+	movementrate = 15m,
+	armor = Leather (2AP),
+	plunderrating = 2
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 4D6 (14),
+		CON = 3D6 (11),
+		DEX = 4D6 (14),
+		SIZ = 2D6+3 (10),
+		INT = 3D6   (11),
+		POW = 2D6+3 (10),
+		CHA = 2D6   (7)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~35\%, Persistence~35\%, Resilience~35\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+    		Craft~40\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~35\%, Perception~45\%, Deception~45\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 40\%]
+		Scimitar (1D8), Shield (1D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ranged Combat 50\%]
+		Shortbow (1D8)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Supernatural]
+		Orcs usually worship evil or warlike deities and are members of their cults. Exceptional leaders and shamans might be trained in Battle and Magic disciplines respectively.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+
 
 
