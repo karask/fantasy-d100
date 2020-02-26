@@ -260,6 +260,66 @@ Note that you should be careful with increasing encounter difficulty by increasi
 
 \newpage
 
+\begin{monsterbox}{Lizardman}
+	\textit{Lizardmen are bipedal Lizards that walk upright, use tools and magic, and would threaten mankind, if they didn’t prefer very hot climates, such as arid deserts and steamy swamps.  They can be found in anything from small primitive groups to large civilisations which enslave humans to build their awesome monuments.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 11,
+	majorwound = 6,
+	damagemodifier = +1D4,
+	powerpoints = 11,
+	movementrate = 15m,
+	armor = Scales (2AP),
+	plunderrating = 3
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6+6 (17),
+		CON = 3D6   (11),
+		DEX = 2D6+3 (10),
+		SIZ = 3D6   (11),
+		INT = 2D6+6 (13),
+		POW = 3D6   (11),
+		CHA = 2D6   (7)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~45\%, Persistence~25\%, Resilience~30\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+    		Natural lore~45\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~45\%, Deception~30\%, Perception~35\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 45\%]
+		Battleaxe (1D8+1D4)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ranged Combat 35\%]
+		Sling (1D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 25\%]
+		Bite (1D6+1D4)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Supernatural]
+		Any discipline is available to Lizardmen.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
+
+
 \begin{monsterbox}{Orc}
 	\textit{Foul green-skinned humanoids with pig-like snouts and a foul temper. Orcs live for violence and have a society where the strong dominate the weak. Orc clans, known as warbands, regularly war on each other and other races that they come across.}\\
 	\rpghline
