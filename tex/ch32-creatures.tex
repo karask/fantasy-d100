@@ -7,7 +7,7 @@ This chapter is split into two lists. The first is the Monster List, which is fu
 \vspace{1em}
 
 \begin{rpg-titlebox}{Monsters as Player Characters}
-Although in theory many of the monsters in this chapter can be used as player characters the following are especially suited: Dwarf, Elf, Centaur, Goblin, Merman, Orc, Ogre, Lizard Man.
+Although in theory many of the monsters in this chapter can be used as player characters the following are especially suited: Dwarf, Elf, Centaur, Goblin, Orc, Ogre, Lizard Man.
 \end{rpg-titlebox}
   
 The following characteristics, attributes, skills, and special rules, collectively known as a ‘Stat block’, for each of the creatures listed on the Monsters List, are the bare bones of a creature. You can use them straight away to give an average non-descript member of that race.
@@ -59,10 +59,10 @@ Note that you should be careful with increasing encounter difficulty by increasi
 		Athletics~60\%, Performance~50\%, Perception~40\%, Deception~30\%
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Ranged Combat 70\%]
-		Large Longbow (1D10+1D6)
+		Longbow (1D10+1D6)
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Close Combat 40\%]
-		Lance (1D10+1D6), Shield (1D6+1D6), Arming Sword (1D8+1D6)
+		Lance (1D10+1D6), Medium Shield (1D6+1D6), Arming Sword (1D8+1D6)
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Unarmed Combat 40\%]
 		Kick (1D6+1D6)
@@ -78,6 +78,8 @@ Note that you should be careful with increasing encounter difficulty by increasi
 \end{monsterbox}
 
 \newpage
+
+
 
 \begin{monsterbox}{Dwarf}
 	\textit{These short, stocky and bearded, human-like creatures, live underground in vast halls, meticulously carved out of the rock by their highly skilled hands.  Long lived and proud of their work, Dwarfs are the natural enemies of Orcs and Goblins, who often encroach upon their realms.}\\
@@ -120,7 +122,7 @@ Note that you should be careful with increasing encounter difficulty by increasi
 		Athletics~50\%, Engineering~35\%, Trade~60\%, Mechanisms~40\%
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Close Combat 65\%]
-		War Hammer (1D8), Battleaxe (1D8), Shield (1D6)
+		War Hammer (1D8), Battleaxe (1D8), Medium Shield (1D6)
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Ranged Combat 45\%]
 		Light Crossbow (1D8)
@@ -318,6 +320,64 @@ Note that you should be careful with increasing encounter difficulty by increasi
 
 \newpage
 
+\begin{monsterbox}{Ogre}
+	\textit{On first glance ogres look like tall, handsome humans. But their mouth full of sharp canines soon betrays their true nature. They live as small family groups, or as leaders of orc and goblin war bands, and are fiercesome carnivores, preferring the sweet flesh of intelligent creatures.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 13, %\rpgdice{3d8 + 3},
+	majorwound = 7,
+	damagemodifier = +1D6,
+	powerpoints = 13,
+	movementrate = 15m,
+	armor = Leather (2AP),
+	plunderrating = 3
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D6+12 (19),
+		CON = 2D6+6  (13),
+		DEX = 3D6    (11),
+		SIZ = 2D6+6  (13),
+		INT = 2D6+6  (13),
+		POW = 2D6+6  (13),
+		CHA = 3D6+3  (14)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~35\%, Persistence~55\%, Resilience~35\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Culture (local human)~60\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~35\%, Deception~30\%, Perception~35\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 60\%]
+		Arming Sword (1D8+1D6), Medium Shield (1D6+1D6), 
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ranged Combat 40\%]
+		Shortbow (1D8)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
+		Fist (1D3+1D6), Bite (1D4+1D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Supernatural]
+		Any is possible although they do tend to gravitate towards manipulation and control of others.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
 
 
 \begin{monsterbox}{Orc}
@@ -361,7 +421,7 @@ Note that you should be careful with increasing encounter difficulty by increasi
 		Athletics~35\%, Perception~45\%, Deception~45\%
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Close Combat 40\%]
-		Scimitar (1D8), Shield (1D6)
+		Scimitar (1D8), Medium Shield (1D6)
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Ranged Combat 50\%]
 		Shortbow (1D8)
