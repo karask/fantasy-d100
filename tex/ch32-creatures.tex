@@ -378,6 +378,64 @@ Note that you should be careful with increasing encounter difficulty by increasi
 
 \newpage
 
+\begin{monsterbox}{Ogre (Mutant)}
+	\textit{Many ogres follow dark and hideous faiths, their foul practices and evil ways eventually lead to their bodies becoming monstrous and warped. It is hard to believe that these gigantic creatures are related to their seductive, weaker kin. Both types of ogre relish in the taste of human flesh and hunt man with vigour. Mutant ogres are either solitary or the leaders of great clans of other monsters, amongst them might rules.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 18, %\rpgdice{3d8 + 3},
+	majorwound = 9,
+	damagemodifier = +2D6,
+	powerpoints = 10,
+	movementrate = 15m,
+	armor = Tough Skin (2AP),
+	plunderrating = 1
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6+12 (23),
+		CON = 2D6+6  (13),
+		DEX = 3D6    (11),
+		SIZ = 3D6+12 (23),
+		INT = 2D6+3  (10),
+		POW = 2D6+3  (10),
+		CHA = 1D6    (3)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~35\%, Persistence~45\%, Resilience~35\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Nature lore~35\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~35\%, Deception~50\%, Perception~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 60\%]
+		Great Axe (2D8+2D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ranged Combat 40\%]
+		Rock (1D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
+		Fist (1D6+2D6), Bite (1D8+2D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Supernatural]
+		Any is possible as long as it is related to evil and demonic powers.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
 
 
 \begin{monsterbox}{Orc}
