@@ -436,8 +436,6 @@ Note that you should be careful with increasing encounter difficulty by increasi
 
 \newpage
 
-
-
 \begin{monsterbox}{Orc}
 	\textit{Foul green-skinned humanoids with pig-like snouts and a foul temper. Orcs live for violence and have a society where the strong dominate the weak. Orc clans, known as warbands, regularly war on each other and other races that they come across.}\\
 	\rpghline
@@ -476,7 +474,7 @@ Note that you should be careful with increasing encounter difficulty by increasi
     		Craft~40\%
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Practical]
-		Athletics~35\%, Perception~45\%, Deception~45\%
+		Athletics~35\%, Deception~45\%, Perception~45\%
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Close Combat 40\%]
 		Scimitar (1D8), Medium Shield (1D6)
@@ -491,6 +489,61 @@ Note that you should be careful with increasing encounter difficulty by increasi
 
 \end{monsterbox}
 
+\newpage
+
+\begin{monsterbox}{Pixie}
+	\textit{Diminutive humanoids with butterfly wings, these mischievous beings live close to nature in forests and woods. They are quite friendly with elves, and other races quite often mistake them as a subspecies of elf.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 8, 
+	majorwound = 4,
+	damagemodifier = -1D6,
+	powerpoints = 13,
+	movementrate = {15m, 30m when flying},
+	armor = None,
+	plunderrating = 0
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D3  (4),
+		CON = 3D6  (11),
+		DEX = 4D6  (14),
+		SIZ = 1D6  (4),
+		INT = 3D6   (11),
+		POW = 2D6+6 (13),
+		CHA = 3D6   (11)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~60\%, Persistence~60\%, Resilience~20\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+    		Nature lore~80\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~60\%, Deception~60\%, Perception~60\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 10\%]
+		Dagger (1D4+1-1D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ranged Combat 25\%]
+		Sling (1D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Supernatural]
+		Pixies have several supernatural abilities and almost always magic abilities.
+	\end{rpg-monsteraction}
+
+
+\end{monsterbox}
 
 
 
