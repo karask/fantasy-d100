@@ -545,5 +545,51 @@ Note that you should be careful with increasing encounter difficulty by increasi
 
 \end{monsterbox}
 
+\newpage
+
+\begin{monsterbox}{Skeleton}
+	\textit{The animated bones of a human, these are the products of supernatural forces. Skeletons are the lowest type of undead which are often created to and act as disposable warriors and tomb guards.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 8, 
+	majorwound = 4,
+	damagemodifier = 0,
+	powerpoints = 0,
+	movementrate = 15m,
+	armor = Leather (2AP),
+	plunderrating = 0
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D6+6 (13),
+		CON = 1D6   (4),
+		DEX = 3D6   (11),
+		SIZ = 3D6   (11),
+		INT = 0     (0),
+		POW = 0     (0),
+		CHA = 0     (0)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~10\%, Persistence~100\%, Resilience~100\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 35\%]
+		Arming Sword (1D8), Medium Shield (1D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Immunities]
+		Skeletons are immune to all diseases, poisons and mind control supernatural abilities.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
 
 
