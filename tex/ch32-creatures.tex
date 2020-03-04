@@ -591,5 +591,63 @@ Note that you should be careful with increasing encounter difficulty by increasi
 
 \end{monsterbox}
 
+\newpage
+
+\begin{monsterbox}{Troll}
+	\textit{Standing over two metres tall, the troll is a fearsome humanoid monster with grey-green slimy skin. Its bulging bloodshot eyes, clawed hands and a stooped posture finishes off the grim countenance of this terrifying creature. Its appearance is not only the reason for its evil reputation. The troll has the ability to literally regrow severed limbs, bashed bones and to mend slashed skin, before the eyes of its attackers. Fortunately such creatures are solitary, unless enslaved by other evil humanoids, and of incredibly low intelligence.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 23, 
+	majorwound = 12,
+	damagemodifier = +2D6,
+	powerpoints = 11,
+	movementrate = 23m,
+	armor = Tough hide (3AP),
+	plunderrating = 1
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 4D6+12 (26),
+		CON = 3D6+9  (20),
+		DEX = 2D6    (7),
+		SIZ = 4D6+12 (26),
+		INT = 1D6+3  (6),
+		POW = 3D6    (11),
+		CHA = 2D6    (7)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~25\%, Persistence~25\%, Resilience~60\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+    		Nature lore~40\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~20\%, Deception~20\%, Perception~20\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 40\%]
+		Club (1D6+2D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 40\%]
+		Claw (1D6+2D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Regeneration]
+		Trolls regenerate damage done to them quite quickly, healing 1D6 Hit Points per Combat Round. This regeneration will not work on damage caused by fire.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Thermoception]
+		Trolls can see at night as if it was day, by seeing heat and cold.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
 
 
