@@ -649,5 +649,61 @@ Note that you should be careful with increasing encounter difficulty by increasi
 
 \end{monsterbox}
 
+\newpage
+
+\begin{monsterbox}{Wyvern}
+	\textit{These giant slender green reptiles are akin to dragons but with no forelegs and animal intelligence.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 23, 
+	majorwound = 12,
+	damagemodifier = +2D6,
+	powerpoints = 10,
+	movementrate = {23m, 30m when flying},
+	armor = Scales (5AP),
+	plunderrating = 1
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 4D6+12 (26),
+		CON = 2D6+12 (19),
+		DEX = 2D6+6  (13),
+		SIZ = 4D6+12 (26),
+		INT = 7      (7),
+		POW = 3D6    (11),
+		CHA = 6      (6)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~50\%, Persistence~35\%, Resilience~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~50\%, Deception~10\%, Perception~60\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
+		Bite (1D10+2D6), Sting (1D6+2D6+poison), Claw (1D6+2D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Multiple Attacks]
+		In one combat round the Wyvern can use all three attacks.	
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Wyvern Sting Poison]
+		\\Type: Ingested\\
+		Delay: 1D2 Combat Rounds\\
+                Potency: 60\\
+		Full Effect: 1D6 damage and -4 penalty to CON\\
+		Duration: 6D10 minutes
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
 
 
