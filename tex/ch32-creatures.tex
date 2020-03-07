@@ -705,5 +705,49 @@ Note that you should be careful with increasing encounter difficulty by increasi
 
 \end{monsterbox}
 
+\newpage
+
+\section{The Animal List}
+
+This list describes more mundane animals. It lists domestic animals (such as horses and cattle), as well as wild beasts. Some of the animals are in their ‘Giant’ form, which are more threatening opponents than their normal species.
+
+None of the animals listed here have any treasure by design. They may have some as determined by the Games Master as fits the needs of the story. For example a carnivore may have a few trinkets In the remains of its previous meals.
+
+All the Animals listed here are of fixed INT and therefore not sentient. They have a Dodge, Persistence and Resilience of DEX x3, Pow x2, CON x3 respectively and none of them know have any supernatural abilities.
+
+
+\begin{monsterbox}{Ant (Giant)}
+	\basics[%
+        hitpoints  = 12, 
+	majorwound = 6,
+	damagemodifier = 0,
+	movementrate = 15m,
+	armor = Chitin (5AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 4D6   (14),
+		CON = 3D6+6 (17),
+		DEX = 2D6+6 (13),
+		SIZ = 2D6   (7),
+		INT = 2     (2),
+		POW = 1D6+3 (6),
+		CHA = 5     (5)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Bite (1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+
+\newpage
 
 
