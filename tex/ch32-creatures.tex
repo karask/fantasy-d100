@@ -16,6 +16,8 @@ To create creatures that truly fit the adage “Monsters are People too”, take
 
 Note that you should be careful with increasing encounter difficulty by increasing numbers of monsters. A much better way is to increase the power of individual monsters, by increasing skills and supernatural abilities, to be closer to the player character power level.  Fantasy D100 combat works best when there is roughly the same amount of monsters as player characters.
 
+\clearpage
+
 \section{The Monster List}
 
 \begin{monsterbox}{Centaur}
@@ -705,7 +707,7 @@ Note that you should be careful with increasing encounter difficulty by increasi
 
 \end{monsterbox}
 
-\newpage
+\clearpage
 
 \section{The Animal List}
 
@@ -715,7 +717,9 @@ None of the animals listed here have any treasure by design. They may have some 
 
 All the Animals listed here are of fixed INT and therefore not sentient. They have a Dodge, Persistence and Resilience of DEX x3, Pow x2, CON x3 respectively and none of them know have any supernatural abilities.
 
+\vspace{1em}
 
+\begin{samepage}
 \begin{monsterbox}{Ant (Giant)}
 	\basics[%
         hitpoints  = 12, 
@@ -747,7 +751,76 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 		Bite (1D6)
 	\end{rpg-monsteraction}
 \end{monsterbox}
+\end{samepage}
 
-\newpage
+
+\begin{samepage}
+\begin{monsterbox}{Bear}
+	\basics[%
+        hitpoints  = 19, 
+	majorwound = 10,
+	damagemodifier = 0,
+	movementrate = 23m,
+	armor = Tough hide (3AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6+15 (25),
+		CON = 2D6+6  (13),
+		DEX = 3D6    (11),
+		SIZ = 3D6+15 (25),
+		INT = 5     (5),
+		POW = 3D6   (11),
+		CHA = 5     (5)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
+		Bite (1D8+2D6), Claw (1D6+2D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+\begin{samepage}
+\begin{monsterbox}{Bull}
+	\basics[%
+        hitpoints  = 15, 
+	majorwound = 8,
+	damagemodifier = +1D6,
+	movementrate = 15m,
+	armor = Hide (2AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 4D6+6 (20),
+		CON = 2D6+9 (15),
+		DEX = 2D6   (7),
+		SIZ = 2D6+9 (15),
+		INT = 4     (4),
+		POW = 2D6   (7),
+		CHA = 4     (4)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 40\%]
+		Charge (1D8+1D6), Trample (1D8+1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
 
 
