@@ -823,4 +823,38 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 \end{samepage}
 
 
+\begin{samepage}
+\begin{monsterbox}{Crocodile}
+	\basics[%
+        hitpoints  = 15, 
+	majorwound = 8,
+	damagemodifier = +1D6,
+	movementrate = {7m, 2m in water},
+	armor = Thich hide (5AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 5D6+12 (30),
+		CON = 3D6+12 (19),
+		DEX = 3D6    (11),
+		SIZ = 4D6    (14),
+		INT = 3      (3),
+		POW = 3D6    (11),
+		CHA = 3      (3)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Bite (1D8+1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
 
