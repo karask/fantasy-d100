@@ -726,7 +726,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 	majorwound = 6,
 	damagemodifier = 0,
 	movementrate = 15m,
-	armor = Chitin (5AP),
+	armor = Chitin (5 AP),
 	]
 	\rpghline%
 	\stats[ % This stat command will autocomplete the modifier for you
@@ -761,7 +761,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 	majorwound = 10,
 	damagemodifier = 0,
 	movementrate = 23m,
-	armor = Tough hide (3AP),
+	armor = Tough hide (3 AP),
 	]
 	\rpghline%
 	\stats[ % This stat command will autocomplete the modifier for you
@@ -795,7 +795,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 	majorwound = 8,
 	damagemodifier = +1D6,
 	movementrate = 15m,
-	armor = Hide (2AP),
+	armor = Hide (2 AP),
 	]
 	\rpghline%
 	\stats[ % This stat command will autocomplete the modifier for you
@@ -830,7 +830,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 	majorwound = 8,
 	damagemodifier = +1D6,
 	movementrate = {7m, 2m in water},
-	armor = Thich hide (5AP),
+	armor = Thich hide (5 AP),
 	]
 	\rpghline%
 	\stats[ % This stat command will autocomplete the modifier for you
@@ -888,6 +888,41 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 	\rpgmonstersection{Skills}
 	\begin{rpg-monsteraction}[Unarmed Combat 40\%]
 		Bite (1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Elephant}
+	\basics[%
+        hitpoints  = 36, 
+	majorwound = 18,
+	damagemodifier = +5D6,
+	movementrate = 23m,
+	armor = Thick hide (3 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 6D6+24 (45),
+		CON = 3D6+15 (24),
+		DEX = 3D6    (11),
+		SIZ = 6D6+30 (48),
+		INT = 6      (6),
+		POW = 2D6+6  (13),
+		CHA = 5      (5)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 45\%]
+		Trample (1D12+5D6), Tusk (1D10+5D6)
 	\end{rpg-monsteraction}
 \end{monsterbox}
 \end{samepage}
