@@ -1033,6 +1033,41 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 
 \begin{samepage}
+	\begin{monsterbox}{Lion (Big Cat)}
+	\basics[%
+        hitpoints  = 15, 
+	majorwound = 8,
+	damagemodifier = +1D6,
+	movementrate = 23m,
+	armor = Hide (2 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6+12 (24),
+		CON = 3D6    (11),
+		DEX = 3D6+6  (17),
+		SIZ = 2D6+12 (19),
+		INT = 5      (5),
+		POW = 3D6    (11),
+		CHA = 5      (5)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
+		Bite (1D8+1D6), Claw (1D6+1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
 	\begin{monsterbox}{Lizard (Giant)}
 	\basics[%
         hitpoints  = 15, 
