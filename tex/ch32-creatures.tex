@@ -711,11 +711,11 @@ Note that you should be careful with increasing encounter difficulty by increasi
 
 \section{The Animal List}
 
-This list describes more mundane animals. It lists domestic animals (such as horses and cattle), as well as wild beasts. Some of the animals are in their ‘Giant’ form, which are more threatening opponents than their normal species.
+This list describes more mundane animals. It lists domestic animals (such as horses and dogs), as well as wild beasts. Some of the animals are in their ‘Giant’ form, which are more threatening opponents than their normal species.
 
 None of the animals listed here have any treasure by design. They may have some as determined by the Games Master as fits the needs of the story. For example a carnivore may have a few trinkets In the remains of its previous meals.
 
-All the Animals listed here are of fixed INT and therefore not sentient. They have a Dodge, Persistence and Resilience of DEX x3, Pow x2, CON x3 respectively and none of them know have any supernatural abilities.
+All the Animals listed here are of fixed INT and therefore not sentient. They have a Dodge, Persistence and Resilience of DEX x3, Pow x3, CON x3 respectively and none of them know have any supernatural abilities.
 
 \vspace{1em}
 
@@ -725,6 +725,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
         hitpoints  = 12, 
 	majorwound = 6,
 	damagemodifier = 0,
+	powerpoints = 6,
 	movementrate = 15m,
 	armor = Chitin (5 AP),
 	]
@@ -760,6 +761,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
         hitpoints  = 19, 
 	majorwound = 10,
 	damagemodifier = 0,
+	powerpoints = 11,
 	movementrate = 23m,
 	armor = Tough hide (3 AP),
 	]
@@ -794,6 +796,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
         hitpoints  = 15, 
 	majorwound = 8,
 	damagemodifier = +1D6,
+	powerpoints = 7,
 	movementrate = 15m,
 	armor = Hide (2 AP),
 	]
@@ -829,6 +832,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
         hitpoints  = 15, 
 	majorwound = 8,
 	damagemodifier = +1D6,
+	powerpoints = 11,
 	movementrate = {7m, 2m in water},
 	armor = Thich hide (5 AP),
 	]
@@ -864,6 +868,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
         hitpoints  = 7, 
 	majorwound = 4,
 	damagemodifier = 0,
+	powerpoints = 9,
 	movementrate = 23m,
 	armor = None,
 	]
@@ -899,6 +904,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
         hitpoints  = 36, 
 	majorwound = 18,
 	damagemodifier = +5D6,
+	powerpoints = 13,
 	movementrate = 23m,
 	armor = Thick hide (3 AP),
 	]
@@ -933,6 +939,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
         hitpoints  = 3, 
 	majorwound = 2,
 	damagemodifier = -1D6,
+	powerpoints = 7,
 	movementrate = {15m, 30m flying},
 	armor = None,
 	]
@@ -968,6 +975,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
         hitpoints  = 36, 
 	majorwound = 18,
 	damagemodifier = +4D6,
+	powerpoints = 11,
 	movementrate = {23m, 30m flying},
 	armor = Thick feathers (3 AP),
 	]
@@ -1003,6 +1011,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
         hitpoints  = 21, 
 	majorwound = 11,
 	damagemodifier = +2D6,
+	powerpoints = 11,
 	movementrate = 30m,
 	armor = Hide (2 AP),
 	]
@@ -1038,6 +1047,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
         hitpoints  = 15, 
 	majorwound = 8,
 	damagemodifier = +1D6,
+	powerpoints = 11,
 	movementrate = 23m,
 	armor = Hide (2 AP),
 	]
@@ -1073,6 +1083,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
         hitpoints  = 15, 
 	majorwound = 8,
 	damagemodifier = +1D6,
+	powerpoints = 11,
 	movementrate = 15m,
 	armor = Hide (2 AP),
 	]
@@ -1101,6 +1112,41 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 \end{monsterbox}
 \end{samepage}
 
+
+\begin{samepage}
+	\begin{monsterbox}{Octupus (Giant)}
+	\basics[%
+        hitpoints  = 31, 
+	majorwound = 16,
+	damagemodifier = +4D6,
+	powerpoints = 11,
+	movementrate = {7m land, 30m swimming},
+	armor = Tough skin (4 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 12D6  (42),
+		CON = 4D6+6 (14),
+		DEX = 3D6+12 (23),
+		SIZ = 12D6   (42),
+		INT = 4      (4),
+		POW = 3D6    (11),
+		CHA = 4      (4)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Bite (1D8+4D6), Arm (1D4+4D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
 
 
 
