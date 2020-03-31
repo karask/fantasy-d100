@@ -1221,6 +1221,55 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 \end{samepage}
 
 
+\begin{samepage}
+	\begin{monsterbox}{Spider (Giant)}
+	\basics[%
+        hitpoints  = 22, 
+	majorwound = 11,
+	damagemodifier = +1D6,
+	powerpoints = 11,
+	movementrate = {15m on land, 23m in web},
+	armor = Chitin (4 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D6+12 (19),
+		CON = 3D6+6  (17),
+		DEX = 2D6+9  (16),
+		SIZ = 4D6+12 (26),
+		INT = 8      (8),
+		POW = 3D6    (11),
+		CHA = 2      (2)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Bite (1D6+1D6+Venom), Web
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Venom]\\
+		\textit{Type:} Ingested or smeared\\
+		\textit{Delay:} 1D3 Combat Rounds\\
+		\textit{Potency:} Spider's CONx3\\
+		\textit{Full Effect:} 1D3 Hit Points per minute and applies –6 penalty to victim’s DEX (upon reaching 0 DEX victim becomes paralysed)\\ 
+		\textit{Duration:} 6D10 minutes
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Web]
+		Entangles opponent. Success is determined by an opposed check of attack roll vs an Athletics roll. If entangled, the web can be destroyed (POWx2 Hit Points).
+	\end{rpg-monsteraction}
+
+
+\end{monsterbox}
+\end{samepage}
+
+
 
 
 
