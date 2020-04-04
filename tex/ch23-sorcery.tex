@@ -18,31 +18,96 @@ Before a spell can be cast using Sorcery, the following process must be followed
 The character must first learn the spell through research. In order to learn a particular Sorcery spell, the caster must possess the spell in written form or be taught it by a teacher. In game terms this means having access to a teacher who knows the spell or a book or scroll where it is written down. The player then spends two Improvement Points and writes the spell down on their character sheet. Once the Sorcery spell has been learned, the character will be ready to try casting it.
 
 
-\iffalse
 
 \subsection{Casting Spells}
-A character must be able to move his hands to make gestures and be able to chant in order to cast a spell and must be able to see his target. 
+A character must be able to gesture with his hands, and be able to chant, in order to cast a spell. Whenever a spell is cast using Sorcery, there will always be a sight and sound that nearby creatures can detect, be it a flash of light, a crack of thunder, or a shimmering in the air. The exact effects are up to the Games Master and Player to decide , but will automatically be detected by any creatures within ten times the Magnitude of the spell in metres. 
 
-When the character is casting a spell under duress, such as in the midst of combat, they must pass a Magic Casting test to successfully cast the spell. In this regard Magic is like any other skill. If the character is relaxed and has all the time in the world then no casting test is needed, the spell is automatically cast.
+Casting a Sorcery spell requires a successful skill test using the Sorcery Casting skill. If successful, the spell takes effect. If the casting test fails, the spell does not take effect. 
 
-The result of the Magic casting test depends on its success:
+\subsubsection{Power Points}
+All Sorcery spells cost a base of one Magic Point to cast. Sorcery spells can be modifying as the caster wishes (if he has the appropriate power points). If a Manipulation effect is applied to a spell, each effect costs one Power Point to apply (see below). 
+
+The result of the Sorcery casting test depends on its success:
 \begin{description}
-	\item[Success:] A number of Power Points are deducted from the spellcaster’s total, equal to the Magnitude of the spell. The spell then takes effect.
-	\item[Failure:] The spell does not take effect and the character loses one Power Point.
-	\item[Critical:] The caster has been able to control the flow of the magic particularly effectively. The character loses one Power Point instead of the normal cost of the spell.
-	\item[Fumble:] The caster has been unable to control the flow of the Magic. Rather than losing a single Power Point for failing to cast the spell, the caster loses a number of Power Points equal to its Magnitude. 
+	\item[Success:] A number of Power Points are deducted from the spellcaster’s total, equal to the Manipulation effects Power Points plus one of the spell. The spell then takes effect.
+	\item[Failure:] The spell does not take effect and the character loses the spell's Power Points.
+	\item[Critical:] Any attempt to resist or counter the spell suffers -20\% penalty. Moreover, only the base cost of one Power Point is lost (not for any Manipulations).
+	\item[Fumble:] The spell fails and the Sorcerer loses 1D6 Power Points in addition to normal Power Point loss.
 \end{description}
 
+
 \subsubsection{Casting Time}
-No other action may be taken whilst casting a spell, though the character may slowly walk up to half their Movement while spell casting. All spells take one combat round to cast.
+No other Combat Action may be taken while casting a spell, though the character may slowly walk up to half their Movement. 
 
-Casting begins at the start of the combat round and a spell’s effect happens on the caster’s INT, instead of DEX, (which is used for close combat).  
+A spell takes effect at the end of its casting, which starts at the beginning of the Combat Round and ends on the INT of the Caster in the Combat order. Note that while spellcasting, a character will draw possible attacks from enemies they are adjacent to during a Combat Round. 
 
-Distractions, or attacks on the caster as he casts, will automatically ruin the spell, unless the caster successfully passes a Persistence test, thereby maintaining concentration on the spell. Examples of distraction include blinding, disarming, or wounding the caster.
+Distractions or attacks on the spellcaster as he casts will either automatically ruin the spell (if the spellcaster is blinded or disarmed, or suffers a Major Wound) or require Persistence tests for them to maintain concentration on the spell. 
+
+\subsubsection{Spell Manipulations}
+Sorcery spells have three basic effects which can be manipulated by the caster: Magnitude, Duration, and Range.
+
+Each effect has a default value which the spell can be cast at, costing one Power Point. The default value for the spell effects are listed in table~\ref{tab:sorcery-manipulations}.
+
+\begin{table}
+\begin{center}
+\caption{Sorcery Manipulations}
+\label{tab:sorcery-manipulations}
+\begin{rpg-table}[|c|c|c|Y|]
+        \hline
+	\textbf{Power Points}  & \textbf{Magniture} & \textbf{Duration} & \textbf{Range}\\
+        \hline
+	1 (Default) & 1 & 5 minutes & 10m\\
+	+1 & 2 & 15 minutes & 20m\\
+	+2 & 3 & 30 minutes & 40m\\
+	+3 & 4 & 1 hour & 80m\\
+	+4 & 5 & 2 hours & 160m\\
+	+5 & 6 & 4 hours & 320m\\
+	+6 & 7 & 12 hours & 640m\\
+	+7 & 8 & 1 day & 1km\\
+	+8 & 9 & 2 day & 2km\\
+	+9 & 10 & 5 day & 5km\\
+	+10 & 11 & 1 week & 10km\\
+	+11 & 12 & 2 weeks & 20km\\
+	+12 & 13 & 1 month & 50km\\
+	+13 & 14 & 2 months & 100km\\
+	+14 & 15 & 3 months & 200km\\
+	+15 & 16 & 6 months & 500km\\
+	+16 & 17 & 1 year & 1000km\\
+	+17 & 18 & 2 years & 2000km\\
+	+18 & 19 & 5 years & 5000km\\
+	+19 & 20 & 10 years & 10000km\\
+	\hline
+\end{rpg-table}
+\end{center}
+\end{table}
+
+The tens value of the caster’s Sorcery Casting skill determines the max number of additional Power Points that can spend on each of the manipulation types. 
+
+\begin{rpg-examplebox}
+Omar the Magnificent with a Sorcery Casting skill of 80\% can spend an additional 8 Power Points on manipulating each of the spell’s effects, in Magnitude, Duration and Range. That’s a manipulation of up to 8 levels for each effect, not 8 levels in total across all three effects.
+\end{rpg-examplebox}
+
+The decision of which effects to manipulate and how many extra Magic Points are to be spent is made before the spell is cast.
+
+\begin{rpg-examplebox}
+Lura casts Damage Boosting on Rurik’s sword, and wants it to be at a magnitude of 4 for an hour.
+
+She has a Sorcery Casting skill of 60\%, which means she can spend an additional six Power Points on manipulating any spell’s effects. Looking at the Manipulation table, Lura can comfortably manage a Magnitude of 4, for three additional Power Points, and can manage a duration of an hour with another three points. 
+
+Lura’s player rolls the dice and compares the result against Lura’s casting skill of 60\% to see whether she successful casts the spell.
+
+In fact Lura, can spend a maximum of six points on a magnitude of range 640m, another six on a duration of 12 hours and another 6 on a magnitude of 7, which is a total of 19 Magic Points (18 for the manipulations and 1 for the spell itself).
+\end{rpg-examplebox}
+
 
 \subsubsection{Dismissing Spells}
 In a single Combat Round, a caster can dismiss any Permanent spell(s) he has cast, as a free action. Ceasing to cast a Concentration spell is immediate and not an action. 
 
+
+\subsubsection{Extra Power Points}
+As you can probably work out from the example above, it is possible for a Sorcerer to cast a spell which needs more Power Points in its manipulated form than a Sorcerer will normally have. Sorcerers get round this by carrying either Power Point stores (see Magic spell Create Magic Store) or other artifacts that can store Power Points (e.g. from other disciplines).
+
+\iffalse
 
 \subsection{Spell Traits}
 Unless otherwise stated all Magic spells have the following traits.
