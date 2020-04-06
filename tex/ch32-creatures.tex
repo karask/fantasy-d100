@@ -1254,7 +1254,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 		Bite (1D6+1D6+Venom), Web
 	\end{rpg-monsteraction}
 	\rpgmonstersection{Abilities}
-	\begin{rpg-monsteraction}[Venom]\\
+	\begin{rpg-monsteraction}[Spider Venom]\\
 		\textit{Type:} Ingested or smeared\\
 		\textit{Delay:} 1D3 Combat Rounds\\
 		\textit{Potency:} Spider's CONx3\\
@@ -1268,6 +1268,52 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 \end{monsterbox}
 \end{samepage}
+
+
+\begin{samepage}
+	\begin{monsterbox}{Viper}
+	\basics[%
+        hitpoints  = 7, 
+	majorwound = 4,
+	damagemodifier = 0,
+	powerpoints = 13,
+	movementrate = 30m,
+	armor = Scales (1 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D6+6  (13),
+		CON = 2D6    (6),
+		DEX = 3D6+18 (27),
+		SIZ = 2D6    (7),
+		INT = 3      (3),
+		POW = 2D6+6  (13),
+		CHA = 3      (3)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
+		Bite (1D6+Venom)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Viper Venom]\\
+		\textit{Type:} Ingested or smeared\\
+		\textit{Delay:} 1 Combat Round\\
+		\textit{Potency:} 48\\
+		\textit{Full Effect:} 1D4 Hit Points damage for each minute and -3 CON (upon reaching 0 CON victim dies)\\ 
+		\textit{Duration:} 6D10 minutes
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
 
 
 
