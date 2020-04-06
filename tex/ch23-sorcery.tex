@@ -107,41 +107,43 @@ In a single Combat Round, a caster can dismiss any Permanent spell(s) he has cas
 \subsubsection{Extra Power Points}
 As you can probably work out from the example above, it is possible for a Sorcerer to cast a spell which needs more Power Points in its manipulated form than a Sorcerer will normally have. Sorcerers get round this by carrying either Power Point stores (see Magic spell Create Magic Store) or other artifacts that can store Power Points (e.g. from other disciplines).
 
-\iffalse
 
 \subsection{Spell Traits}
-Unless otherwise stated all Magic spells have the following traits.
+All Sorcery spells share the same basic qualities:
 
 \begin{rpg-list}
-\item They have Variable Magnitude. This means that the Magnitude of the spell starts from the stated Magnitude and then can be cast at a higher Magnitude, if the caster knows it, giving an increase in the effect of the spell. The maximum Magnitude that a caster can learn is equal to their POW divided by 3.
-\item Base Magnitude is one. 
-\item Range is equal to the caster’s POWx3 in metres.
-\item All spells, unless noted, have a Duration of ten minutes.
+\item Base Magnitude of one 
+\item Duration of 5 minutes, and
+\item Range of 10 metres.
 \end{rpg-list}
 
 Other traits used by spells are detailed below. 
 \begin{description}
-	\item[Area (X):] The spell affects all targets within a radius specified in metres. 
-	\item[Concentration:] The spell’s effects will remain in place so long as the character continues to concentrate on it. Concentrating on a spell is functionally identical to casting the spell, requiring the caster to continue to chant and ignore distractions. 
-	\item[Instant:] The spell’s effects take place instantly. The spell itself then disappears. 
-	\item[Magnitude (X):] The strength and power of the spell. Also the minimum number of Magic Points required to cast it. 
-	\item[Non-Variable:] The spell may only be cast at the stated Magnitude.
-	\item[Permanent:] The spell’s effects remain in place until they are dispelled or dismissed. 
+	\item[Concentration:] The spell’s effects will remain in place as long as the character concentrates on it. Concentrating on a spell is functionally identical to casting the spell, requiring the spell caster to continue to gesture with both arms, chant and ignore distractions. This trait overrides the normal Sorcery spell default Duration. 
+	\item[Instant:] The spell’s effects take place instantly. The spell itself then disappears. This trait overrides the normal Sorcery spell default Duration. 
+	\item[Permanent:] The spell’s effects remain in place until they are dispelled or dismissed. This trait overrides the normal Sorcery spell default Duration.
 	\item[Resist (Dodge/Persistence/Resilience):] The spell’s intended effects do not succeed automatically. The target may make a Dodge, Persistence or Resilience test (as specified by the spell) in order to avoid the effect of the spell entirely. Note that Resist (Dodge) spells require the target to be able to use Reactions in order to Dodge. In the case of Area spells, the Resist (Dodge) trait requires the target to dive in order to mitigate the spell’s effect. 
-	\item[Touch:] Touch spells require the character to actually touch his target for the spell to take effect, using a Unarmed skill test to make contact. The caster must remain in physical contact with the target for the entire casting. 
-	\item[Trigger:] The spell will lie dormant until an event stated in the description takes place. The spell then takes effect and is expended.
+	\item[Touch:] Touch spells require the character to actually touch his target for the spell to take effect, using an Unarmed skill test to make contact. The caster must remain in physical contact with the target for the entire casting. TODO NEED TO CLARIFY THIS. This trait overrides the normal Sorcery spell default Range. 
 \end{description}
 
 \section{Spells}
 
+
+\begin{samepage}
 \begin{rpg-spell}
-{Animal Whisperer}
-{Magnitude 2, Non-Variable, Touch}
+{Animate (Substance)}
+{Concentration}
 
-The caster whispers into the ear of a distressed animal, calming it. If the distressed animal is under the influence of a spell such as Fear or Scare, then its gets another Persistence test to shake off the effect of the spell.
+This spell allows the Sorcerer to animate the substance indicated, up to one SIZ for every point of Magnitude. The Sorcerer can cause it to move about and interact clumsily (Movement of 1m per three points of Magnitude). 
+
+The Sorcerer’s chance to have the animated object perform any physical skill successfully is equal to his own chance to perform that action halved (before any modifiers). If the appropriate Form/Set spell is cast immediately after this spell, the caster can perform much finer manipulation of the object. In this case, the animated object will use the caster’s full skill scores for physical activities. 
+
+This spell can only be used on inanimate matter. 
 \end{rpg-spell}
+\end{samepage}
 
 
+\iffalse
 \begin{rpg-spell}
 {Avoidance}
 {Instant, Trigger}
