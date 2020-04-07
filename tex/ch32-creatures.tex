@@ -1042,7 +1042,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 
 \begin{samepage}
-	\begin{monsterbox}{Lion (Big Cat)}
+\begin{monsterbox}{Lion (Big Cat)}
 	\basics[%
         hitpoints  = 15, 
 	majorwound = 8,
@@ -1078,7 +1078,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 
 \begin{samepage}
-	\begin{monsterbox}{Lizard (Giant)}
+\begin{monsterbox}{Lizard (Giant)}
 	\basics[%
         hitpoints  = 15, 
 	majorwound = 8,
@@ -1114,7 +1114,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 
 \begin{samepage}
-	\begin{monsterbox}{Octupus (Giant)}
+\begin{monsterbox}{Octupus (Giant)}
 	\basics[%
         hitpoints  = 31, 
 	majorwound = 16,
@@ -1150,7 +1150,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 
 \begin{samepage}
-	\begin{monsterbox}{Python (Giant)}
+\begin{monsterbox}{Python (Giant)}
 	\basics[%
         hitpoints  = 11, 
 	majorwound = 6,
@@ -1186,7 +1186,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 
 \begin{samepage}
-	\begin{monsterbox}{Rhinoceros}
+\begin{monsterbox}{Rhinoceros}
 	\basics[%
         hitpoints  = 19, 
 	majorwound = 10,
@@ -1222,7 +1222,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 
 \begin{samepage}
-	\begin{monsterbox}{Spider (Giant)}
+\begin{monsterbox}{Spider (Giant)}
 	\basics[%
         hitpoints  = 22, 
 	majorwound = 11,
@@ -1271,7 +1271,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 
 \begin{samepage}
-	\begin{monsterbox}{Viper}
+\begin{monsterbox}{Viper}
 	\basics[%
         hitpoints  = 7, 
 	majorwound = 4,
@@ -1313,6 +1313,41 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 \end{monsterbox}
 \end{samepage}
 
+
+\begin{samepage}
+\begin{monsterbox}{Wolf}
+	\basics[%
+        hitpoints  = 12, 
+	majorwound = 6,
+	damagemodifier = 0,
+	powerpoints = 11,
+	movementrate = 23m,
+	armor = None,
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6   (11),
+		CON = 3D6+3 (14),
+		DEX = 3D6+3 (13),
+		SIZ = 2D6+3 (10),
+		INT = 5     (5),
+		POW = 3D6   (11),
+		CHA = 5     (5)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Bite (1D8), Claw (1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
 
 
 
