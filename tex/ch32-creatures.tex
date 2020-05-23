@@ -18,7 +18,649 @@ Note that you should be careful with increasing encounter difficulty by increasi
 
 \clearpage
 
-\section{The Monster List}
+\section{Animals}
+
+This list describes more mundane animals. It lists domestic animals (such as horses and dogs), as well as wild beasts. Some of the animals are in their ‘Giant’ form, which are more threatening opponents than their normal species.
+
+None of the animals listed here have any treasure by design. They may have some as determined by the Games Master as fits the needs of the story. For example a carnivore may have a few trinkets In the remains of its previous meals.
+
+All the Animals listed here are of fixed INT and therefore not sentient. They have a Dodge, Persistence and Resilience of DEX x3, Pow x3, CON x3 respectively and none of them know have any supernatural abilities.
+
+\vspace{1em}
+
+\begin{samepage}
+\begin{monsterbox}{Ant (Giant)}
+	\basics[%
+        hitpoints  = 12, 
+	majorwound = 6,
+	damagemodifier = 0,
+	powerpoints = 6,
+	movementrate = 15m,
+	armor = Chitin (5 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 4D6   (14),
+		CON = 3D6+6 (17),
+		DEX = 2D6+6 (13),
+		SIZ = 2D6   (7),
+		INT = 2     (2),
+		POW = 1D6+3 (6),
+		CHA = 5     (5)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Bite (1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Bear}
+	\basics[%
+        hitpoints  = 19, 
+	majorwound = 10,
+	damagemodifier = 0,
+	powerpoints = 11,
+	movementrate = 23m,
+	armor = Tough hide (3 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6+15 (25),
+		CON = 2D6+6  (13),
+		DEX = 3D6    (11),
+		SIZ = 3D6+15 (25),
+		INT = 5     (5),
+		POW = 3D6   (11),
+		CHA = 5     (5)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
+		Bite (1D8+2D6), Claw (1D6+2D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+\begin{samepage}
+\begin{monsterbox}{Bull}
+	\basics[%
+        hitpoints  = 15, 
+	majorwound = 8,
+	damagemodifier = +1D6,
+	powerpoints = 7,
+	movementrate = 15m,
+	armor = Hide (2 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 4D6+6 (20),
+		CON = 2D6+9 (15),
+		DEX = 2D6   (7),
+		SIZ = 2D6+9 (15),
+		INT = 4     (4),
+		POW = 2D6   (7),
+		CHA = 4     (4)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 40\%]
+		Charge (1D8+1D6), Trample (1D8+1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Crocodile}
+	\basics[%
+        hitpoints  = 15, 
+	majorwound = 8,
+	damagemodifier = +1D6,
+	powerpoints = 11,
+	movementrate = {7m, 2m in water},
+	armor = Thich hide (5 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 5D6+12 (30),
+		CON = 3D6+12 (19),
+		DEX = 3D6    (11),
+		SIZ = 4D6    (14),
+		INT = 3      (3),
+		POW = 3D6    (11),
+		CHA = 3      (3)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Bite (1D8+1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Dog}
+	\basics[%
+        hitpoints  = 7, 
+	majorwound = 4,
+	damagemodifier = 0,
+	powerpoints = 9,
+	movementrate = 23m,
+	armor = None,
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D6+6 (13),
+		CON = 3D6   (11),
+		DEX = 2D6+6 (13),
+		SIZ = 1D6   (3),
+		INT = 5     (5),
+		POW = 1D6+6 (9),
+		CHA = 5     (5)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 40\%]
+		Bite (1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Elephant}
+	\basics[%
+        hitpoints  = 36, 
+	majorwound = 18,
+	damagemodifier = +5D6,
+	powerpoints = 13,
+	movementrate = 23m,
+	armor = Thick hide (3 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 6D6+24 (45),
+		CON = 3D6+15 (24),
+		DEX = 3D6    (11),
+		SIZ = 6D6+30 (48),
+		INT = 6      (6),
+		POW = 2D6+6  (13),
+		CHA = 5      (5)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 45\%]
+		Trample (1D12+5D6), Tusk (1D10+5D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+\begin{samepage}
+\begin{monsterbox}{Hawk}
+	\basics[%
+        hitpoints  = 3, 
+	majorwound = 2,
+	damagemodifier = -1D6,
+	powerpoints = 7,
+	movementrate = {15m, 30m flying},
+	armor = None,
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 1D3    (2),
+		CON = 2D3    (4),
+		DEX = 3D6+18 (27),
+		SIZ = 1D2    (2),
+		INT = 4      (4),
+		POW = 2D6    (7),
+		CHA = 4      (4)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Claw (1D6-1D6), Bite (1D4-1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+	\begin{monsterbox}{Hawk (Giant)}
+	\basics[%
+        hitpoints  = 36, 
+	majorwound = 18,
+	damagemodifier = +4D6,
+	powerpoints = 11,
+	movementrate = {23m, 30m flying},
+	armor = Thick feathers (3 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 6D6+21 (39),
+		CON = 5D6+15 (33),
+		DEX = 3D6+9  (18),
+		SIZ = 6D6+21 (39),
+		INT = 4      (4),
+		POW = 3D6    (11),
+		CHA = 4      (4)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 80\%]
+		Claw (1D8+4D6), Bite (1D6+4D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Horse}
+	\basics[%
+        hitpoints  = 21, 
+	majorwound = 11,
+	damagemodifier = +2D6,
+	powerpoints = 11,
+	movementrate = 30m,
+	armor = Hide (2 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D6+18 (25),
+		CON = 3D6+6  (17),
+		DEX = 2D6+3  (10),
+		SIZ = 2D6+18 (25),
+		INT = 4      (4),
+		POW = 3D6    (11),
+		CHA = 5      (5)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 40\%]
+		Kick (1D6+2D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Lion (Big Cat)}
+	\basics[%
+        hitpoints  = 15, 
+	majorwound = 8,
+	damagemodifier = +1D6,
+	powerpoints = 11,
+	movementrate = 23m,
+	armor = Hide (2 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6+12 (24),
+		CON = 3D6    (11),
+		DEX = 3D6+6  (17),
+		SIZ = 2D6+12 (19),
+		INT = 5      (5),
+		POW = 3D6    (11),
+		CHA = 5      (5)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
+		Bite (1D8+1D6), Claw (1D6+1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Lizard (Giant)}
+	\basics[%
+        hitpoints  = 15, 
+	majorwound = 8,
+	damagemodifier = +1D6,
+	powerpoints = 11,
+	movementrate = 15m,
+	armor = Hide (2 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D6+12 (19),
+		CON = 3D6    (11),
+		DEX = 1D6+12 (15),
+		SIZ = 2D6+12 (19),
+		INT = 3      (3),
+		POW = 3D6    (11),
+		CHA = 3      (3)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 35\%]
+		Bite (1D6+1D6), Tail (1D8+1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Octupus (Giant)}
+	\basics[%
+        hitpoints  = 31, 
+	majorwound = 16,
+	damagemodifier = +4D6,
+	powerpoints = 11,
+	movementrate = {7m land, 30m swimming},
+	armor = Tough skin (4 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 12D6  (42),
+		CON = 4D6+6 (14),
+		DEX = 3D6+12 (23),
+		SIZ = 12D6   (42),
+		INT = 4      (4),
+		POW = 3D6    (11),
+		CHA = 4      (4)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Bite (1D8+4D6), Arm (1D4+4D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Python (Giant)}
+	\basics[%
+        hitpoints  = 11, 
+	majorwound = 6,
+	damagemodifier = +2D6,
+	powerpoints = 11,
+	movementrate = 15m,
+	armor = Scales (3 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6+24 (35),
+		CON = 3D6    (11),
+		DEX = 2D6+6  (13),
+		SIZ = 3D6    (11),
+		INT = 3      (3),
+		POW = 3D6    (11),
+		CHA = 3      (3)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Bite (1D4+2D6), Constrict (1D8+2D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Rhinoceros}
+	\basics[%
+        hitpoints  = 19, 
+	majorwound = 10,
+	damagemodifier = +2D6,
+	powerpoints = 11,
+	movementrate = 23m,
+	armor = Thick hide (5 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D6+21 (26),
+		CON = 3D6    (11),
+		DEX = 2D6    (7),
+		SIZ = 2D6+21 (26),
+		INT = 3      (3),
+		POW = 3D6    (11),
+		CHA = 3      (3)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Bite (1D6+2D6), Gore (1D8+2D6), Trample (1D12+2D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Spider (Giant)}
+	\basics[%
+        hitpoints  = 22, 
+	majorwound = 11,
+	damagemodifier = +1D6,
+	powerpoints = 11,
+	movementrate = {15m on land, 23m in web},
+	armor = Chitin (4 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D6+12 (19),
+		CON = 3D6+6  (17),
+		DEX = 2D6+9  (16),
+		SIZ = 4D6+12 (26),
+		INT = 8      (8),
+		POW = 3D6    (11),
+		CHA = 2      (2)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Bite (1D6+1D6+Venom), Web
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Spider Venom]\\
+		\textit{Type:} Ingested or smeared\\
+		\textit{Delay:} 1D3 Combat Rounds\\
+		\textit{Potency:} Spider's CONx3\\
+		\textit{Full Effect:} 1D3 Hit Points per minute and applies –6 penalty to victim’s DEX (upon reaching 0 DEX victim becomes paralysed)\\ 
+		\textit{Duration:} 6D10 minutes
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Web]
+		Entangles opponent. Success is determined by an opposed check of attack roll vs an Athletics roll. If entangled, the web can be destroyed (POWx2 Hit Points).
+	\end{rpg-monsteraction}
+
+
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Viper}
+	\basics[%
+        hitpoints  = 7, 
+	majorwound = 4,
+	damagemodifier = 0,
+	powerpoints = 13,
+	movementrate = 30m,
+	armor = Scales (1 AP),
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D6+6  (13),
+		CON = 2D6    (6),
+		DEX = 3D6+18 (27),
+		SIZ = 2D6    (7),
+		INT = 3      (3),
+		POW = 2D6+6  (13),
+		CHA = 3      (3)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
+		Bite (1D6+Venom)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Viper Venom]\\
+		\textit{Type:} Ingested or smeared\\
+		\textit{Delay:} 1 Combat Round\\
+		\textit{Potency:} 48\\
+		\textit{Full Effect:} 1D4 Hit Points damage for each minute and -3 CON (upon reaching 0 CON victim dies)\\ 
+		\textit{Duration:} 6D10 minutes
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
+\begin{monsterbox}{Wolf}
+	\basics[%
+        hitpoints  = 12, 
+	majorwound = 6,
+	damagemodifier = 0,
+	powerpoints = 11,
+	movementrate = 23m,
+	armor = None,
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6   (11),
+		CON = 3D6+3 (14),
+		DEX = 3D6+3 (13),
+		SIZ = 2D6+3 (10),
+		INT = 5     (5),
+		POW = 3D6   (11),
+		CHA = 5     (5)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Bite (1D8), Claw (1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+\clearpage
+
+\section{Monsters}
 
 \begin{monsterbox}{Centaur}
 	\textit{Atop of the body of a well-bred and strong horse, this creature has the body of a strong athletic human where the horse’s head should be. The centaur is the raw power and nobility of nature incarnate. Often they act as the self styled protectors of the wilderness, which brings them into conflict with more settled races who encroach on their territory.}\\
@@ -709,321 +1351,26 @@ Note that you should be careful with increasing encounter difficulty by increasi
 
 \clearpage
 
-\section{The Animal List}
+\section{Spirits}
+\label{sec:spirits}
 
-This list describes more mundane animals. It lists domestic animals (such as horses and dogs), as well as wild beasts. Some of the animals are in their ‘Giant’ form, which are more threatening opponents than their normal species.
-
-None of the animals listed here have any treasure by design. They may have some as determined by the Games Master as fits the needs of the story. For example a carnivore may have a few trinkets In the remains of its previous meals.
-
-All the Animals listed here are of fixed INT and therefore not sentient. They have a Dodge, Persistence and Resilience of DEX x3, Pow x3, CON x3 respectively and none of them know have any supernatural abilities.
-
-\vspace{1em}
-
-\begin{samepage}
-\begin{monsterbox}{Ant (Giant)}
+\begin{monsterbox}{Ancestor Spirit}
+	\textit{An Ancestor Spirit is the deceased relation of a living being. They are the keepers of tribal wisdom, ancient advisors or just long lost loved ones. They appear as they did in life, dressed in tattered clothing of familiar designs. Ancestor Spirits often manifest at large gatherings of their kinsmen, at holy rituals or to bring portents of warning and doom to their kin. Some clans bind their ancestors to holy locations, while other see that as disrespectful.}\\
+	\rpghline
 	\basics[%
-        hitpoints  = 12, 
-	majorwound = 6,
-	damagemodifier = 0,
-	powerpoints = 6,
-	movementrate = 15m,
-	armor = Chitin (5 AP),
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 4D6   (14),
-		CON = 3D6+6 (17),
-		DEX = 2D6+6 (13),
-		SIZ = 2D6   (7),
-		INT = 2     (2),
-		POW = 1D6+3 (6),
-		CHA = 5     (5)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
-		Bite (1D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-
-\begin{samepage}
-\begin{monsterbox}{Bear}
-	\basics[%
-        hitpoints  = 19, 
-	majorwound = 10,
-	damagemodifier = 0,
-	powerpoints = 11,
-	movementrate = 23m,
-	armor = Tough hide (3 AP),
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 3D6+15 (25),
-		CON = 2D6+6  (13),
-		DEX = 3D6    (11),
-		SIZ = 3D6+15 (25),
-		INT = 5     (5),
-		POW = 3D6   (11),
-		CHA = 5     (5)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
-		Bite (1D8+2D6), Claw (1D6+2D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-\begin{samepage}
-\begin{monsterbox}{Bull}
-	\basics[%
-        hitpoints  = 15, 
-	majorwound = 8,
-	damagemodifier = +1D6,
-	powerpoints = 7,
-	movementrate = 15m,
-	armor = Hide (2 AP),
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 4D6+6 (20),
-		CON = 2D6+9 (15),
-		DEX = 2D6   (7),
-		SIZ = 2D6+9 (15),
-		INT = 4     (4),
-		POW = 2D6   (7),
-		CHA = 4     (4)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 40\%]
-		Charge (1D8+1D6), Trample (1D8+1D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-
-\begin{samepage}
-\begin{monsterbox}{Crocodile}
-	\basics[%
-        hitpoints  = 15, 
-	majorwound = 8,
-	damagemodifier = +1D6,
-	powerpoints = 11,
-	movementrate = {7m, 2m in water},
-	armor = Thich hide (5 AP),
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 5D6+12 (30),
-		CON = 3D6+12 (19),
-		DEX = 3D6    (11),
-		SIZ = 4D6    (14),
-		INT = 3      (3),
-		POW = 3D6    (11),
-		CHA = 3      (3)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
-		Bite (1D8+1D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-
-\begin{samepage}
-\begin{monsterbox}{Dog}
-	\basics[%
-        hitpoints  = 7, 
-	majorwound = 4,
-	damagemodifier = 0,
-	powerpoints = 9,
-	movementrate = 23m,
-	armor = None,
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 2D6+6 (13),
-		CON = 3D6   (11),
-		DEX = 2D6+6 (13),
-		SIZ = 1D6   (3),
-		INT = 5     (5),
-		POW = 1D6+6 (9),
-		CHA = 5     (5)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 40\%]
-		Bite (1D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-
-\begin{samepage}
-\begin{monsterbox}{Elephant}
-	\basics[%
-        hitpoints  = 36, 
-	majorwound = 18,
-	damagemodifier = +5D6,
-	powerpoints = 13,
-	movementrate = 23m,
-	armor = Thick hide (3 AP),
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 6D6+24 (45),
-		CON = 3D6+15 (24),
-		DEX = 3D6    (11),
-		SIZ = 6D6+30 (48),
-		INT = 6      (6),
-		POW = 2D6+6  (13),
-		CHA = 5      (5)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 45\%]
-		Trample (1D12+5D6), Tusk (1D10+5D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-\begin{samepage}
-\begin{monsterbox}{Hawk}
-	\basics[%
-        hitpoints  = 3, 
-	majorwound = 2,
-	damagemodifier = -1D6,
-	powerpoints = 7,
-	movementrate = {15m, 30m flying},
-	armor = None,
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 1D3    (2),
-		CON = 2D3    (4),
-		DEX = 3D6+18 (27),
-		SIZ = 1D2    (2),
-		INT = 4      (4),
-		POW = 2D6    (7),
-		CHA = 4      (4)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
-		Claw (1D6-1D6), Bite (1D4-1D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-
-\begin{samepage}
-	\begin{monsterbox}{Hawk (Giant)}
-	\basics[%
-        hitpoints  = 36, 
-	majorwound = 18,
-	damagemodifier = +4D6,
-	powerpoints = 11,
-	movementrate = {23m, 30m flying},
-	armor = Thick feathers (3 AP),
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 6D6+21 (39),
-		CON = 5D6+15 (33),
-		DEX = 3D6+9  (18),
-		SIZ = 6D6+21 (39),
-		INT = 4      (4),
-		POW = 3D6    (11),
-		CHA = 4      (4)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 80\%]
-		Claw (1D8+4D6), Bite (1D6+4D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-
-\begin{samepage}
-\begin{monsterbox}{Horse}
-	\basics[%
-        hitpoints  = 21, 
-	majorwound = 11,
-	damagemodifier = +2D6,
-	powerpoints = 11,
+	powerpoints = 17,
 	movementrate = 30m,
-	armor = Hide (2 AP),
+	plunderrating = 0
 	]
 	\rpghline%
 	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 2D6+18 (25),
-		CON = 3D6+6  (17),
-		DEX = 2D6+3  (10),
-		SIZ = 2D6+18 (25),
-		INT = 4      (4),
-		POW = 3D6    (11),
-		CHA = 5      (5)
+		STR = -,
+		CON = --,
+		DEX = ---,
+		SIZ = -,
+		INT = 3D6    (11),
+		POW = 3D6+6  (17),
+		CHA = 3D6    (11)
 	]
 	%\rpghline%
 	%\details[%
@@ -1034,324 +1381,30 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 	%]
 	\rpghline%
 	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 40\%]
-		Kick (1D6+2D6)
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~40\%, Persistence~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Lore (Spirit World)~40\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Spirit Combat 40\%]
+		Spectral Blast (1D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Other}
+	\begin{rpg-monsteraction}[Special Rules]
+		All Ancestor Spirits are capable of covertly possessing their relatives to aid them. All Ancestors know 1D6 X 10\% Skills and have 1D4 points of Magic spells (they may rarely have Sorcery or Divine Magic). When they possess their relatives, the Ancestor gives them access to their magic which is cast at POWx4. The skills of the ancestor are added as a bonus to those possessed for the duration of the possession. The skills can be selected at random, but most will have skills logical to the spirits background, the maximum amount of points allocated to one skill is 30\%. Some examples follow.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Uncle Mad Blood the Pirate Captain]
+		\\INT 9 - POW 15 - CHA 10\\
+		Skills: Close Combat 20\%, Sailing 20\%\\
+                Spells: Weapon Enhance 4
+	\end{rpg-monsteraction}
+
+	\begin{rpg-monsteraction}[Granny Goodweather]
+		\\INT 17 - POW 20 - CHA 18\\
+		Skills: Healing 20\%, Influence 30\%, Natural World 10\%\\
+                Spells: Heal 4
 	\end{rpg-monsteraction}
 \end{monsterbox}
-\end{samepage}
 
-
-\begin{samepage}
-\begin{monsterbox}{Lion (Big Cat)}
-	\basics[%
-        hitpoints  = 15, 
-	majorwound = 8,
-	damagemodifier = +1D6,
-	powerpoints = 11,
-	movementrate = 23m,
-	armor = Hide (2 AP),
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 3D6+12 (24),
-		CON = 3D6    (11),
-		DEX = 3D6+6  (17),
-		SIZ = 2D6+12 (19),
-		INT = 5      (5),
-		POW = 3D6    (11),
-		CHA = 5      (5)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
-		Bite (1D8+1D6), Claw (1D6+1D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-
-\begin{samepage}
-\begin{monsterbox}{Lizard (Giant)}
-	\basics[%
-        hitpoints  = 15, 
-	majorwound = 8,
-	damagemodifier = +1D6,
-	powerpoints = 11,
-	movementrate = 15m,
-	armor = Hide (2 AP),
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 2D6+12 (19),
-		CON = 3D6    (11),
-		DEX = 1D6+12 (15),
-		SIZ = 2D6+12 (19),
-		INT = 3      (3),
-		POW = 3D6    (11),
-		CHA = 3      (3)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 35\%]
-		Bite (1D6+1D6), Tail (1D8+1D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-
-\begin{samepage}
-\begin{monsterbox}{Octupus (Giant)}
-	\basics[%
-        hitpoints  = 31, 
-	majorwound = 16,
-	damagemodifier = +4D6,
-	powerpoints = 11,
-	movementrate = {7m land, 30m swimming},
-	armor = Tough skin (4 AP),
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 12D6  (42),
-		CON = 4D6+6 (14),
-		DEX = 3D6+12 (23),
-		SIZ = 12D6   (42),
-		INT = 4      (4),
-		POW = 3D6    (11),
-		CHA = 4      (4)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
-		Bite (1D8+4D6), Arm (1D4+4D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-
-\begin{samepage}
-\begin{monsterbox}{Python (Giant)}
-	\basics[%
-        hitpoints  = 11, 
-	majorwound = 6,
-	damagemodifier = +2D6,
-	powerpoints = 11,
-	movementrate = 15m,
-	armor = Scales (3 AP),
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 3D6+24 (35),
-		CON = 3D6    (11),
-		DEX = 2D6+6  (13),
-		SIZ = 3D6    (11),
-		INT = 3      (3),
-		POW = 3D6    (11),
-		CHA = 3      (3)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
-		Bite (1D4+2D6), Constrict (1D8+2D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-
-\begin{samepage}
-\begin{monsterbox}{Rhinoceros}
-	\basics[%
-        hitpoints  = 19, 
-	majorwound = 10,
-	damagemodifier = +2D6,
-	powerpoints = 11,
-	movementrate = 23m,
-	armor = Thick hide (5 AP),
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 2D6+21 (26),
-		CON = 3D6    (11),
-		DEX = 2D6    (7),
-		SIZ = 2D6+21 (26),
-		INT = 3      (3),
-		POW = 3D6    (11),
-		CHA = 3      (3)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
-		Bite (1D6+2D6), Gore (1D8+2D6), Trample (1D12+2D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-
-\begin{samepage}
-\begin{monsterbox}{Spider (Giant)}
-	\basics[%
-        hitpoints  = 22, 
-	majorwound = 11,
-	damagemodifier = +1D6,
-	powerpoints = 11,
-	movementrate = {15m on land, 23m in web},
-	armor = Chitin (4 AP),
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 2D6+12 (19),
-		CON = 3D6+6  (17),
-		DEX = 2D6+9  (16),
-		SIZ = 4D6+12 (26),
-		INT = 8      (8),
-		POW = 3D6    (11),
-		CHA = 2      (2)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
-		Bite (1D6+1D6+Venom), Web
-	\end{rpg-monsteraction}
-	\rpgmonstersection{Abilities}
-	\begin{rpg-monsteraction}[Spider Venom]\\
-		\textit{Type:} Ingested or smeared\\
-		\textit{Delay:} 1D3 Combat Rounds\\
-		\textit{Potency:} Spider's CONx3\\
-		\textit{Full Effect:} 1D3 Hit Points per minute and applies –6 penalty to victim’s DEX (upon reaching 0 DEX victim becomes paralysed)\\ 
-		\textit{Duration:} 6D10 minutes
-	\end{rpg-monsteraction}
-	\begin{rpg-monsteraction}[Web]
-		Entangles opponent. Success is determined by an opposed check of attack roll vs an Athletics roll. If entangled, the web can be destroyed (POWx2 Hit Points).
-	\end{rpg-monsteraction}
-
-
-\end{monsterbox}
-\end{samepage}
-
-
-\begin{samepage}
-\begin{monsterbox}{Viper}
-	\basics[%
-        hitpoints  = 7, 
-	majorwound = 4,
-	damagemodifier = 0,
-	powerpoints = 13,
-	movementrate = 30m,
-	armor = Scales (1 AP),
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 2D6+6  (13),
-		CON = 2D6    (6),
-		DEX = 3D6+18 (27),
-		SIZ = 2D6    (7),
-		INT = 3      (3),
-		POW = 2D6+6  (13),
-		CHA = 3      (3)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
-		Bite (1D6+Venom)
-	\end{rpg-monsteraction}
-	\rpgmonstersection{Abilities}
-	\begin{rpg-monsteraction}[Viper Venom]\\
-		\textit{Type:} Ingested or smeared\\
-		\textit{Delay:} 1 Combat Round\\
-		\textit{Potency:} 48\\
-		\textit{Full Effect:} 1D4 Hit Points damage for each minute and -3 CON (upon reaching 0 CON victim dies)\\ 
-		\textit{Duration:} 6D10 minutes
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-
-\begin{samepage}
-\begin{monsterbox}{Wolf}
-	\basics[%
-        hitpoints  = 12, 
-	majorwound = 6,
-	damagemodifier = 0,
-	powerpoints = 11,
-	movementrate = 23m,
-	armor = None,
-	]
-	\rpghline%
-	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 3D6   (11),
-		CON = 3D6+3 (14),
-		DEX = 3D6+3 (13),
-		SIZ = 2D6+3 (10),
-		INT = 5     (5),
-		POW = 3D6   (11),
-		CHA = 5     (5)
-	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
-	\rpghline%
-	\rpgmonstersection{Skills}
-	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
-		Bite (1D8), Claw (1D6)
-	\end{rpg-monsteraction}
-\end{monsterbox}
-\end{samepage}
-
-
-
-
-
-
-
+\newpage
