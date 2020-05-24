@@ -1365,8 +1365,8 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 	\rpghline%
 	\stats[ % This stat command will autocomplete the modifier for you
 		STR = -,
-		CON = --,
-		DEX = ---,
+		CON = -,
+		DEX = -,
 		SIZ = -,
 		INT = 3D6    (11),
 		POW = 3D6+6  (17),
@@ -1408,3 +1408,52 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 \end{monsterbox}
 
 \newpage
+
+\begin{monsterbox}{Disease Spirit}
+	\textit{Disease spirits are the source of misery and illness. They appear in a sickly green humanoid form, with a skull or sunken plaid face for a head.
+They are commonly encountered in wilderness areas, where there are no Shamans to banish them, and around evil monster groups whose evil Shaman’s bind them to protect their treasure and lair.}\\
+	\rpghline
+	\basics[%
+	powerpoints = 17,
+	movementrate = 30m,
+	plunderrating = 0
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = -,
+		CON = -,
+		DEX = -,
+		SIZ = -,
+		INT = 2D6    (7),
+		POW = 3D6+6  (17),
+		CHA = 3D6    (11)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~40\%, Persistence~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Lore (Disease)~100\%, Lore (Spirit World)~40\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Deception~30\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Spirit Combat 50\%]
+		Spectral Claw (1D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Other}
+	\begin{rpg-monsteraction}[Special Rules]
+		A disease spirit is in essence a disease, either mundane or magical. After covertly possessing its victim, the possessed will be forced to make Resilience tests to resist the effects of the disease. However, the disease cannot be thrown off until the disease spirit is ousted. Also, the spirit will nearly always choose to apply its POW as a penalty to the possessed’s Resilience tests.
+		If the possessed dies while being possessed by a disease spirit, there is a percentage chance equal to the spirit’s POW that it will arise as a new disease spirit in 2D6 hours.
+	\end{rpg-monsteraction}
+\end{monsterbox}
+
+\newpage 
