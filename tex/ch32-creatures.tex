@@ -1457,3 +1457,43 @@ They are commonly encountered in wilderness areas, where there are no Shamans to
 \end{monsterbox}
 
 \newpage 
+
+\begin{monsterbox}{Guardian Spirit}
+	\textit{These spirits are often found guarding treasures, tombs and temples. They are unusual in that they are bound to a location or object, but remain discorporate. They take many forms, such as leonine monster guard dogs, shadowy robed figures or pale warriors. The Guardian Spirit has conditions set upon it as part of its binding determining how it will defend its post. When these conditions are broken the spirit lets out a screaming howl and then attacks in Spirit Combat. The warning howl can be heard at a distance of 10m per point of the Guardian’s POW. A Guardian cannot roam from its post a distance greater than its POW in meters.}\\
+	\rpghline
+	\basics[%
+	powerpoints = 17,
+	movementrate = 30m,
+	plunderrating = (depends on the Treasure being guarded)
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = -,
+		CON = -,
+		DEX = -,
+		SIZ = -,
+		INT = 2D6    (7),
+		POW = 3D6+6  (17),
+		CHA = 3D6    (11)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~40\%, Persistence~60\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Lore (Spirit World)~40\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Spirit Combat 70\%]
+		Spectral Claw (1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+
+\newpage 
