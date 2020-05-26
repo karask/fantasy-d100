@@ -1497,3 +1497,50 @@ They are commonly encountered in wilderness areas, where there are no Shamans to
 \end{monsterbox}
 
 \newpage 
+
+\begin{monsterbox}{Healing Spirit}
+	\textit{The nemesis of the disease spirit this spirit appears as a bright happily glowing orb. They are typically summoned to help heal the sick and wounded.}\\
+	\rpghline
+	\basics[%
+	powerpoints = 14,
+	movementrate = 30m,
+	plunderrating = 0
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = -,
+		CON = -,
+		DEX = -,
+		SIZ = -,
+		INT = 2D6    (7),
+		POW = 4D6    (14),
+		CHA = 3D6    (11)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~40\%, Persistence~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Lore (Disease)~100\%, Lore (Spirit World)~60\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Spirit Combat 50\%]
+		Spectral Blast (1D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Magic 100\%]
+		Heal 6
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Special Rules]
+		The natural enemy of a disease spirit, a healing spirit is only capable of entering Spirit Combat with a disease spirit already covertly possessing a creature. If the healing spirit can bring the disease spirit to zero Power Points, it will force it to leave its host. The healing spirit will then depart as well, for it cannot permanently possess any creature. If a healing spirit is used on an individual who is sick from a mundane illness (rather than from a disease spirit), it will add its POW as a percentage bonus to the individual’s chance of success on his next Resilience test to throw off the effects of the disease.
+	\end{rpg-monsteraction}
+\end{monsterbox}
+
+\newpage 
+
