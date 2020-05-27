@@ -1449,7 +1449,6 @@ They are commonly encountered in wilderness areas, where there are no Shamans to
 	\begin{rpg-monsteraction}[Spirit Combat 50\%]
 		Spectral Claw (1D6)
 	\end{rpg-monsteraction}
-	\rpgmonstersection{Other}
 	\begin{rpg-monsteraction}[Special Rules]
 		A disease spirit is in essence a disease, either mundane or magical. After covertly possessing its victim, the possessed will be forced to make Resilience tests to resist the effects of the disease (see page \pageref{ssec:disease}). However, the disease cannot be thrown off until the disease spirit is ousted. Also, the spirit will nearly always choose to apply its POW as a penalty to the possessed’s Resilience tests.
 		If the possessed dies while being possessed by a disease spirit, there is a percentage chance equal to the spirit’s POW that it will arise as a new disease spirit in 2D6 hours.
@@ -1539,6 +1538,49 @@ They are commonly encountered in wilderness areas, where there are no Shamans to
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Special Rules]
 		The natural enemy of a disease spirit, a healing spirit is only capable of entering Spirit Combat with a disease spirit already covertly possessing a creature. If the healing spirit can bring the disease spirit to zero Power Points, it will force it to leave its host. The healing spirit will then depart as well, for it cannot permanently possess any creature. If a healing spirit is used on an individual who is sick from a mundane illness (rather than from a disease spirit), it will add its POW as a percentage bonus to the individual’s chance of success on his next Resilience test to throw off the effects of the disease.
+	\end{rpg-monsteraction}
+\end{monsterbox}
+
+\newpage 
+
+\begin{monsterbox}{Magic Spirit}
+	\textit{Magic spirits are spirits that have mastery of one or more spells. If bound, the holder of the spirit may use the spirit’s Power Points for casting spells. Magic spirits may not initiate Spirit Combat, but may use the spells it knows to attack or defend itself. They appear as a series of multi-coloured orbs equal in number to the number of spells they know.}\\
+	\rpghline
+	\basics[%
+	powerpoints = 14,
+	movementrate = 30m,
+	plunderrating = 0
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = -,
+		CON = -,
+		DEX = -,
+		SIZ = -,
+		INT = 3D6    (11),
+		POW = 4D6    (14),
+		CHA = 1D6    (4)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~40\%, Persistence~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Lore (Spirit World)~60\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Spirit Combat 50\%]
+		Spectral Blast (1D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Magic]
+		A magic spirit knows 1D6 Battle Magic, Divine Magic or Sorcery spells. These spirits will only know one  spell type – for example, a magic spirit will not have both Divine and Sorcery spells, nor may it ever learn spells of another type. If the spirit casts Divine Magic, it must regain the use of spent spells in the same way a Priest does. If casting Sorcery or battle magic it has a casting skill equal to its POW x 5.
 	\end{rpg-monsteraction}
 \end{monsterbox}
 
