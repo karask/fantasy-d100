@@ -660,6 +660,12 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 \clearpage
 
+\section{Elementals}
+
+
+
+\clearpage
+
 \section{Monsters}
 
 \begin{monsterbox}{Centaur}
@@ -1354,6 +1360,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 \section{Spirits}
 \label{sec:spirits}
 
+\begin{samepage}
 \begin{monsterbox}{Ancestor Spirit}
 	\textit{An Ancestor Spirit is the deceased relation of a living being. They are the keepers of tribal wisdom, ancient advisors or just long lost loved ones. They appear as they did in life, dressed in tattered clothing of familiar designs. Ancestor Spirits often manifest at large gatherings of their kinsmen, at holy rituals or to bring portents of warning and doom to their kin. Some clans bind their ancestors to holy locations, while other see that as disrespectful.}\\
 	\rpghline
@@ -1406,9 +1413,11 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
                 Spells: Heal 4
 	\end{rpg-monsteraction}
 \end{monsterbox}
+\end{samepage}
 
-\newpage
+%\newpage
 
+\begin{samepage}
 \begin{monsterbox}{Disease Spirit}
 	\textit{Disease spirits are the source of misery and illness. They appear in a sickly green humanoid form, with a skull or sunken plaid face for a head.
 They are commonly encountered in wilderness areas, where there are no Shamans to banish them, and around evil monster groups whose evil Shaman’s bind them to protect their treasure and lair.}\\
@@ -1454,9 +1463,11 @@ They are commonly encountered in wilderness areas, where there are no Shamans to
 		If the possessed dies while being possessed by a disease spirit, there is a percentage chance equal to the spirit’s POW that it will arise as a new disease spirit in 2D6 hours.
 	\end{rpg-monsteraction}
 \end{monsterbox}
+\end{samepage}
 
-\newpage 
+%\newpage 
 
+\begin{samepage}
 \begin{monsterbox}{Guardian Spirit}
 	\textit{These spirits are often found guarding treasures, tombs and temples. They are unusual in that they are bound to a location or object, but remain discorporate. They take many forms, such as leonine monster guard dogs, shadowy robed figures or pale warriors. The Guardian Spirit has conditions set upon it as part of its binding determining how it will defend its post. When these conditions are broken the spirit lets out a screaming howl and then attacks in Spirit Combat. The warning howl can be heard at a distance of 10m per point of the Guardian’s POW. A Guardian cannot roam from its post a distance greater than its POW in meters.}\\
 	\rpghline
@@ -1494,9 +1505,11 @@ They are commonly encountered in wilderness areas, where there are no Shamans to
 		Spectral Claw (1D6)
 	\end{rpg-monsteraction}
 \end{monsterbox}
+\end{samepage}
 
-\newpage 
+%\newpage 
 
+\begin{samepage}
 \begin{monsterbox}{Healing Spirit}
 	\textit{The nemesis of the disease spirit this spirit appears as a bright happily glowing orb. They are typically summoned to help heal the sick and wounded.}\\
 	\rpghline
@@ -1540,9 +1553,11 @@ They are commonly encountered in wilderness areas, where there are no Shamans to
 		The natural enemy of a disease spirit, a healing spirit is only capable of entering Spirit Combat with a disease spirit already covertly possessing a creature. If the healing spirit can bring the disease spirit to zero Power Points, it will force it to leave its host. The healing spirit will then depart as well, for it cannot permanently possess any creature. If a healing spirit is used on an individual who is sick from a mundane illness (rather than from a disease spirit), it will add its POW as a percentage bonus to the individual’s chance of success on his next Resilience test to throw off the effects of the disease.
 	\end{rpg-monsteraction}
 \end{monsterbox}
+\end{samepage}
 
-\newpage 
+%\newpage 
 
+\begin{samepage}
 \begin{monsterbox}{Magic Spirit}
 	\textit{Magic spirits are spirits that have mastery of one or more spells. If bound, the holder of the spirit may use the spirit’s Power Points for casting spells. Magic spirits may not initiate Spirit Combat, but may use the spells it knows to attack or defend itself. They appear as a series of multi-coloured orbs equal in number to the number of spells they know.}\\
 	\rpghline
@@ -1583,6 +1598,60 @@ They are commonly encountered in wilderness areas, where there are no Shamans to
 		A magic spirit knows 1D6 Battle Magic, Divine Magic or Sorcery spells. These spirits will only know one  spell type – for example, a magic spirit will not have both Divine and Sorcery spells, nor may it ever learn spells of another type. If the spirit casts Divine Magic, it must regain the use of spent spells in the same way a Priest does. If casting Sorcery or battle magic it has a casting skill equal to its POW x 5.
 	\end{rpg-monsteraction}
 \end{monsterbox}
+\end{samepage}
 
-\newpage 
+%\newpage 
+
+\begin{samepage}
+\begin{monsterbox}{Passion Spirit}
+	\textit{This group of spirits embody negative and harmful feelings and emotions. If they successfully defeat a living creature in Spirit Combat, they will covertly possess that creature. The results of this possession depend upon the particular passion spirit. They are normally invisible, but fear spirits appear as an inky black form with a skull head, madness spirits are ghost like with faces quickly changing from one expression to another while pain spirits take on an angry red form with a face twisted in agony.}\\
+	\rpghline
+	\basics[%
+	powerpoints = 17,
+	movementrate = 30m,
+	plunderrating = 0
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = -,
+		CON = -,
+		DEX = -,
+		SIZ = -,
+		INT = 2D6+3  (10),
+		POW = 3D6+6  (17),
+		CHA = 4D6    (14)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~40\%, Persistence~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Lore (Spirit World)~60\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Spirit Combat 55\%]
+		Spectral Claw (1D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Other}
+	\begin{rpg-monsteraction}[Fear Spirit]
+		If a fear spirit covertly possesses a host, the host becomes permanently Demoralised (as the Magic spell), until the spirit is cast out.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Madness Spirit]
+		If a madness spirit succeeds in covertly possessing a victim, it will manifest itself in daily bouts of insanity. At least once per day, the madness spirit will attempt to cause an insane fit in its host. It matches its Persistence against the host’s Resilience in a standard opposed test. If the host succeeds, the madness spirit will be quiescent for at least a number of hours equal to the host’s POW. If the host fails, he becomes incapacitated for 1D20 hours – screaming madly, giggling incoherently or simply becoming catatonic for the duration of the effect. The madness spirit chooses the manner of madness, though most are partial to a single effect. The madness spirit will also attempt to assert itself whenever its host is in a stressful situation. Combat is an obvious example, but these spirits also delight in affecting their hosts in a variety of other stressful, important situations – collapsing into a fit of mad giggling while petitioning an unfriendly king for a boon is exactly the kind of thing madness spirits enjoy. Note that if the stressful situation occurs during a period of forced quiescence on the part of the spirit, it will be unable to manifest itself.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Pain Spirit]
+		If a pain spirit manages to covertly possess its target, the victim will be overcome with a sudden burst of pain. From that point on, until the spirit is cast out, the victim will always be conscious of a dull ache in his joints or a twinge in his muscles. Whenever the host acts quickly (as in combat) or concentrates (as in spell casting), and sometimes purely at random intervals, he is struck by a sudden spasm of pain. This pain reduces all the host’s skill tests by a penalty equal to the spirit’s POW.
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+%\newpage
+
 
