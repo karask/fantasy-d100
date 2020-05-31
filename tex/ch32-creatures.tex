@@ -724,6 +724,67 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 \newpage
 
 
+\begin{monsterbox}{Dragon}
+	\textit{These giant flying reptilian monsters are incredibly powerful and dangerous. Dragons are very individual in their temperament. Some are evil cruel beasts. Others are solitary hoarding creatures. Some use their high intelligence to lord it over lesser races.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 50, %\rpgdice{3d8 + 3},
+	majorwound = 25,
+	damagemodifier = +7D6,
+	powerpoints = 26,
+	movementrate = {30m, 45m when flying},
+	armor = Dragon Scales (12AP),
+	plunderrating = 5-6
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 20D6    (70),
+		CON = 10D6    (35),
+		DEX = 4D6     (14),
+		SIZ = 10D6+30 (65),
+		INT = 6D6     (21),
+		POW = 4D6+12  (26),
+		CHA = 6D6     (21)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~30\%, Persistence~180\%, Resilience~120\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Natural lore~100\%, Culture (local) 100\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~120\%, Influence~150\%, Perception~110\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 125\%]
+		Bite (1D10+7D6), Claw (1D8+7D6), Tail (1D20+7D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Double Claw Attack]
+		In a single Combat Round a dragon can make two claw attacks.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Breathe Flame]
+		The Dragon may breathe flame over an area as a Combat Action. The flame will cover a cone in front of the Dragon, which stretches for its POW in metres. At its furthest extent, the cone is equal to the creature’s POW in width.
+		Any creature caught in the flame suffers 4D6 fire damage, though on a successful Dodge roll a character may dive for cover to halve this damage and AP counts as normal.
+		The Dragon may only breathe flame once per hour. Further attempts to breathe flame within this time period require the creature to make a Resilience test, with a cumulative –20\% penalty for every attempt.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Supernatural]
+		Dragons are highly magical creatures and often learn Sorcery and Magic (of which they have a minimum of 10 points of Magnitude of spells)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+
+\newpage
+
+
+
 \begin{monsterbox}{Dwarf}
 	\textit{These short, stocky and bearded, human-like creatures, live underground in vast halls, meticulously carved out of the rock by their highly skilled hands.  Long lived and proud of their work, Dwarfs are the natural enemies of Orcs and Goblins, who often encroach upon their realms.}\\
 	\rpghline
