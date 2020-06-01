@@ -662,6 +662,71 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 \section{Monsters}
 
+
+\begin{monsterbox}{Basilisk}
+	\textit{Born from the egg of a cockerel acted upon in an Alchemist’s or witches cauldron, this magical monster is the product of foul Sorcery. It is a large lizard with multicoloured scales. Its baleful gaze can kill and its blood is poisonous and corrosive.   Basilisks are usually employed as guardians of their master’s treasure.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 8, %\rpgdice{3d8 + 3},
+	majorwound = 4,
+	damagemodifier = -1D6,
+	powerpoints = 16,
+	movementrate = 15m,
+	armor = Armor Scales (2AP),
+	plunderrating = 5
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D3   (4),
+		CON = 2D6+6 (13),
+		DEX = 3D6   (11),
+		SIZ = 1D3   (2),
+		INT = 3     (3),
+		POW = 1D6+12 (16),
+		CHA = 3     (3)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~40\%, Persistence~50\%, Resilience~70\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+    		Natural lore~40\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~65\%, Deception~40\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ranged Combat 100\%]
+		Death Gaze (Range: POW in metres)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 35\%]
+		Bite (1D6-1D6+poison)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Basilisk Venom \& Poison Blood]\\
+		\textit{Type:} Ingested or smeared\\
+		\textit{Delay:} Immediate\\
+		\textit{Potency:} 65\\
+		\textit{Full Effect:} 1D4 Hit Points damage for each minute and -6 CON (upon reaching 0 CON victim dies)\\ 
+		\textit{Duration:} 6D10 minutes\\
+		Any non-magical weapon hitting the basilisk corrodes in the creature’s blood, completely disintegrating after D4 rounds. The basilisk’s poison and corrosive blood are magical effects, which lose their special properties a few minutes after leaving the basilisk’s body, making it virtually impossible to use the creature as a source for making lethal compounds.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Death Gaze]
+		A basilisk can kill with a glance. In combat the basilisk glares at a single opponent each round. If the basilisk overcomes the target in an opposed test of its Persistence against the target’s Resilience, the target dies instantly. Using the gaze attack costs no Power Points, and the basilisk may attack normally in any round in which it uses the gaze attack. This attack penetrates magical defences as if it were a Magnitude 6 Magic spell. If the target successfully resists the gaze attack, he is unharmed, though he may certainly be targeted again. 
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
+
 \begin{monsterbox}{Centaur}
 	\textit{Atop of the body of a well-bred and strong horse, this creature has the body of a strong athletic human where the horse’s head should be. The centaur is the raw power and nobility of nature incarnate. Often they act as the self styled protectors of the wilderness, which brings them into conflict with more settled races who encroach on their territory.}\\
 	\rpghline
