@@ -1805,6 +1805,62 @@ They are commonly encountered in wilderness areas, where there are no Shamans to
 
 \begin{samepage}
 \begin{monsterbox}{Ghoul}
+	\textit{Amongst the foulest of the undead, Ghouls survive by eating the flesh of the living in a state of perpetual ravenous hunger. Most Ghouls haunt their old tombs in packs waiting for the living to foolishly enter their lairs. Those Ghouls who are more capable and magically powerful enslave weaker living races, such as orcs and goblins, using these creatures to capture their prey for them.  Unlike other undead, the ghoul’s flesh has a tight leathery sheen as if it has been tanned at the time of death or transformation.  Their eyes are alive and bright and their teeth are sharp and needle-like.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 12, 
+	majorwound = 6,
+	damagemodifier = +1D4,
+	powerpoints = 11,
+	movementrate = 15m,
+	armor = None,
+	plunderrating = 1
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 4D6   (14),
+		CON = 3D6   (11),
+		DEX = 3D6   (11),
+		SIZ = 2D6+6 (13),
+		INT = 3D6   (11),
+		POW = 3D6   (11),
+		CHA = 1D6   (4)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~40\%, Persistence~30\%, Resilience~40\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Lore (Undead)~75\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~40\%, Deception~60\%, Perception~30\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
+		Claw (1D4+1D4), Bite (1D6+1D4+poison)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Magic]
+		Ghouls learn Magic from each other, with the occasional powerful leader becoming a Shaman or Priest of some Evil Cannibal religion.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ghoul Howl]
+		Ghouls can employ a blood chilling howl once per combat round in addition to a Claw or Bite attack. When a ghoul howls, every creature in a radius equal to the ghoul’s POW in metres becomes Demoralised (as the Magic spell), unless he can overcome the ghoul’s Persistence with his Resilience in an opposed test. The Demoralise effect continues until all howling stops. Any who are able to resist the howling must resist again every round for a total of five successive rounds, after which they are considered immune to the howling’s effects for a week. Countermagic, Shield and Spell Resistance offer no protection against the effects of a ghoul’s howl. 
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ghoul Venom]
+		\\Type: Ingested or smeared\\
+		Delay: 1D3 Combat Rounds\\
+                Potency: 22\\
+		Full Effect: Paralysis
+		Duration: 1D10 hours or until healing is administered that restores at least 1 Hit Point.
+	\end{rpg-monsteraction}
 \end{monsterbox}
 \end{samepage}
 	
@@ -1858,14 +1914,120 @@ They are commonly encountered in wilderness areas, where there are no Shamans to
 \newpage
 
 \begin{samepage}
-\begin{monsterbox}{Zombie}
+\begin{monsterbox}{Vampire}
+	\textit{Dark overlords of the undead, Vampires feed off the blood and life-force of the living. They appear as normal humans, but their pallid complexion and overly large canines give them away.  Vampires are either solitary hunters, or form societies where weaker members of the brood must bring victims to the more powerful leaders.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 18, 
+	majorwound = 9,
+	damagemodifier = +1D6,
+	powerpoints = 0 (see below),
+	movementrate = 15m,
+	armor = Chainmail (5AP) or Platemail (6AP) for High Vampires,
+	plunderrating = 4
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6+12 (23),
+		CON = 3D6+12 (23),
+		DEX = 3D6    (11),
+		SIZ = 2D6+6  (13),
+		INT = 2D6+6  (13),
+		POW = 0      (0),
+		CHA = 3D6    (11)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~40\%, Persistence~80\%, Resilience~80\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Culture (Local)~80\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~50\%, Deception~80\%, Perception~80\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 50\%]
+		Arming Sword (1D8+1D6), Medium Shield (1D6+1D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
+		Bite (1D6 + Power Point drain)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Magic]
+		Vampires are highly magical and will either be a Priest of an appropriate Death Religion or an Arcane Magic caster. They have at least 10 points of Magnitude of spells.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Night Vision]
+		Vampires can see in the dark and at night as if it was day by sensing life energy.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Power Point drain]
+                A vampire does not regenerate Hit Points or Power Points normally. Instead, he must take them from other beings by draining their blood. On a successful bite attack, the vampire will hang on and drain D6 Power Points from the victim every round. Each drained Power Point gives the vampire one Hit Point or Power Point (vampire’s choice). When the Vampire drains the victim’s Power Points to 0, the victim fails unconscious, as normal, and the vampire can choose to carry on draining blood, except now it’s the victim’s permanent POW that is drained.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Shapeshifting]
+		Vampires have the ability to shapeshift into mist at will. As a single Combat Action, the vampire (and every non-living item on his person) dissolves into a thin, greenish fog approximately the same SIZ as he was in the flesh. As a mist, the vampire is immune to all types of physical damage, but cannot take any action except Movement Rate. In mist form, a vampire moves at the same speed as he would normally and is unaffected by strong winds. Additionally, vampires still take damage from sunlight, as normal.
+		As well as the ability to transform into mist, some vampires manifest the ability to shapeshift into wolves and bats as well. As with the mist transformation, such changes take a Combat Action to perform.
+		Upon death, the vampire collapses to the ground and turns to mist at the beginning of the next Combat Round. Before then, it can be destroyed permanently by driving a stake through its heart (the only way to prevent it turning to mist) and decapitating it.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Sunlight Weakness]
+		As creatures of the night Vampires cannot stand the touch of natural sunlight. They take two point of damage per round that they are exposed to the sun, though some will risk travelling in the daylight hours by wearing layers of clothing and a hood to cover as much of their body as possible.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Holy Symbols]
+		In the past the holy icons of some religions have proved effective against vampires. Those that focus their energies against the undead are the most likely to be effective. But it is down to the Games Master to decide what supernaturally offends any particular vampire.  An elven vampire, for example, might be repelled by symbols of nature gods, rather than by human symbols of holiness. Any character presenting a holy symbol to a vampire as a Combat Action matches their Persistence against the vampire’s Resilience in an opposed check. They will receive bonuses or penalties at the Games Master’s discretion, based on the appropriateness of the symbol being displayed. On a successful test, the vampire loses 1D4 Hit Points (unaffected by armour or any of the vampire’s magic) and may not attack that character or any other character under the protection of Holy Symbol.
+	\end{rpg-monsteraction}
 \end{monsterbox}
 \end{samepage}
 	
 \newpage
 
 \begin{samepage}
-\begin{monsterbox}{Vampire}
+\begin{monsterbox}{Zombie}
+	\textit{The restless dead, rotting corpses animated by dark magic that shamble the world serving their masters or wandering lost, randomly attacking the living.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 7, 
+	majorwound = 4,
+	damagemodifier = +1D6,
+	powerpoints = 0,
+	movementrate = 7m,
+	armor = None,
+	plunderrating = 0
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6+12 (23),
+		CON = 1D6    (4),
+		DEX = 1D6+3  (7),
+		SIZ = 3D6    (10),
+		INT = 1D3    (2),
+		POW = 0      (0),
+		CHA = 1D3    (2)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~0\%, Persistence~100\%, Resilience~100\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 50\%]
+		Fist (1D3+1D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Immunities]
+		Zombies are immune to fatigue, disease, poisons and mind control.
+	\end{rpg-monsteraction}
 \end{monsterbox}
 \end{samepage}
 	
