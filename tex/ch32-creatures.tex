@@ -1447,6 +1447,76 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 \newpage
 
+
+\begin{monsterbox}{Werewolf}
+	\textit{Human by day, when the rage takes them, or under a full moon, they transform into a giant savage wolf.  The very embodiment of nature or the bane of mankind, depending on your viewpoint.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 12, 
+	majorwound = 6,
+	damagemodifier = +1D6 (wolf),
+	powerpoints = 11,
+	movementrate = {15m (man), 30m (wolf)},
+	armor = Hide (1AP),
+	plunderrating = 0
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6/6D6  (11/22),
+		CON = 3D6      (11),
+		DEX = 3D6      (11),
+		SIZ = 2D6+6    (13),
+		INT = 2D6+6/1D6+3 (13/6),
+		POW = 3D6      (11),
+		CHA = 3D6      (11)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~60\%, Persistence~60\%, Resilience~60\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+    		Nature lore~80\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~60\%, Deception~60\%, Perception~60\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Human Close Combat 35\%]
+		Arming Sword (1D8)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Human Ranged Combat 25\%]
+		Shortbow (1D8)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Wolf Unarmed Combat 60\%]
+		Bite (1D8+1D6), Claw (1D6+1D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Magic]
+		Werewolves either learn Magic handed down from their ancestors their family, a grouping known as the pack, or join Earth religions of a particularly rough and savage nature.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Night Vision]
+		Werewolves have night vision, and at night they can see as well as they can during the day.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Shapeshift]
+		Werewolves can change form at will, an act that requires two Combat Actions to complete. On nights of a full moon, werewolves have no choice but to assume beast form.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Wolf Immunities and Weaknesses]
+		While in wolf form, werewolves are immune to most damage. Only magic, fire or weapons made of pure silver will harm them – all other blows simply bounce off harmlessly. If a normal sword with a Weapon Enhance 3 spell cast on it is used against a werewolf, only the three points of damage from the spell will affect the creature; the weapon’s normal damage, as well as the attacker’s Damage Modifier, do not count. The werewolf’s thick skin, which grants the beast one point of armour, would reduce the Weapon Enhance spell’s damage to two. If the entire weapon is enchanted, such as with a Fire Weapon spell, the entire damage rolled will count, though the wielder’s Damage Modifier will still be ignored. Werewolves can be poisoned, so long as the poison can be introduced to the creature’s body. They are living entities who require oxygen, and thus may be asphyxiated or drowned.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
+
+
 \begin{monsterbox}{Wyvern}
 	\textit{These giant slender green reptiles are akin to dragons but with no forelegs and animal intelligence.}\\
 	\rpghline
@@ -1964,7 +2034,7 @@ They are commonly encountered in wilderness areas, where there are no Shamans to
 	\begin{rpg-monsteraction}[Magic]
 		Vampires are highly magical and will either be a Priest of an appropriate Death Religion or an Arcane Magic caster. They have at least 10 points of Magnitude of spells.
 	\end{rpg-monsteraction}
-	\begin{rpg-monsteraction}[Night Vision]
+	\begin{rpg-monsteraction}[Life Energy Vision]
 		Vampires can see in the dark and at night as if it was day by sensing life energy.
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Power Point drain]
