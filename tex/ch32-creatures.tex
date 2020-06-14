@@ -495,6 +495,42 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 
 \begin{samepage}
+\begin{monsterbox}{Raven}
+	\basics[%
+        hitpoints  = 3, 
+	majorwound = 2,
+	damagemodifier = -1D6,
+	powerpoints = 7,
+	movementrate = {15m, 25m flying},
+	armor = None,
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 1D3    (2),
+		CON = 2D3    (4),
+		DEX = 3D6+12 (21),
+		SIZ = 1D2    (2),
+		INT = 5      (5),
+		POW = 2D6    (7),
+		CHA = 4      (4)
+	]
+	%\rpghline%
+	%\details[%
+	% If you want to use commas in these sections, enclose the
+	% description in braces.
+	% I'm so sorry.
+	%languages = {Common Lisp, Erlang},
+	%]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Unarmed Combat 35\%]
+		Claw (1D6-1D6), Bite (1D4-1D6)
+	\end{rpg-monsteraction}
+\end{monsterbox}
+\end{samepage}
+
+
+\begin{samepage}
 \begin{monsterbox}{Rhinoceros}
 	\basics[%
         hitpoints  = 19, 
