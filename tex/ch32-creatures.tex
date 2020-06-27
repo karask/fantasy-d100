@@ -1841,56 +1841,51 @@ Nymphs are spirits embodying a particular place or natural feature. They take t
 Killing a nymph’s physical body sends her to the Spirit World.  The nymph, if unmolested in the Spirit World, will form a new body in her special place after 2D6 days, provided it remains intact.
 
 
-\begin{monsterbox}{Dryad AAAAAAAAAAA}
-	\textit{These giant slender green reptiles are akin to dragons but with no forelegs and animal intelligence.}\\
+\begin{monsterbox}{Dryad}
+	\textit{A dryad is a nymph of a particular area of woodland, a grove of a radius in metres equal to twice her Power score. She cannot leave this territory.; if she tries to do so, her physical body disintegrates into leaves and flowers. Within a dryad’s grove is a particular tree she is mystically linked to; she will endure for as long as her personal tree endures, and no longer. A dryad can form or dissolve her body by stepping out of or into this tree, though if a dryad’s body is destroyed, it takes her time (as for any nymph) to form another.}\\
 	\rpghline
 	\basics[%
-        hitpoints  = 23, 
-	majorwound = 12,
-	damagemodifier = +2D6,
-	powerpoints = 10,
-	movementrate = {23m, 30m when flying},
-	armor = Scales (5AP),
+        hitpoints  = 11, 
+	majorwound = 6,
+	damagemodifier = 0,
+	powerpoints = 22,
+	movementrate = 15m,
+	armor = None
 	plunderrating = 1
 	]
 	\rpghline%
 	\stats[ % This stat command will autocomplete the modifier for you
-		STR = 4D6+12 (26),
-		CON = 2D6+12 (19),
-		DEX = 2D6+6  (13),
-		SIZ = 4D6+12 (26),
-		INT = 7      (7),
-		POW = 3D6    (11),
-		CHA = 6      (6)
+		STR = 2D6    (7),
+		CON = 3D6    (11),
+		DEX = 4D6    (14),
+		SIZ = 2D6+3  (10),
+		INT = 3D6+6  (17),
+		POW = 2D6+15 (22),
+		CHA = 2D6+12 (19)
 	]
-	%\rpghline%
-	%\details[%
-	% If you want to use commas in these sections, enclose the
-	% description in braces.
-	% I'm so sorry.
-	%languages = {Common Lisp, Erlang},
-	%]
 	\rpghline%
 	\rpgmonstersection{Skills}
 	\begin{rpg-monsteraction}[Resistances]
-		Dodge~50\%, Persistence~35\%, Resilience~50\%
+		Dodge~50\%, Persistence~60\%, Resilience~40\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Nature Lore~60\%
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Practical]
-		Athletics~50\%, Deception~10\%, Perception~60\%
+		Deception~50\%, Perception~50\%, Performance~50\%
 	\end{rpg-monsteraction}
-	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
-		Bite (1D10+2D6), Sting (1D6+2D6+poison), Claw (1D6+2D6)
+	\begin{rpg-monsteraction}[Close Combat 40\%]
+		Quarterstaff (1D8)
 	\end{rpg-monsteraction}
 	\rpgmonstersection{Abilities}
-	\begin{rpg-monsteraction}[Multiple Attacks]
-		In one combat round the Wyvern can use all three attacks.	
+	\begin{rpg-monsteraction}[Magic 60\%]
+		A dryad has 8 points of Magic from the following spells: Befuddle, Clear Path, Countermagic, Darkwall, Detect Magic, Enhance Performance, Enhance Deception, Light, Shroud of Silence.
 	\end{rpg-monsteraction}
-	\begin{rpg-monsteraction}[Wyvern Sting Poison]
-		\\Type: Ingested\\
-		Delay: 1D2 Combat Rounds\\
-                Potency: 60\\
-		Full Effect: 1D6 damage and -4 penalty to CON\\
-		Duration: 6D10 minutes
+	\begin{rpg-monsteraction}[Divine Magic]
+		Some dryads learn Divine Magic. Such a dryad has a Glamourweaving skill of 50\%, and can spend some of the above points on divine spells. 
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[One with the Grove]
+		A dryad controls all of the plants within her grove. She can cause them to move slowly, grow surprisingly rapidly, or blossom or bear fruit out of season. This power cannot be used as a direct attack, however.
 	\end{rpg-monsteraction}
 
 \end{monsterbox}
