@@ -1850,7 +1850,7 @@ Killing a nymph’s physical body sends her to the Spirit World.  The nymph, if
 	damagemodifier = 0,
 	powerpoints = 22,
 	movementrate = 15m,
-	armor = None
+	armor = None,
 	plunderrating = 1
 	]
 	\rpghline%
@@ -1901,7 +1901,7 @@ Killing a nymph’s physical body sends her to the Spirit World.  The nymph, if
 	damagemodifier = +1D6,
 	powerpoints = 22,
 	movementrate = 15m,
-	armor = None
+	armor = None,
 	plunderrating = 3
 	]
 	\rpghline%
@@ -1937,6 +1937,60 @@ Killing a nymph’s physical body sends her to the Spirit World.  The nymph, if
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Create Shade]
 		A hag can create a shade out of the darkness of her lair. Doing this costs 1 Power Point per point of SIZ the shade has. A hag can only manifest one shade at a time, though if it is destroyed she can create another.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
+\begin{monsterbox}{Naiad}
+	\textit{Naiads are nymphs of the water, whether a particular stream, stretch of river, lake, swamp, or occasionally a part of the coastline. For every ten metres a naiad moves from her body of water, she loses a Power Point. If she reaches zero Power Points, her body collapses into a pool of water, and her spirit returns to her domain.  A naiad can only regain Power Points when completely submerged in water.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 10, 
+	majorwound = 5,
+	damagemodifier = 0,
+	powerpoints = 25,
+	movementrate = 15m,
+	armor = None,
+	plunderrating = 1
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 4D6    (14),
+		CON = 3D6    (11),
+		DEX = 4D6    (14),
+		SIZ = 2D6+3  (10),
+		INT = 3D6+6  (17),
+		POW = 2D6+18 (25),
+		CHA = 2D6+12 (19)
+	]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~80\%, Persistence~70\%, Resilience~60\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Nature Lore~40\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Perception~40\%, Performance~40\%, Stealth~65\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 40\%]
+		Shortspear (1D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ranged Combat 40\%]
+		Javelin (1D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Magic 60\%]
+		A naiad has 10 points of magic from the following spells: Befuddle, Countermagic, Dull Weapon, Detect Magic, Enhance Performance, Extinguish, Heal, Protection, Slow, Water Breath.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Divine Magic]
+		Some naiads learn Divine Magic. Such a naiad has a Religion skill of 50\%, and can spend some of the above points on divine spells.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Undine Transformation]
+		A naiad can transform herself into an undine. Doing this takes a round, and costs 1 Power Point per point of SIZ the undine has. If the undine is destroyed, the naiad is unharmed, but is immediately forced back to her own body of water.
 	\end{rpg-monsteraction}
 
 \end{monsterbox}
