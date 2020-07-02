@@ -1290,6 +1290,54 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 \newpage
 
+\begin{monsterbox}{Golem}
+	\textit{These artificial anthropomorphic behemoths are created by powerful magic, from inanimate matter to do the bidding of the magician that summoned them. Typically formed from baked clay by ancient Priests, most Golems are relics of greater times. They are tireless servants, who are commanded to their labors by sacred texts placed beneath their tongues or within cavities in their heads. They follow their commands precisely, but in most cases can only do one task at a time (such as Break Rocks, Guard Door). Most golems are stupid, senseless creatures, without freewill, but resistant to almost every hazard thrown their way. Occasionally a Golem is given its liberty, but they still remain ponderous, slow, yet thoughtful creatures. Other types of Golem exist, but are much rarer, animated statues of metal and stone are heard of and some magicians have used their power to give life to cadavers to make monstrous flesh golems. The statistics are given here for the traditional Clay Golem.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 29
+	majorwound = 15,
+	damagemodifier = +3D6,
+	powerpoints = 4/11 (free willed),
+	movementrate = 15m (cannot run),
+	armor = Clay Body (8AP or 4AP against crushing weapons),
+	plunderrating = 0
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 6D6+18 (39),
+		CON = 3D6+18 (29),
+		DEX = 2D6    (7),
+		SIZ = 3D6+18 (29),
+		INT = 1D6/2D6 (4/7),
+		POW = 1D6/3D6 (4/11),
+		CHA = 1D6/2D6 (4/7)
+	]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~0\%, Persistence~90\%, Resilience~100\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Lore (Allocated Task)~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Golems perform their one programmed skill at 100\% unless they are free-willed in which case they develop skills normally. All other skills at base %.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 30\%]
+		Fist (1D8+3D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Magic]
+		Golems rarely learn magic, even when free-willed.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Special Rules]
+		Golem are immune to all mind affecting spells, they cannot be poisoned, they do not breathe, eat or sleep and are very, very hard to break. They rarely react to, or with, violence, unless commanded to do so. They follow strictly the commands of either their master or the commands on their sacred texts.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
 
 
 \begin{monsterbox}{Holy Steed}
@@ -1997,8 +2045,56 @@ Killing a nymph’s physical body sends her to the Spirit World.  The nymph, if
 
 \newpage
 
+\begin{monsterbox}{Oread}
+	\textit{An oread is a nymph associated with a particular hill, mountain, or valley. For every ten metres an oread moves from her domain, she loses a Power Point. If she reaches zero Power Points, her body turns to stone, and her spirit returns home.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 11, 
+	majorwound = 6,
+	damagemodifier = 0,
+	powerpoints = 25,
+	movementrate = 15m,
+	armor = None,
+	plunderrating = 1
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 2D6    (7),
+		CON = 3D6+3  (12),
+		DEX = 3D6+6  (17),
+		SIZ = 2D6+3  (10),
+		INT = 3D6+3  (14),
+		POW = 2D6+15 (22),
+		CHA = 2D6+9  (15)
+	]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~40\%, Persistence~30\%, Resilience~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Nature Lore~40\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Perception~50\%, Performance~50\%, Deception~80\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 35\%]
+		Fist (1D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Ranged Combat 40\%]
+		Rock (1D4)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Magic 70\%]
+		An oread has 12 points of magic from the following spells: Countermagic, Darkwall, Dull Weapon, Detect Magic, Extinguish, Pierce, Protection, Repair, Slow, Vigour, Weapon Enhance.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Gnome Transformation]
+		An oread can transform herself into a gnome. Doing this takes a round, and costs 1 Power Point per point of SIZ the gnome has. If the gnome is destroyed, the oread is unharmed, but is immediately forced back to her own domain.
+	\end{rpg-monsteraction}
 
+\end{monsterbox}
 
+%\newpage
 
 \clearpage
 
