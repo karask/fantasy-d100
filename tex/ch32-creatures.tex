@@ -1294,7 +1294,7 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 	\textit{These artificial anthropomorphic behemoths are created by powerful magic, from inanimate matter to do the bidding of the magician that summoned them. Typically formed from baked clay by ancient Priests, most Golems are relics of greater times. They are tireless servants, who are commanded to their labors by sacred texts placed beneath their tongues or within cavities in their heads. They follow their commands precisely, but in most cases can only do one task at a time (such as Break Rocks, Guard Door). Most golems are stupid, senseless creatures, without freewill, but resistant to almost every hazard thrown their way. Occasionally a Golem is given its liberty, but they still remain ponderous, slow, yet thoughtful creatures. Other types of Golem exist, but are much rarer, animated statues of metal and stone are heard of and some magicians have used their power to give life to cadavers to make monstrous flesh golems. The statistics are given here for the traditional Clay Golem.}\\
 	\rpghline
 	\basics[%
-        hitpoints  = 29
+        hitpoints  = 29,
 	majorwound = 15,
 	damagemodifier = +3D6,
 	powerpoints = 4/11 (free willed),
@@ -1332,6 +1332,59 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 	\end{rpg-monsteraction}
 	\begin{rpg-monsteraction}[Special Rules]
 		Golem are immune to all mind affecting spells, they cannot be poisoned, they do not breathe, eat or sleep and are very, very hard to break. They rarely react to, or with, violence, unless commanded to do so. They follow strictly the commands of either their master or the commands on their sacred texts.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
+\begin{monsterbox}{Gorgon}
+	\textit{These giant creatures have the upper body of female humans and the lower body of a giant snake, with metallic scales and leathery wings growing out of their back. To top off their gruesome visage, which can turn other living creatures to stone, is a head that has living writhing serpents for hair. Evil and vicious to the extreme, it is fortunate that Gorgons are solitary creatures, except in the occasional time that they gather to lord it over other evil creatures.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 16,
+	majorwound = 8,
+	damagemodifier = +1D4,
+	powerpoints = 16,
+	movementrate = {15m, 23m when flying},
+	armor = Tough Scales (8AP),
+	plunderrating = 5
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 4D6    (14),
+		CON = 3D6+6  (17),
+		DEX = 3D6+6  (17),
+		SIZ = 4D6    (14),
+		INT = 3D6    (11),
+		POW = 1D6+12 (16),
+		CHA = 1D6    (4)
+	]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~50\%, Persistence~35\%, Resilience~45\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~65\%, Deception~60\%, Perception~50%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 75\%]
+		Talons (1D6+1D4), Serpents (1d4+poison)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Magic]
+		Gorgons have at least 10 Magnitude of Magic or Arcane or Divine Magic. They are usually Priestesses or Adepts, with a casting skill of 75\%.
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Special Rules}
+	\begin{rpg-monsteraction}[Gaze Attack]
+		The gorgon’s gaze attack is an automatic attack at the beginning of every round. Every susceptible creature must make an opposed Resilience test against the gorgon’s Persistence or be turned to stone.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Gorgon Serpent Venom]\\
+		\textit{Type:} Ingested or smeared\\
+		\textit{Delay:} 1D3 Combat Rounds\\
+		\textit{Potency:} 34\\
+		\textit{Full Effect:} 1D3 Hit Points damage for each minute and -3 CON (upon reaching 0 CON victim dies)\\ 
+		\textit{Duration:} 6D10 minutes
 	\end{rpg-monsteraction}
 
 \end{monsterbox}
