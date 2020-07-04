@@ -7,7 +7,7 @@ This chapter contains several creatures grouped in lists according to their spec
 \vspace{1em}
 
 \begin{rpg-titlebox}{Monsters as Player Characters}
-Although in theory many of the monsters in this chapter can be used as player characters the following are especially suited: Dwarf, Elf, Centaur, Goblin, Orc, Ogre, Lizard Man.
+Although in theory many of the monsters in this chapter can be used as player characters the following are especially suited: Dwarf, Elf, Centaur, Goblin, Orc, Ogre, Lizardman.
 \end{rpg-titlebox}
   
 The following characteristics, attributes, skills, and special rules, collectively known as a ‘Stat block’, for each of the creatures listed on the Monsters List, are the bare bones of a creature. You can use them straight away to give an average non-descript member of that race.
@@ -1591,6 +1591,146 @@ All the Animals listed here are of fixed INT and therefore not sentient. They ha
 
 \newpage
 
+\begin{monsterbox}{Merfolk}
+	\textit{These humanoids have a human upper body and a fish body from the waist down live in large undersea colonies which mirror the human kingdoms of dry land above. They are quite territorial and they have been known to lure sailors to their death if they did not paid them the proper respect.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 14,
+	majorwound = 7,
+	damagemodifier = +1D6,
+	powerpoints = 11,
+	movementrate = {23m swimming, 7m crawling in land},
+	armor = None,
+	plunderrating = 1
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6+3 (14),
+		CON = 3D6   (11),
+		DEX = 2D6+6 (13),
+		SIZ = 3D6+6 (17),
+		INT = 3D6   (11),
+		POW = 3D6   (11),
+		CHA = 3D6   (11)
+	]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~30\%, Persistence~30\%, Resilience~30\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Nature Lore~80\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~60\%, Deception~30\%, Perception~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 35\%]
+		Longspear (1D8+1D6), Dagger (1D4+1+1D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Magic]
+		Merfolk typically join the religion of the Sea God.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Long Breath]
+		Merfolk can hold their breath and swim underwater for their CON in minutes.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
+\begin{monsterbox}{Sea Serpent}
+	\textit{These long serpentine sea monsters are distantly related to Dragons. They lair in caves at the bottom of the sea and this is where they drag their victims to be devoured.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 36,
+	majorwound = 18,
+	damagemodifier = +5D6,
+	powerpoints = 21,
+	movementrate = {23m swimming, 0m in land},
+	armor = Scales (5AP),
+	plunderrating = 3
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 8D6+30 (58),
+		CON = 4D6+21 (35),
+		DEX = 2D6    (7),
+		SIZ = 6D6+15 (36),
+		INT = 3      (3),
+		POW = 6D6    (21),
+		CHA = 3      (3)
+	]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~40\%, Persistence~40\%, Resilience~80\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~60\%, Stealth~25\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
+		Bite (1D6+5D6)
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
+\begin{monsterbox}{Slime}
+	\textit{This creature lives up to its name, being an amorphous blob of indeterminate colour that oozes around, dripping highly corrosive acid. They are carnivorous, engulfing their victims and dissolving them with their acid secretion.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 16,
+	majorwound = 8,
+	damagemodifier = 0,
+	powerpoints = 11,
+	movementrate = 7m (can crawl up walls and ceilings,
+	armor = None,
+	plunderrating = 1
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 1D6 (4),
+		CON = 3D6 (11),
+		DEX = 1D6 (4),
+		SIZ = 6D6 (21),
+		INT = 1   (1),
+		POW = 3D6 (11),
+		CHA = 1   (1)
+	]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~10\%, Persistence~40\%, Resilience~85\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~30\%, Deception~75\%, Perception~75\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 75\%]
+		Envelop (acid damage equal to SIZ)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Special Rules}
+	\begin{rpg-monsteraction}[Immunities]
+		Slimes are immune to mind control, poison and disease.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Fire and Magic Weakness]
+		A Slime can only be killed by fire or magic. Normal weapons merely pass through the Slime’s rancid tissue, without causing damage. Because of a Slime’s caustic nature, neither acid nor poison has any effect on it. Non-fiery weapon enhancement spells do no damage to a Slime. Disruption and similar spells have their normal effect.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Acid Body]
+		A Slime’s body retains its full acidic properties for a number of days after death equal to the creature’s CON.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Envelop Attack]
+		A Slime attacks by moving next to its intended victim and attempting to envelop him. This attack has a base 75\% chance of success, though the victim may use his Dodge skill or his Athletics skill to jump out of the way. Using Athletics rather than Dodge incurs a –40\% penalty. A Slime’s attack may not be parried – the creature will simply slide around the parrying weapon to engulf its foe.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Envelop Attack]
+		A Slime attacks by moving next to its intended victim and attempting to envelop him. This attack has a base 75\% chance of success, though the victim may use his Dodge skill or his Athletics skill to jump out of the way. Using Athletics rather than Dodge incurs a –40\% penalty. A Slime’s attack may not be parried – the creature will simply slide around the parrying weapon to engulf its foe. Every round a creature is enmeshed by a Slime, that creature will take acid damage equal to the SIZ of the Slime. Armour will protect against this damage for the first round, after which it is dissolved by the Slime’s acid, unless it is enchanted in some way or another. A character caught by a Slime may attempt to escape by making another Dodge or Athletics skill test.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
 
 
 \begin{monsterbox}{Holy Steed}
@@ -2769,6 +2909,68 @@ They are commonly encountered in wilderness areas, where there are no Shamans to
 \end{samepage}
 	
 \newpage
+
+\begin{monsterbox}{Mummy}
+	\textit{The preserved remains of nobility, whose death rituals are deliberately designed to turn them into this form of undead. Often bandaged from head to toe as part of this process, they tend to be found in their original tomb. Being nobility, they are of course found as the leader of other lesser undead types, who were often their servants during life as well.}\\
+	\rpghline
+	\basics[%
+        hitpoints  = 18,
+	majorwound = 9,
+	damagemodifier = +1D6,
+	powerpoints = 0,
+	movementrate = 15m,
+	armor = Tough Skin (2AP),
+	plunderrating = 4
+	]
+	\rpghline%
+	\stats[ % This stat command will autocomplete the modifier for you
+		STR = 3D6+12 (23),
+		CON = 3D6+12 (23),
+		DEX = 2D6    (4),
+		SIZ = 2D6+6  (13),
+		INT = 2D6+6  (13),
+		POW = 0      (0),
+		CHA = 1      (1)
+	]
+	\rpghline%
+	\rpgmonstersection{Skills}
+	\begin{rpg-monsteraction}[Resistances]
+		Dodge~30\%, Persistence~80\%, Resilience~50\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Knowledge]
+		Lore (Undead)~65\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Practical]
+		Athletics~10\%, Deception~10\%, Perception~40\%
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Close Combat 80\%]
+		Great Hammer (2D8+1D6)
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Unarmed Combat 60\%]
+		Fist (1D6+1D6)
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Abilities}
+	\begin{rpg-monsteraction}[Magic]
+		Since Mummies are POW-less, they never have Magic. Mummies who were Priests in their previous lives may have Divine Magic, and Mummies who know Arcane Magic will always know at least one Tap spell to gain Power Points to fuel their spells.
+	\end{rpg-monsteraction}
+	\rpgmonstersection{Special Rules}
+	\begin{rpg-monsteraction}[Immunities]
+		Mummies are immune to Mind control, natural diseases and poisons.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Flammable]
+		An Ignite spell will work on a mummy’s body. A strike with a fiery weapon, such as a sword with a Fireblade spell on it, or even a torch, will ignite the mummy if the hit causes damage. The damage done by the initial hit is taken each combat round as fire damage, unless the fire is put out. To put out a fire the Mummy must take 1 combat round to roll on the ground or immerse itself in water. During this time it may not make any other actions or reactions.
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Cannot Heal]
+		Healing spells are ineffective on Mummies, though a Repair spell will fix any damage done (in 1D10 Hit Point increments).
+	\end{rpg-monsteraction}
+	\begin{rpg-monsteraction}[Any Creature]
+		When a creature becomes a mummy, its STR and CON are doubled. The statistics above represent a human mummy, though any sentient creature willing to undergo the process may become a mummy.
+	\end{rpg-monsteraction}
+
+\end{monsterbox}
+
+\newpage
+
 
 
 \begin{monsterbox}{Skeleton}
