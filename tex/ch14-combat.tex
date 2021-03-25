@@ -23,7 +23,7 @@ These harsh realities mean that players tend to avoid combats where they do not 
 \begin{description}
 	\item[Work out encounter distance:] The Gamemaster determines how far away the hostile group is to the player characters, either at Range or Close.
 
-	\item[Drop into Combat time:] Combat is divided into rounds. A single round has a duration of five seconds of time, giving 12 rounds in every minute. During a round every character can perform one action. Combat rounds cycle through the following steps:
+	\item[Start Combat time:] Combat is divided into rounds. A single round has a duration of five seconds of time, giving 12 rounds in every minute. During a round every character can perform one action. Combat rounds cycle through the following steps:
 	\begin{rpg-list}
 	\item Determine Order: At the start of every combat, check each character’s DEX (or INT if they are spell casting) +1D6; this is their Combat Order and will determine the order in which every character involved acts for the round.
 	\item Characters Take Action \& Reaction: In a combat round each character gets one Combat Action and one Defensive Reaction. Combat Actions, such as attacks, take place in Combat Order. The character with the highest order will act first, followed by the character with the second-highest order, and so on until the character with the lowest order acts. Reactions, such as parries or dodges, are made during this process as they are needed.
@@ -136,6 +136,7 @@ The character need not speak the same language as the opponent they are trying t
 	Defending while on lower ground or against mounted foe (unless wielding a weapon two size categories larger) & -20\%\\
         Fighting in partial darkness & -20\%\\
         Fighting in darkness & -40\%\\
+        Fighting in pitch dark or blinded & -60\%\\
         \hline
 \end{rpg-table}
 \end{center}
@@ -201,25 +202,25 @@ Grapple Attack is made in the same way as a normal Unarmed or Natural Weapon att
 \item[Disarm:] The opponent is forced to drop whatever was holding.
 \end{description}
 
-The difference in SIZ between characters matters considerably. The Gamemaster discression is important here but as a general guideline the larger character gets a +20\% to their grapple check for every 7 points of SIZ difference they have from their opponent.
-%Consult table~\ref{tab:grappling-modifiers} for some guidelines. For greater differences the Gamemaster will determine if it makes sense to roll dice.
+The difference in SIZ between characters matters considerably. %The Gamemaster discression is important here but as a general guideline the larger character gets a +20\% to their grapple check for every 7 points of SIZ difference they have from their opponent.
+Consult table~\ref{tab:grappling-modifiers} for some guidelines. For greater differences the Gamemaster will determine if it makes sense to roll dice.
 
-%\begin{table}
-%\begin{center}
-%\caption{Grappling Modifiers}
-%\label{tab:grappling-modifiers}
-%	\begin{rpg-table}[|X|c|]
-%	\hline
-%        \textbf{Situation} & \textbf{Skill Modifier}\\
-%	\hline
-%        Attacker is $1/3$ larger in SIZ   & +20\%\\
-%        Attacker is $1/2$ larger in SIZ   & +40\%\\
-%        Defender is $1/3$ smaller in SIZ  & -20\%\\
-%        Defender is $1/2$ smaller in SIZ  & -40\%\\
-%	\hline
-%\end{rpg-table}
-%\end{center}
-%\end{table}
+\begin{table}
+\begin{center}
+\caption{Grappling Modifiers}
+\label{tab:grappling-modifiers}
+	\begin{rpg-table}[|X|c|]
+	\hline
+        \textbf{Situation} & \textbf{Skill Modifier}\\
+	\hline
+        Attacker is $1/3$ larger in SIZ   & +20\%\\
+        Attacker is $1/2$ larger in SIZ   & +40\%\\
+        %Defender is $1/3$ smaller in SIZ  & -20\%\\
+        %Defender is $1/2$ smaller in SIZ  & -40\%\\
+	\hline
+\end{rpg-table}
+\end{center}
+\end{table}
 
 
 
@@ -249,9 +250,9 @@ All ranged attacks are handled in same manner as close combat attacks, with the 
 Cover affects both ranged and close combat attacks. For missile attacks the defender benefits from the best of the shield modifier (see section~\ref{sec:defensive-reactions}) and the cover modifier below.
 
 \begin{description}
-	\item[Partial cover (-20\%):] For example a low wall that leaves only head and torso exposed.
-	\item[Very good cover (-40\%):] For example Defender on a castle wall, firing from protected battlements.
-	\item[Virtual total cover (-80\%):] For example castle wall with arrow slits for defenders to shot through.
+	\item[Partial cover (-20\%):] For example a low wall that protects the legs leaving only head and torso exposed.
+	\item[Very good cover (-40\%):] For example a defender on a castle wall, firing from protected battlements.
+	\item[Virtual total cover (-80\%):] For example a castle wall with arrow slits for defenders to shot through.
 \end{description}
 
 
@@ -290,11 +291,12 @@ Cover affects both ranged and close combat attacks. For missile attacks the defe
         Attacker is prone                                                 & -40\%\\
 	Attacker is underwater$^{3}$                                      & -20\%\\
 	Attacker is on unstable ground                                    & -20\%\\
-	Attacker is blinded                                               & -40\%\\
+	Attacker is blinded$^{4}$                                               & -80\%\\
 	\hline
 	\multicolumn{2}{|p{\linewidth-4.5mm}|}{1. Modifiers within these sections are not cumulative. However, modifiers from different sections are cumulative. Therefore, shooting at a target within a mist that has moved more than 10m since the attacker’s last Combat Action imparts a –40\% penalty.}\\
 	\multicolumn{2}{|p{\linewidth-4.5mm}|}{2. Attacker condition modifiers are cumulative.}\\
 	\multicolumn{2}{|p{\linewidth-4.5mm}|}{3. Only bows and crossbows may be used underwater.}\\
+	\multicolumn{2}{|p{\linewidth-4.5mm}|}{4.~GMs discretion depending on the distance and the ranged weapon.}\\
 	\cline{1-2}
 \end{rpg-table}
 \end{center}
@@ -312,10 +314,10 @@ If the attack fails to hit the target and succeeds against the unmodified attack
 A character may make one of the following Move Actions and unless noted otherwise does not lose either their Action or Reaction:
 
 \begin{description}
-\item[Change Stance:] The character may stand up from prone, or vice versa.
-\item[Fighting Retreat:] A character may move their full Movement directly away from an enemy he is fighting. He may only defend at +20\% (+40\% with a Medium and Large shield).
-\item[Standard Move:] The character may move a distance up to his Movement Rate.
-\item[Sprint:] The character may move a distance up to twice their Movement Rate, forsaking their attack and only being able to dodge as a defensive reaction.
+\item[Change Stance:] A character may stand up from prone, or vice versa.
+\item[Fighting Retreat:] A character may move a distance up to their full Movement directly away from an enemy he is fighting. He may only defend at +20\% (+40\% with a Medium and Large shield).
+\item[Standard Move:] A character may move a distance up to his Movement Rate.
+\item[Sprint:] A character may move a distance up to twice their Movement Rate, forsaking their attack and only being able to dodge as a defensive reaction.
 \item[Ready Weapon:] Drawing a sword from its sheath, unhooking an axe from one’s belt, nocking an arrow to one’s bow – all these actions take half of available movement. A single Ready Weapon action can also include dropping a weapon currently held to the floor and then drawing a new one. Sheathing one weapon and drawing another requires the full movement as does readying two weapons. 
 \end{description}
 
@@ -335,7 +337,7 @@ A character may make one of the following Move Actions and unless noted otherwis
 A character can make one Reaction in a combat round. Unlike Combat Actions, Reactions are made in response to the successful hits of enemies. There are two types of Reaction, dodge and parry:
 
 \begin{description}
-	\item[Parries] can be made against close combat attacks. Shields can also parry hand thrown missile weapons. Shields with a size of Large or Huge (i.e. Medium and Large Shields) provide a cover modifier to the ranged attack of the attacker  -20\% and -40\% respectively against arrows, sling shot and cross bow bolts. 
+	\item[Parries] can be made against close combat attacks. A character with a shield can also parry hand thrown missile weapons. Shields with a size of Large or Huge (i.e. Medium and Large Shields) provide a cover modifier to the ranged attack of the attacker of -20\% and -40\% respectively against arrows, sling shot and cross bow bolts. 
 	\item[Dodges] can only be made against close combat attacks and hand thrown missile weapons providing the target is aware of the attack.  
 \end{description}
 

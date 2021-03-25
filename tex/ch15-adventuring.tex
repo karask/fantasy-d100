@@ -54,9 +54,9 @@ Table~\ref{tab:illumination-and-darkness} gives examples of several different le
         \hline
 	Brightly Illuminated & Blazing summer day  & None.\\
 	Illuminated          & Heavy candlelit room, overcast day, with radius of illuminating item & None.\\
-	Partial Darkness     & Cavern mouth, misty day, within 3 x radius of illuminating item (see below). & -20\% to vision-based Perception tests.\\
-	Darkness             & Large cavern illuminated only by embers, foggy day, within 5 x radius of illuminating item. & -40\% to vision-based Perception tests and -20\% to combat attacks. Movement rate halved.\\
-	Pitch Black          & Sealed room with stone walls, cavern many miles underground, supernatural darkness, mountaintop whiteout. & Perception tests reliant on vision become near impossible, as are ranged attacks. Close combat attacks are at -40\%. Movement rate a quarter of normal.\\
+	Partial Darkness     & Cavern mouth, misty day, within 3 x radius of illuminating item (see below). & -20\% to vision-based Perception tests and combat attacks.\\
+	Darkness             & Large cavern illuminated only by embers, foggy day, within 5 x radius of illuminating item. & -40\% to vision-based Perception tests and combat attacks. Movement rate halved.\\
+	Pitch Black          & Sealed room with stone walls, cavern many miles underground, supernatural darkness, mountaintop whiteout. & Perception tests reliant on vision become near impossible, as are ranged attacks. Close combat attacks are at -60\%. Movement rate a quarter of normal.\\
         \hline
 \end{rpg-table}
 \end{center}
@@ -102,7 +102,7 @@ This test is usually made after the activity has been completed, unless the acti
 
 
 \subsubsection{The Effects of Fatigue}
-If a character fails the Resilience test then they become fatigued. All skill tests are at -20\%. Also movement rate drops by a quarter. The character also becomes sluggish, DEX and INT are each reduced by three points for the purposes of determining combat order.
+If a character fails the Resilience test then they become fatigued. All skill tests are at -20\%. Also movement rate drops by a quarter. The character also becomes sluggish, DEX and INT are each reduced by three points for the purposes of determining Combat Order.
 
 If the fatigued character insists on engaging in heavy activity, such as combat, heavy labour or running, then another Resilience roll is made at -20\%. If the character fails this second skill test they become heavily fatigued and all the above penalties are doubled.
 
@@ -124,28 +124,16 @@ A character can survive for a number of days equal to his CON before becoming st
 A character can survive for a number of hours equal to his CON x 2 before becoming chronically thirsty, though particularly arid environments may reduce this to CON x 1 or even CON x 1/2. 
 
 \subsubsection{Effects and Remedy}
-Whenever a character is suffering from exposure, starvation or thirst, the Fatigue test penalty immediately doubles to –20\%. In addition, the character will automatically suffer one 1D6 of damage every day, for every condition he is experiencing. Natural healing will not heal this damage – only sufficient shelter, food or water can remedy the problem and allow natural healing to take place. 
+Whenever a character is suffering from exposure, starvation or thirst, a Fatigue test penalty is required with a -20\%. In addition, the character will automatically suffer one 1D6 of damage every day, for every condition he is experiencing. Natural healing will not heal this damage – only sufficient shelter, food or water can remedy the problem and allow natural healing to take place. 
 
 
 \subsection{Healing}
 Healing can be performed in one of two ways – using the First Aid skill or through natural healing, resting while the injuries heal themselves. 
 
-Natural Healing 
+\subsection{Natural Healing}
 A character’s Minor injuries regain CON/4 (round up) hit point per 24 hours, as long as the character does not engage in anything more than light activity. 
 
 Natural healing will not improve Major Wounds. A Major Wound requires treatment with a successful Healing test. Once this is done Major Wounds heal at a rate of one hit point per day, as long as the character does not engage in anything more than light activity, and the character succeeds a daily Resilience test. 
-
-\subsection{Regaining Power Points}
-Power Points are being expended whenever a discipline Power is being used. Using Powers is an exhausting activity that requires a major effort from which the body needs to recover. A character who is reduced to zero Power Points falls unconscious until he has regained one Power Point. 
-
-Power Points regenerate once the character fully rests, either by sitting down and taking it very easy or by having a good nights sleep.
-For every two hour period that a character rests they regain Power Points equal to a quarter of their POW total. 
-
-\begin{rpg-examplebox}
-Rurik, with a POW of 8, takes two hours of rest to regain two Power Points, four hours to regain four Power Points, six hours to regain six Power Points and eight hours to regain the full eight Power Points. 
-\end{rpg-examplebox}
-
-Basically, if the character has a comfortable uninterrupted sleep of eight hours they will regain their full Power Points. Characters may never exceed their original Power Point total by resting.
 
 
 \subsection{Encumbrance}
@@ -203,7 +191,8 @@ Armour points do not reduce suffocation damage. The damage will only cease once 
 
 
 \subsection{Burning}
-The amount of damage per Combat Round suffered from fire or heat will depend on its intensity, as shown on table~\ref{tab:fire-and-heat}. Metal armour, such as Plate or Chain mail, does not subtract from the rolled damage.
+The amount of damage per Combat Round suffered from fire or heat will depend on its intensity, as shown on the Fire and Heat Table.%table~\ref{tab:fire-and-heat}. 
+Metal armour, such as Plate or Chain mail, does not subtract from the rolled damage.
 
 \begin{table}
 \begin{center}
@@ -253,7 +242,7 @@ Other poisons: Viper Venom, Belladonna, Mushrooms, Scorpion Sting, Pokeweed or H
 
 \subsection{Disease}
 \label{ssec:disease}
-Disease is a source of threat in fantasy worlds, either from diseases that ravage the land from time to time or those even supernatural diseases.
+Disease is a source of threat in fantasy worlds, either from diseases that ravage the land from time to time or even supernatural diseases.
 Every type of disease has the following information detailed: 
 
 \begin{description}
