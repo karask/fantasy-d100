@@ -1,12 +1,15 @@
-- clean fixes/mistakes up to combat
-
-- read combat and make sure several reactions is covered everywhere in text (remove or single reaction, etc.)
+- calculate 'Armor Encumbrance'??
+  - Combat Order: deduct Armor's ENC divided by 2 !
+  - Running / Swimming / Climbing ?? (Leather: None, Ringmail/Scalemail: -20 and Chainmail/Platemail -40 for consistency) -- implicit by GM or explicit in the rules? -- just mention somewhere?
 
 - add spirit combat to Combat chapter (don't mentioned shamanism!) ??
 
 - add Combat Order in character sheet
 
 - add Demons !! (and angel ?)
+
+- Add Mage (76-99) and Archmage (100+) (instead of Magus) in Arcane Magic?
+ . also add focus / staff / crystal from OQ3 !?!
 
 - create monster template !?! (for manually writing stuff)
 - create character sheet  (contain space for companions like familiar/fetch/dog/horse/etc)
@@ -21,6 +24,9 @@
   . MAYBE ADD Legend's combat manuevers as weapon 'types' like Flex, 2H, etc. ???
   . MAYBE change weapons and their damages from Legend ?? -- SIMPLER, CRITICAL allows for 2 combat manuevers: Maximum Damage, Ignore Armor, AND add as many manuevers make sense !! (add critical defense manuevers !!)
     . OR just give some bonus to critical defense...?
+
+Future?
+- Integrate all Combat Actions and calculate how many each character can do (consule Legends)
 
 
 CHANGE NAME TO:
