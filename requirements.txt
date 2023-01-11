@@ -1,2 +1,2 @@
 Need to install:
-$ sudo apt install xelatex-full ??
+$ sudo apt install texlive-xetex 
