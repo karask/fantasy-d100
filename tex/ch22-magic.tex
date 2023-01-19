@@ -16,6 +16,8 @@ Characters learn Magic spells from other characters who know the appropriate spe
 Adjin already knows Coordination at 2 Magnitude. He wants to learn Coordination 3, so he must only spend one Improvement Point to gain the spell at that Magnitude.
 \end{rpg-examplebox}
 
+A character has a limit of their POWx2 in magnitude in spells. So a character with a POW of 10 can learn s AAAA
+
 Magic can be learnt from a number of sources. The most typical is from some kind of school of magic appropriate for the campaign or from remote hermits and otherworldly Shamans who commune with the Spirit World and learn it's secrets. In some cases, it can be learnt from local priests who teach Magic associated with their gods’ mythological exploits.
 
 In each case the player character must be in good standing with the teacher before they will teach them the spell. If the teacher is indifferent to the player character to start with then they will first need to undertake some kind of service, which can be the focus of an adventure.
@@ -85,12 +87,12 @@ The caster whispers into the ear of a distressed animal, calming it. If the dist
 \end{rpg-spell}
 
 
-\begin{rpg-spell}
-{Avoidance}
-{Instant, Trigger}
-
-This spell lies dormant until the recipient is attacked. Then, after the normal reaction of the recipient, it fires off allowing the recipient to Dodge a number of times equal to the spell’s Magnitude. Once triggered, all the extra Dodge reactions are valid for that round only.
-\end{rpg-spell}
+%\begin{rpg-spell}
+%{Avoidance}
+%{Instant, Trigger}
+%
+%This spell lies dormant until the recipient is attacked. Then, after the normal reaction of the recipient, it fires off allowing the recipient to Dodge a number of times equal to the spell’s Magnitude. Once triggered, all the extra Dodge reactions are valid for that round only.
+%\end{rpg-spell}
 
 
 \begin{rpg-spell}
@@ -230,6 +232,14 @@ Countermagic is only ever used as a Reaction, and only when another spell is cas
 
 
 \begin{rpg-spell}
+{Cover Blind Side}
+{Magnitude 1, Non-Variable}
+
+For the duration of the spell, the target can react to attacks from behind or flank attacks as if they were a normal attack from the front. It does not confer any additional reactions.
+\end{rpg-spell}
+
+
+\begin{rpg-spell}
 {Create Charms}
 {Permanent}
 
@@ -238,11 +248,11 @@ A charm is a physical item that stores one or more Magic spells. A charm could b
 \begin{rpg-list}
 \item To create a charm a character must possess both the spell they wish to store and Create Charm at the same Magnitude.
 \item The item into which the charm is to be cast must be prepared and in contact with the caster for the length of the casting.
-\item If the caster spends one Improvement Point at the time of creation the spell is reusable. Otherwise once the spell is cast the Charm is dispelled. A spell stored in a Charm is used like any other spell that the possessor knows. It uses the wielder’s Magic Casting skill and is powered by the wielder’s Power Points.
+\item If the caster spends one Improvement Point at the time of creation, the spell is reusable. Otherwise once the spell is cast the Charm is dispelled. A spell stored in a Charm is used like any other spell that the possessor knows. It uses the wielder’s Magic Casting skill and is powered by the wielder’s Power Points.
 \item If the caster spends three Improvement Points per Magnitude at the time of creation the spell within the Charm is reusable, once per day (1/day), without requiring a Magic Casting skill or any Power. It can be activated as an Action. If the Create Charms spell is cast again then it becomes 2/day, and so on. Not all spells can be stored this way and the Gamemaster has the final say.
 \item If the caster spends ten Improvement Points per Magnitude at the time of creation the spell within the Charm is always active, without requiring a Magic Casting skill or any Power. These are the most powerful charms. Not all spells can be stored this way and the Gamemaster has the final say.
 \item The time taken to create a single-use Charm is one hour per point of Magnitude of the spell being stored; Reusable Charms take three hours per point of Magnitude to create.
-\item Charms are mundane items in their own right and if the item is broken the Charm is dispelled.
+\item Charms are mundane items. Breaking the item dispels the Charm.
 \end{rpg-list}
 \end{rpg-spell}
 
@@ -261,7 +271,7 @@ Unless one Improvement Point is spent when they are created they are non-reusabl
 
 The caster must fill the item with their own Power Points as part of the spell. The amount of Power Points put into the item at the time of casting becomes the maximum that can be put into the item. This maximum can not be increased after the spell is cast.
 
-If the item is destroyed the Power Points are released harmlessly into the surrounding area.
+If the item is damaged or destroyed the Power Points are released harmlessly into the surrounding area.
 \end{rpg-spell}
 
 % TODO check all spells here and compare/contrast with OQ3 SRD, OQ2 hard cover, etc.
@@ -274,12 +284,29 @@ Potions are liquids that store one or more Magic spells. The Magnitude of the C
 
 \begin{rpg-list}
 \item All potions are one use. They must be drunk in one swift gulp to work. 
-\item The potion automatically works and doesn’t incur a cost in power points to the person who is drinking it. 
-\item The potion costs the enchanter Power Points. They must know the spell at the Magnitude enchanting at, with the Power Points of the spell being put into the potion. 
-\item There is an associated cost of 10 Gold Pieces per Magnitude. 
+\item The potion automatically works and doesn’t incur a cost in Power Points to the person who is drinking it. 
+\item If multiple spells are placed in the potion, they are all cast on the drinker when the potion is drunk.
+\item The potion costs the enchanter Power Points. They must know the spell at the Magnitude enchanting at, with the Power Points of the spell(s) placed into the potion. 
+\item There is an associated cost of 10 Gold Pieces per Magnitude in materials, which includes the flask that contains the potion. 
 \item To make the potion, the enchanter must roll successfully against Magic Casting for each spell being placed in the potion and against Lore (Potion Making). If they fail the potion is ruined and they lose the cost of the ingredients. 
 \item Potions take one hour per point of Magnitude of spell(s) stored to create. 
-\item A potion must be stored in an air tight container, or it evaporates, losing one point of Magnitude per week. 
+\item A potion must be stored in an airtight container, or it evaporates, losing one point of Magnitude per week. 
+\end{rpg-list}
+\end{rpg-spell}
+
+
+
+\begin{rpg-spell}
+{Create Scrolls}
+{Permanent}
+
+This spell allows the caster to create a written version of the spell for later use. Either to impart knowledge of the spell to a trainee or as a reference when casting the spell in the field.
+
+\begin{rpg-list}
+\item The caster must be able to read and write in some form of written language, which is represented by having a Language skill of over 80\%. They must also pay for the special inks and scroll paper (10 Gold Pieces per point of magnitude).
+\item The trainee must be able to read the language that the scroll uses. Once every three months they may study the scroll, which takes one day per point of spell, and then make a Language skill test. If successful, they spend the normal Improvement Point cost to learn the spell. If they roll a critical they spend half that cost, to the nearest whole unit. If they fumble, they can never learn the spell from that scroll, it is beyond their understanding.
+\item To directly cast a spell from the scroll, the caster must be able to read the language the scroll uses. Then cast the spell as normal. Casting is much slower than if the caster is casting the spell from memory. First, the caster reads the spell out loud and then harnesses and shapes the magical energies. Therefore, no matter what their normal casting skill, the spell takes an entire combat round to cast, and fires off at the end of the combat round.
+\item AAAA TODO
 \end{rpg-list}
 \end{rpg-spell}
 
