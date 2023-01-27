@@ -1,10 +1,9 @@
 (up to create spells)
 
-- add The Wise in magic (check / compare / clean)
 
 Priority
 - calculate 'Armor Encumbrance'??
-  - Combat Order: deduct Armor's ENC divided by 2 !
+  - Combat Order: deduct Armor's ENC divided by 2 ! (maybe not because of Magic spells diminishing the uniqueness of armor ??
   - Running / Swimming / Climbing ?? (Leather: None, Ringmail/Scalemail: -20 and Chainmail/Platemail -40 for consistency) -- implicit by GM or explicit in the rules? -- just mention somewhere?
 
 - add spirit combat to Combat chapter (don't mentioned shamanism!) ??
