@@ -1,2 +1,4 @@
 Need to install:
 $ sudo apt install texlive-xetex 
+
+$ xelatex fantasy-d100.tex
