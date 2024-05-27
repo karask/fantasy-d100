@@ -1,0 +1,71 @@
+%\documentclass[10pt,a4paper,twocolumn,openany]{book}
+\documentclass[10pt,a4paper,openany]{book}
+
+
+\usepackage[bg-a4]{lib/rpg-book} % Options: bg-a4, bg-letter, bg-full, bg-print, bg-none.
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+\restylefloat{table}
+% For the Gyre Chorus font - font code: qzc
+%\usepackage{tgchorus}
+%\usepackage[T1]{fontenc}
+%https://tex.stackexchange.com/questions/25249/how-do-i-use-a-particular-font-for-a-small-section-of-text-in-my-document
+%{\fontfamily{qzc}\selectfont
+%This and that text new font
+%}
+
+\hyphenation{round-ed Stre-ngth Game-master Mind-link weap-ons}
+
+% Start document
+\begin{document}
+\fontfamily{ppl}
+\selectfont % Set text font
+\frontmatter
+
+\rpgMakeCover[
+    image = img/cover,
+    logo = img/empty,
+    title = Fantasy Crux,
+    subtitle = {\ttfamily An Open D100 System created by\\~\\Konstantinos Karasavvas\\~\\{\Large based on OpenQuest by Newt Newport}}
+    %subtitle = {\ttfamily An Open D100 System created by Konstantinos Karasavvas\\~\\Art by ncorva, SirenD, John Malis and Stable Cascade\\~\\{\Large based on OpenQuest by Newt Newport}}
+]
+
+%Maybe here the credits... for artists and playtesters ?
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+% Your content goes here
+\mainmatter
+
+\include{tex/ch01-introduction}
+
+
+\part{Base System}
+% include chapters
+\include{tex/ch11-characters}
+\include{tex/ch12-skills}
+\include{tex/ch13-equipment}
+\include{tex/ch14-combat}
+
+\part{Disciplines and Powers}
+\include{tex/ch20-disciplines}
+\include{tex/ch21-battle}
+\include{tex/ch22-magic}
+\include{tex/ch23-arcane}
+\include{tex/ch24-divine}
+%\include{tex/ch25-shamanism}
+
+\part{Game Master}
+\include{tex/ch15-adventuring}
+\include{tex/ch31-more-rules-advice}
+\include{tex/ch32-creatures}
+
+\appendix
+% licenses
+\include{tex/license}
+\include{tex/art-license}
+
+% End document
+\end{document}
