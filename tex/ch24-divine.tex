@@ -70,7 +70,7 @@ The minimum requirement to become a Holy Warrior is to have Lore (Religion) of a
 
 When someone becomes a Holy Warrior they are gifted a specially consecrated weapon, that gives them a bonus when fighting to defend fellow worshippers, religion temples, and when attacking enemies of their faith.  This bonus is usually +20\% to the appropriate weapon skill and double damage when fighting for their Religion. All damage done by such weapons is considered magical.
 
-They also gain armor, which is magically blessed by the Religion’s Deity. Normally, this is at least double the normal AP of the armor type used, and it may have additional powers depending on the Deity.
+They also gain armour, which is magically blessed by the Religion’s Deity. Normally, this is at least double the normal AP of the armour type used, and it may have additional powers depending on the Deity.
 
 
 \subsection{Player Character Priests}
@@ -107,7 +107,7 @@ When the Sun Lord sleeps, the mistress of the Night stealthily creeps up from th
 
 
 \subsubsection{The Sun King}
-The bright blazing ruler of the day. The everlasting source of life and light. To some cultures he is the Imperial Emperor, whose sacred word is to be obeyed without question. Also a source of healing and resurrection.
+The bright blazing ruler of the day. The everlasting source of life and light. To some cultures he is the ultimate lawmaker, whose word is to be obeyed without question. Also a source of healing and resurrection.
 
 \begin{description}
 \item[Type of Religion:] Great
@@ -145,7 +145,7 @@ The all embracing and loving Earth Mother is known throughout the world. Some pe
 \item[Worshipper Duties:] Respect the Earth. Don’t foul or pollute the environment. Practice the peaceful cut, a small prayer said in thanks to the animal spirit before killing it for food. The prayer ensures its return to the Earth Mother and through the cycle of rebirth into the world. 
 \item[Religion skills:] Healing, Nature Lore, Resilience.
 %\item[Magic:] Heal, Protection
-\item[Divine Magic:] All common spells, Absorption, Berserk, Heal Body.
+\item[Divine Magic:] All common spells, Absorption, Berserk, Divine Heal.
 \item[Special benefits:] Any member of this cult gains a +20\% bonus to their Nature Lore, due to their connection to Nature, which they gain through their relationship with the Earth Mother.
 \end{description}
 
@@ -228,7 +228,7 @@ This down to earth Deity is a daughter of the Earth Goddess who chose to live in
 
 
 \subsubsection{The Lord of War}
-He is a blood-soaked Deity of violence and conflict. He is mentor and master to both the high-and-mighty General and the rank-and-file soldier. In civilized cultures he is worshipped through arcane ritual, where armies receive his blessing before battle. Amongst the Barbarians he is invoked through deed, in the fire of the battle itself.
+He is a blood-soaked Deity of violence and conflict. He is mentor and master to both the high-and-mighty General and the rank-and-file soldier. In civilized cultures he is worshipped through ritual, where armies receive his blessing before battle. Amongst the Barbarians he is invoked through deed, in the fire of the battle itself.
 
 \begin{description}
 \item[Type of Religion:] Great
@@ -400,14 +400,14 @@ The traits used by Divine Magic spells are detailed below. 
 \begin{description}
 	\item[Area (X):] The spell affects all targets within a radius specified in metres.
 	\item[Concentration:] The spell’s effects will remain in place so long as the character concentrates on it. Concentrating on a spell is functionally identical to casting the spell, requiring the caster to continue to gesture with both arms, chant, and ignore distractions.
-	\item[Duration (X):] The spell’s effects will stay in place for the number of minutes indicated. 
+	\item[Duration (X):] The spell’s effects will stay in place for the number of minutes indicated.  Unless otherwise specified this will be 15 minutes.
 	\item[Instant:] The spell’s effects take place instantly. The spell itself then disappears. 
 	\item[Magnitude (X):] The strength and power of the spell.
 	\item[Permanent:] The spell’s effects remain in place until they are dispelled or dismissed.
 	\item[Progressive:] This indicates that the spell can be learnt and cast at greater levels of Magnitude than the minimum.
 	\item[Ranged:] Ranged spells may be cast upon targets up to a maximum distance of the character’s POW x 5 in metres.
 	\item[Resist (Dodge/Persistence/Resilience):] The spell’s effects do not take effect automatically. The target may make a Dodge, Persistence or Resilience test (as specified by the spell) in order to avoid the effect of the spell entirely. Note that Resist (Dodge) spells require the target to be able to use Reactions in order to Dodge. In the case of Area spells, the Resist (Dodge) trait requires the target to dive in order to mitigate the spell’s effect. 
-	\item[Touch:] Touch spells require the character to actually touch his target for the spell to take effect. The caster must remain in physical contact with the target for the entire casting.
+	\item[Touch:] Touch spells require the character to actually touch his target for the spell to take effect. %The caster must remain in physical contact with the target for the entire casting.
 	\item[Religion:] The type of religion that offers this spell to it’s worshippers. If the religion is listed as All, the spell is a Common spell available in all religions. The religion’s description will help determine which spells should or should not be available. 
 \end{description}
 
@@ -620,7 +620,7 @@ Each point of Magnitude of the Extension spell doubles the target spell’s dura
 %\begin{samepage}
 \begin{rpg-spell}
 {Fear}
-{Instant, Magnitude 1, Ranged, Resit (Persistence)\\{[Religions: Chaos, Night]}}
+{Instant, Magnitude 1, Ranged, Resist (Persistence)\\{[Religions: Chaos, Night]}}
 
 This spell causes the target to be gripped with overwhelming fear. Fear has no effect on unconscious targets, targets without an INT Characteristic or targets that are currently under the influence of a Fear spell. The effect depends on the result of the Persistence check as follows:
 \begin{description}
@@ -692,7 +692,7 @@ This spell literally causes the target to fall to pieces upon a failed Persisten
 {Lightning Strike}
 {Instant, Magnitude 1, Progressive, Ranged, Resist (Dodge)\\{[Religions: Storm]}}
 
-This spell causes a sizzling bolt of lightning to streak from the hand of the caster toward the target. If the bolt is not dodged, each point of Magnitude of the spell will cause 1D6 damage. Armor Points are not effective against this damage and it counts as both magical and electrical damage.
+This spell causes a sizzling bolt of lightning to streak from the hand of the caster toward the target. If the bolt is not dodged, each point of Magnitude of the spell will cause 1D6 damage. Armour Points are not effective against this damage and it counts as both magical and electrical damage.
 \end{rpg-spell}
 %\end{samepage}
 
@@ -704,7 +704,7 @@ This spell causes a sizzling bolt of lightning to streak from the hand of the ca
 This spell causes the target to lose contact with reality and become a gibbering loon. Madness has no effect on unconscious targets, targets without an INT Characteristic or targets that are currently under the effect of a Madness spell. The effect depends on the result of the Persistence check as follows:
 \begin{description}
 \item[Fumble:] Victim instantly loses 1D4 INT permanently and lapses into a catatonic state for a number of minutes equal to 20 minus its POW (minimum of one Combat Round). 
-\item[Failure:] Victim gibbers and raves uncontrollably for a number of Combat Rounds equal to 20 minus its POW (minimum of one Combat Round). Victim will perform random Combat Actions during this period. Roll 1D6: (1) Move to close combat attack a random target; (2) Run in a random direction; (3) Cast a spell at random target; (4) Use ranged attack against random target; (5) Shout at random target; (6) Change stance. 
+\item[Failure:] Victim gibbers and raves uncontrollably for a number of Combat Rounds equal to 20 minus its POW (minimum of one Combat Round). Victim will perform random Combat Actions during this period. Roll 1D6: (1) Move to close combat and attack a random target; (2) Run in a random direction; (3) Cast a spell at random target; (4) Use ranged attack against random target; (5) Shout at random target; (6) Change stance. 
 \item[Success:] Victim is shaken and disturbed, suffering a –20\% penalty to all skill tests for a number of Combat Rounds equal to 20 minus its POW (minimum of one Combat Round).
 \item[Critical:] Victim is unaffected by the spell and cannot be affected by further Madness spells for a number of Combat Rounds equal to its POW.
 \end{description}
@@ -728,7 +728,7 @@ This spell applies a penalty to the victim’s INT equal to the Magnitude of the
 
 This spell allows the transmission of spell knowledge, conscious thoughts and Power Points between participants. 
 
-Additional points of Magnitude allow multiple sets of people to be linked together, either creating several separate pairs of Mindlinked people, or making the caster the central hub of a small Mindlink network. In the second case, only the 'central' character is linked directly to other participants. 
+Additional points of Magnitude allow multiple sets of people to be linked together, either creating several separate pairs of Mindlinked people, or making the caster the central hub of a small Mindlink network. In the second case, only the central character is linked directly to other participants. 
 
 Mindlink must be cast upon all participants at the same time and is limited to consenting participants. Any participant in a Mindlink may use the spell knowledge and Power Points of others they are linked to without consent. 
 
@@ -748,9 +748,9 @@ Any participant may sever their connection to the Mindlink as a Combat Action. I
 This spell allows the caster to create items literally from nowhere. The size of the item depends upon the Magnitude of the spell:
 \begin{rpg-list}
 \item 1 - Small items, such as pots, plates, knives, a defaced detail on a stone fresco, etc.
-\item 2 - Medium. Large containers such as wine amphorae, target shields, longswords, human sized armor, a missing arm on a broken statue.
+\item 2 - Medium. Large containers such as wine amphorae, target shields, longswords, human sized armour, a missing arm on a broken statue.
 \item 3 - Large. Tower shields, broken doors, a missing masonry feature such as a column.
-\item 4 - Huge. Giant armor, ruined houses, shattered towers.
+\item 4 - Huge. Giant armour, ruined houses, shattered towers.
 \item 5 - Enormous. The broken parts of a walking castle, the ruined walls of a city.
 \end{rpg-list}
 Such items are always of the finest quality and do not break under any circumstance. For the cost of the Magnitude in Improvement Points the item can last permanently. Otherwise it disappears after one hour.
@@ -799,7 +799,7 @@ Such items are always of the finest quality and do not break under any circumsta
 %\begin{samepage}
 \begin{rpg-spell}
 {Mischief}
-{Magnitude 2, Touch, Resist (Persistence)\\{[Religions: Trickster]}}
+{Magnitude 2, Touch, Resist (Persistence), Duration 15\\{[Religions: Trickster]}}
 
 Mischief is a minor trickster’s spell which afflicts its target with a small irritating curse.
 
@@ -811,7 +811,7 @@ Roll 1D20 on the following list for a result, which stays in place for the durat
 \item[3:] Hair drops out.
 \item[4:] Grows beard regardless of sex.
 \item[5:] The target's weapon becomes a bunch of flowers.
-\item[6:] Armor becomes the festive dress of the opposite sex.
+\item[6:] Armour becomes the festive dress of the opposite sex.
 \item[7:] Feet become duck feet.
 \item[8:] Head becomes that of a domestic animal (cow, pig, sheep, etc.)
 \item[9:] Victim smells of excrement (-20\% to Deception or Influence rolls).
@@ -853,7 +853,7 @@ This spell removes a perceived sin according to a particular religion. If the ca
 %\begin{samepage}
 \begin{rpg-spell}
 {Quicksand}
-{Magnitude 2, Area, Resist (Persistence)\\{[Religions: Earth]}}
+{Magnitude 2, Area, Resist (Persistence), Duration 15\\{[Religions: Earth]}}
 
 This spell creates a patch of quicksand 10m square. The earth in the area becomes boggy and saturated with water. On a failed Persistence roll, any character standing on the patch will sink down into the earth, at a rate of 1 metre a round. The quicksand holds the victim firmly and only by dispelling the magic can they be rescued.
 
@@ -866,7 +866,7 @@ Once the duration of the spell is over the victim, if not on the surface, is bur
 {Radiant Appearance}
 {Magnitude 2, Duration 1 Day\\{[Religions: Sun]}}
 
-The recipient of this spell glows with light and power. They gain +40\% to any Influence rolls for the duration of the spell.  Also any light-hating creatures suffer -20\% when attacking the recipient. 
+The recipient of this spell glows with light and power. They gain +40\% to any Influence rolls for the duration of the spell. Also any light-hating creatures suffer -20\% when attacking the recipient. 
 \end{rpg-spell}
 %\end{samepage}
 
@@ -886,10 +886,10 @@ The recipient of this spell glows with light and power. They gain +40\% to any I
 This spell repairs broken crafted items. It also replaces missing parts of an item. The size of the item depends on the Magnitude of the spell:
 \begin{rpg-list}
 \item 1 - Small items, such as pots, plates, knives, a defaced detail on a stone fresco, etc.
-\item 2 - Medium. Large containers such as wine amphorae, target shields, longswords, human sized armor, a missing arm on a broken statue.
+\item 2 - Medium. Large containers such as wine amphorae, target shields, longswords, human sized armour, a missing arm on a broken statue.
 \item 3 - Large. Tower shields, broken doors, a missing masonry feature such as a column.
-\item 4 - Huge. Giant armor, ruined houses, shattered towers.
-\item 5 - Ginormous. The broken parts of a walking castle, the ruined walls of a city.
+\item 4 - Huge. Giant armour, ruined houses, shattered towers.
+\item 5 - Enormous. The broken parts of a walking castle, the ruined walls of a city.
 \end{rpg-list}
 \end{rpg-spell}
 %\end{samepage}
@@ -941,7 +941,7 @@ When cast on a 10m area, the caster can see that area as it was in any past poin
 {Shield}
 {Duration 15, Magnitude 1, Progressive\\{[Religions: War]}}
 
-This spell protects the caster from physical and magical attacks. Each point of Magnitude gives the caster one Armor Point and provides a +10\% bonus to any tests the caster may make to resist malign magical effects. These effects are cumulative with other spells, as well as any physical armor the caster is wearing. Shield is incompatible with Absorption, Reflection and Spirit Block. 
+This spell protects the caster from physical and magical attacks. Each point of Magnitude gives the caster one Armour Point and provides a +10\% bonus to any tests the caster may make to resist malign magical effects. These effects are cumulative with other spells, as well as any physical armour the caster is wearing. Shield is incompatible with Absorption, Reflection and Spirit Block. 
 \end{rpg-spell}
 %\end{samepage}
 
@@ -992,7 +992,7 @@ Upon casting this spell, the Caster projects a disc of blinding light from their
 {Sunspear}
 {Instant, Magnitude 4, Ranged, Resist (Dodge)\\{[Religions: Sun]}}
 
-This spell will only function in direct sunlight. When cast, a shaft of light two metres wide streaks from the sky to blast a single target, who must be visible to the caster. If the target does not dive out of the way, the blazing light will burn it for 4D6 damage. Armor points are not effective against this damage and it counts as both magical and fire damage. 
+This spell will only function in direct sunlight. When cast, a shaft of light two metres wide streaks from the sky to blast a single target, who must be visible to the caster. If the target does not dive out of the way, the blazing light will burn it for 4D6 damage. Armour points are not effective against this damage and it counts as both magical and fire damage. 
 \end{rpg-spell}
 %\end{samepage}
 
@@ -1001,7 +1001,7 @@ This spell will only function in direct sunlight. When cast, a shaft of light tw
 {Summon Holy Steed}
 {Magnitude 3, Duration 1 Day\\{[Religions: Various]}}
 
-This spell summons a Holy Steed (see page~\pageref{monster:holy-steed}) from the Other World which is associated with the Deity that the Summoner worships. The Steed will obey the orders of the Summoner until the duration of the spell is up at which point the Steed will return to the Other World from whence it came. If the caster spends 3 Improvement Points the Steed is summoned will remain in their service on a permanent basis, unless killed.
+This spell summons a Holy Steed (see page~\pageref{monster:holy-steed}) from the Other World which is associated with the Deity that the Summoner worships. The Steed will obey the orders of the Summoner until the duration of the spell is up at which point the Steed will return to the Other World from whence it came. If the caster spends 3 Improvement Points the Steed summoned will remain in their service on a permanent basis, unless killed.
 \end{rpg-spell}
 %\end{samepage}
 
@@ -1028,7 +1028,7 @@ Special powers for Warriors are available at the cost of increasing the spell’
 \item 6 - Hideous appearance that strikes fear into enemies (+40\% to Influence roll when Intimidating) or Beautiful appearance which charms all that behold them (+40\% to Influence rolls).
 \item 7 - Mighty Divine weapons that does D20 damage.
 \item 8 - Shapechanger.
-\item 9 - Heavily armored (9 AP instead of normal 6AP).
+\item 9 - Heavily armoured (9 AP instead of normal 6AP).
 \item 10 - Can become insubstantial and walk through solid walls. While in this state can not interact with the real world.
 \item 11 - Can become Invisible at will.
 \item 12 - Faster, +18 Move, than normal.
@@ -1120,7 +1120,7 @@ Each point of Magnitude of this spell whips up a whirlwind that is 10 metres tal
 
 If a character is hit by the Whirlwind, make a Dodge roll to avoid being caught up in it. Characters who are caught are whipped off their feet, D6 metres into the vortex. Each round roll a D6:
 \begin{rpg-list}
-\item 1-2: Carried up D10 metres (if already at the top, blown out the whirlwind the additional height before falliing to earth (taking damage).
+\item 1-2: Carried up D10 metres (if already at the top, blown out the whirlwind the additional height before falling to earth (taking damage).
 \item 3-4: Stay at the height they are.
 \item 5-6: Fall D6 down in the vortex. If this takes them to the ground they take falling damage.
 \end{rpg-list}
