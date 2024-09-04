@@ -32,7 +32,7 @@ These harsh realities mean that players tend to avoid combats where they do not 
 	\item[Start Combat time:] Combat is divided into rounds. A single round has a duration of five seconds of time, giving 12 rounds in every minute. During a round every character can perform one action. Combat rounds cycle through the following steps:
 	\begin{rpg-list}
 	\item Determine Order: At the start of every combat each character rolls 1D6 and adds it to their Combat Order. The higher the result the earliest the character acts.
-	\item Characters Take Actions \& Reaction: In a combat round each character gets one Combat Action, one Movement Action and one Defensive Reaction. Combat Actions, such as attacks, and Movement Actions take place in Combat Order. The character with the highest order will act first, followed by the character with the second-highest order, and so on until the character with the lowest order acts. Reactions, such as parries or dodges, are made during this process as they are needed.
+	\item Characters Take Actions \& Reaction: In a combat round each character gets one Combat Action, one Movement Action and one Reaction. Combat Actions, such as attacks, and Movement Actions take place in Combat Order. The character with the highest order will act first, followed by the character with the second-highest order, and so on until the character with the lowest order acts. Reactions, such as parries, dodges or opportunity attacks, are made during this process as they are needed.
 	\item End of Combat Round: Once all eligible characters have acted in the combat round, it is over. If there are characters still engaged in combat with enemies, another combat round begins. 
 	\end{rpg-list}
 \end{description}
@@ -59,7 +59,7 @@ Ranged, beyond two metres up to double the range of the missile weapon a charact
 \begin{rpg-list}
 \item A Combat Round lasts five seconds.
 
-\item You get one Combat Action, usually an attack, one Movement Action and one Defensive Reaction, usually a defensive action, per combat round.
+\item You get one Combat Action, usually an attack, one Movement Action and one Reaction, usually a defensive action, per combat round.
 
 \item You can move your Movement Rate in a Combat Round without losing your Action or Reaction. 
 
@@ -74,7 +74,7 @@ Ranged, beyond two metres up to double the range of the missile weapon a charact
 \item If your opponent successfully Parries your attack their weapon or shield reduces the damage your attack does.
 
 \item If you successfully hit, your opponent takes damage to their hit points equal to 
-	Weapon Damage rolled + your Damage Modifier - (Opponent’s Armour Points)
+	Weapon Damage rolled + your Damage Modifier - Opponent’s Armour Points
 \end{rpg-list}
 
 \begin{figure*}%[h]
@@ -89,7 +89,7 @@ The actions a character may take when it is his turn to act are detailed here. 
 
 \subsection{Close Combat Actions}
 \begin{description}
-	\item[Charge:]  If a character can move a minimum of five metres towards his opponent, then he can make a charge. He may move a distance up to - but no more than - twice his Movement Rate.  This must be in a straight line and he must end up adjacent to an enemy.  When the move is complete, a close combat attack may be made against the enemy. If the attack is successful, the character gains a bonus of +1D6 damage. He loses his defensive reaction for the round that he charges on. Characters may not charge uphill and gain the damage modifier.
+	\item[Charge:]  If a character can move a minimum of five metres towards his opponent, then he can make a charge. He may move a distance up to - but no more than - twice his Movement Rate.  This must be in a straight line and he must end up adjacent to an enemy.  When the move is complete, a close combat attack may be made against the enemy. If the attack is successful, the character gains a bonus of +1D6 damage. He loses his reaction for the round that he charges on. Characters may not charge uphill and gain the damage modifier.
 	\item[Close Combat Attack:]  The character can make a single close combat attack. In addition to the normal attack, there are the following special attacks.
 		\begin{rpg-list}
 		\item All out Attack: The attacker gives up their Reaction for the round but gains a second attack, which happens straight after the first attack. Both attacks are at -20\% due to the loss of skill during this frenzied attack. This type of attack cannot be combined with any other special attack.
@@ -257,6 +257,7 @@ The following are potential actions:
 \item[Aim:] If a character aims for a round he adds a +20\% bonus to the character’s Ranged Combat skill. This bonus only applies to the first attack the character makes with the weapon, which must be fired at the target being aimed at. A character can take no Reaction while aiming without losing the aim bonus.
 \end{description}
 
+% TODO MAYBE ADD IMAGE FOR LAYOUT PURPOSES - removed
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.24]{img/ai-images/warrior-with-shield.png}
@@ -271,9 +272,10 @@ All ranged attacks are handled in same manner as close combat attacks, with the 
 \begin{description}
 \item[Charge:] Ranged attacks may not be used as part of a charge.
 \item[Range:] A target within the weapon’s range may be attacked without penalty. A target within double the weapon’s range may be attacked, but the attacker’s weapon skill is halved before other modifiers are applied. Attacks cannot be made at a distance beyond twice/double the weapon’s range.
-\item[Dodging and Parrying:] The target may attempt to Parry or Dodge a hand thrown ranged attack at -20\% but may not normally Dodge or Parry ranged missile weapons (such as Bows and Crossbow fire). Shield-carrying characters may Parry hand thrown missile weapons with no penalty.
+\item[Parrying:] The target may attempt to Parry a hand thrown ranged attack at -20\% but may not normally Parry ranged missile weapons (such as Bows and Crossbow fire). Shield-carrying characters may Parry hand thrown missile weapons with no penalty.
+\item[Dodging:] The target may attempt to Dodge a ranged attack at -20\%.
 \item[Disarming:] A character may not attempt to disarm targets with ranged attacks, nor may he attempt to strike a target’s weapon or shield.
-\item[Damage Modifier:] A character may not add their Damage modifier to Ranged weapons except if they are Thrown weapons.
+\item[Damage Modifier:] A character may add their Damage modifier to Thrown weapons but only half their Damage modifier for other Ranged weapons (e.g. bows, crossbows).
 
 \end{description}
 
@@ -320,14 +322,16 @@ Cover affects both ranged and close combat attacks. For missile attacks the defe
 	\multicolumn{2}{|p{\linewidth-4.5mm}|}{Attacker Condition$^{2}$}\\
 	\hline
         Attacker is prone                                                 & -40\%\\
-	Attacker is underwater$^{3,4}$                                      & -20\%\\
-	Attacker is on unstable ground                                    & -20\%\\
-	Attacker is blinded$^{4}$                                               & -60\%\\
+	      Attacker is underwater$^{3,4}$                                    & -20\%\\
+	      Attacker is on unstable ground                                    & -20\%\\
+	      Attacker is blinded$^{4}$                                         & -60\%\\
+        Attacker is engaged in melee$^{5}$                                & -40\%\\
 	\hline
 	\multicolumn{2}{|p{\linewidth-4.5mm}|}{1. Modifiers within these sections are not cumulative. However, modifiers from different sections are cumulative. Therefore, shooting at a target within a mist that has moved more than 10m since the attacker’s last Combat Action imparts a –40\% penalty.}\\
 	\multicolumn{2}{|p{\linewidth-4.5mm}|}{2. Attacker condition modifiers are cumulative.}\\
 	\multicolumn{2}{|p{\linewidth-4.5mm}|}{3. Only bows and crossbows may be used underwater.}\\
 	\multicolumn{2}{|p{\linewidth-4.5mm}|}{4.~GMs discretion depending on the distance and the ranged weapon.}\\
+	\multicolumn{2}{|p{\linewidth-4.5mm}|}{5.~Per enemy; i.e. if engaged with two enemies the modifier will be -80\%.}\\
 	\cline{1-2}
 \end{rpg-table}
 \end{center}
@@ -351,34 +355,26 @@ A character may make one of the following Move Actions and unless noted otherwis
 \item[Fighting Retreat:] A character may move a distance up to their full Movement directly away from an enemy he is fighting. He may only defend at +20\% (+40\% with a Medium and Large shield).
 \item[Standard Move:] A character may move a distance up to his Movement Rate.
 \item[Sprint:] A character may move a distance up to twice their Movement Rate, forsaking their attack and only being able to dodge as a defensive reaction.
-\item[Ready Weapon:] Drawing a sword from its sheath, unhooking an axe from one’s belt, nocking an arrow to one’s bow – all these actions take half of available movement. A single Ready Weapon action can also include dropping a weapon currently held to the floor and then drawing a new one. Sheathing one weapon and drawing another requires the full movement as does readying two weapons. 
+\item[Ready Weapon:] Drawing a sword from its sheath, unhooking an axe from one’s belt, nocking an arrow to one’s bow – all these actions take half of available movement. A single Ready Weapon action can also include dropping a weapon currently held to the floor and then drawing a new one. Sheathing one weapon and drawing another requires the full movement as does readying two weapons.
+\item[Disengage:] A character may disengage from close combat but they risk a reaction attack from their opponent, if a reaction is available. In such case the character can dodge to avoid the attack, again if a reaction is available.
 \end{description}
 
 \begin{rpg-titlebox}{Contested Movement}
 At the Gamemaster's discretion movement can be interrupted regardless of Combat Order. For example, a Player cannot make circles around an enemy just because the latter had worse Combat Order. Maybe the enemy can use their reaction to attack the Player or an opposed roll could be applicable to determine who gets an advantage, etc.
 \end{rpg-titlebox}
 
-\section{Other Actions}
-These actions operate under special circumstances and are not necessarily part of the normal actions and reactions.
 
-\begin{description}
-\item[Powers:] This depends on which Discipline the Power belongs to. Consult the appropriate Discipline chapter.
-\item[Delay:] A character may pause to assess the tactical situation around him. If a delaying character merely wishes to act after a specific character has acted, they wait until that character has finished their Combat Action. If a delaying character wishes to interrupt a specific character’s action as it occurs, the character must make a test appropriate to his interrupting action (a weapon skill test if the character wishes to attack, for instance). Whoever wins the test acts first. 
-\item[Load Crossbow:] A light crossbow requires a full combat round to load while a heavy requires two full combat rounds.
-\item[Skill Use:] The character performs one action which requires the use of a skill, such as opening a locked door with the Mechanisms skill.
-\end{description}
-
-
-\section{Defensive Reactions}
+%\section{Defensive Reactions}
+\section{Reactions}
 \label{sec:defensive-reactions}
-A character can make one Reaction in a combat round. Unlike Combat Actions, Reactions are made in response to the successful hits of enemies. There are two types of Reaction, dodge and parry:
-%Reactions are made in response to the successful hits of enemies. There are two types of Reaction, dodge and parry: 
+A character can make one Reaction in a combat round. Unlike Combat Actions, Reactions are made in response to the successful hits or other actions of enemies. There are three types of Reaction, dodge, parry and opportunity attack:
 \begin{description}
-	\item[Parries] can be made against close combat attacks. A character can also parry hand thrown missile weapons at a -20\% or without penalty if using a shield. Shields with a size of Large or Huge (i.e. Medium and Large Shields) provide a cover modifier to the ranged attack of the attacker of -20\% and -40\% respectively against arrows, sling shot and crossbow bolts. 
-	\item[Dodges] can be made normally against close combat attacks and at a -20\% penalty for thrown missile weapons providing the target is aware of the attack.  
+	\item[Parries] can be made against close combat attacks. A character can also parry hand thrown missile weapons at a -20\% or without penalty if using a shield.% Shields with a size of Large or Huge (i.e. Medium and Large Shields) provide a cover modifier to the ranged attack of the attacker of -20\% and -40\% respectively against arrows, sling shot and crossbow bolts. 
+	\item[Dodges] can be made normally against close combat attacks and at a -20\% penalty for ranged attacks providing the target is aware of the attack.  
+	\item[Opportunity Attack] can be made when a character disengages from melee. At the GM's discretion it can apply to other contested situations as well.
 \end{description}
 
-\noindent Reactions are declared after a successful attack has occurred but before its effects are applied. Resolution depends on the level of success between the participants and is described in table~\ref{tab:combat-results}.
+\noindent Parry and Dodge reactions are declared after a successful attack has occurred but before its effects are applied. Resolution depends on the level of success between the participants and is described in table~\ref{tab:combat-results}.
 
 %\noindent Characters can make several reactions, but they get a cumulative -20\% modifier for every reaction after the first.
 
@@ -399,6 +395,18 @@ A character can make one Reaction in a combat round. Unlike Combat Actions, Reac
 
 %\subsection{Parry or Dodge?}
 %What’s the difference between Parry and Dodge? Mainly down to a matter of combat style and Parrying has the advantage that it is based off the same skill that is used to Attack with, so for the purposes of skill advancement it is easier  to advance Close Combat or Unarmed than Dodge with a separate Combat skill. But remember that Dodge can be used to avoid falling rocks, traps, etc., so should not be neglected too much.
+
+
+\section{Other Actions}
+These actions operate under special circumstances and are not necessarily part of the normal actions and reactions.
+
+\begin{description}
+\item[Powers:] This depends on which Discipline the Power belongs to. Consult the appropriate Discipline chapter.
+\item[Delay:] A character may pause to assess the tactical situation around him. If a delaying character merely wishes to act after a specific character has acted, they wait until that character has finished their Combat Action. If a delaying character wishes to interrupt a specific character’s action as it occurs, the character must make a test appropriate to his interrupting action (a weapon skill test if the character wishes to attack, for instance). Whoever wins the test acts first. 
+\item[Load Crossbow:] A light crossbow requires a movement action to load while a heavy requires one full combat round.
+\item[Skill Use:] The character performs one action which requires the use of a skill, such as opening a locked door with the Mechanisms skill.
+\end{description}
+
 
 
 \section{Critical Hits}
@@ -437,34 +445,36 @@ When a character successfully scores damage against a target it must be deducted
 
 \subsection{Major Wounds}
 If the character takes half of their original Hit Points in one go then they suffer a major wound.  This represents badly mangled limbs, shattered bones and severely damaged internal organs.
-%Roll on the Major Wound Table below to see what type of wound the character has suffered.
-They must immediately make a Resilience roll, with a -40\% modifier, or fall unconscious. If the test is successfull then the character’s DEX is immediately halved and the character may only fight on for as many combat rounds as their remaining hit points before falling unconscious.
-%This is in addition to any effects described below.  The effects of major wounds are permanent, unless healed using Powers.
-The halved DEX is regained once the character starts to heal, since it represents the shock and trauma of the wound.
-The Gamemaster may apply some permanent effects as a result of a Major Wound, like permanent loss of a limb and/or Characteristic scores.
+At the GMs discression, you may also roll on the Major Wound Table below to see what type of permanent impairment the character has suffered.
 
-%\begin{table}
-%\begin{center}
-%\caption{Major Wounds}
-%\label{tab:major-wounds}
-%\begin{rpg-table}[|c|X|]
-%        \hline
-%        \textbf{Roll D10} & \textbf{Major Wound}\\
-%        \hline
-%        1  & Lose an eye, all Perception rolls become -40\%, lose 4 points of DEX, 1 point of CHA permanently.\\
-%        2  & Cracked skull, brain damage. Lose 4 points of INT. All skills involving mental processes become -20 permanently. This includes Perception, Persistence, and all Lore, Culture, and Craft skills.\\
-%        3  & Right Leg muscles badly cut/mangled or leg bone shattered and becomes useless. Fall prone, can only crawl at 1m per round. Lose 2 points of DEX and 2 points of STR permanently.\\
-%        4  & Left Leg muscles badly cut/mangled or leg bone shattered and becomes useless. Fall prone, can crawl at 1m per round. Lose 2 points of DEX and 2 points of STR permanently.\\
-%        5  & Broken ribs, all skills become -40\%, due to severe pain.\\
-%        6  & Slashed stomach. Lose one extra hit point per round from blood loss. Lose 3 points of CON permanently.\\
-%        7  & Heart stops in shock! Lose consciousness for the next D10 combat rounds, falls prone and can not move. Lose 2 points of CON permanently.\\
-%        8  & Spine broken. The character permanently paralysed below the neck (odd result on dice) or the torso (even result on dice). Half DEX permanently.\\
-%        9  & Left Arm badly broken and becomes useless permanently. Automatically drop any held items.\\
-%        10 & Right Arm badly broken and becomes useless permanently. Automatically drop any held items.\\
-%        \hline
-%\end{rpg-table}
-%\end{center}
-%\end{table}
+They must immediately make a Resilience roll, with a -40\% modifier, or fall unconscious. If the test is successfull then the character’s DEX is immediately halved and the character may only fight on for as many combat rounds as their remaining hit points before falling unconscious.
+This is in addition to any effects described in the Major Wound Table, if used. The effects of major wounds are permanent, unless healed using Powers.
+
+The halved DEX is regained once the character starts to heal, since it represents the shock and trauma of the wound.
+%The Gamemaster may apply some permanent effects as a result of a Major Wound, like permanent loss of a limb and/or Characteristic scores.
+
+\begin{table}[H]
+\begin{center}
+\caption{Major Wounds}
+\label{tab:major-wounds}
+\begin{rpg-table}[|c|X|]
+        \hline
+        \textbf{Roll D10} & \textbf{Major Wound}\\
+        \hline
+        1  & Lose an eye, all Perception rolls become -40\%, lose 4 points of DEX, 1 point of CHA permanently.\\
+        2  & Cracked skull, brain damage. Lose 4 points of INT. All skills involving mental processes become -20 permanently. This includes Perception, Persistence, and all Lore, Culture, and Craft skills.\\
+        3  & Right Leg muscles badly cut/mangled or leg bone shattered and becomes useless. Fall prone, can only crawl at 1m per round. Lose 2 points of DEX and 2 points of STR permanently.\\
+        4  & Left Leg muscles badly cut/mangled or leg bone shattered and becomes useless. Fall prone, can crawl at 1m per round. Lose 2 points of DEX and 2 points of STR permanently.\\
+        5  & Broken ribs, all skills become -40\%, due to severe pain. Lose 2 points of DEX permanently.\\
+        6  & Slashed stomach. Lose one extra hit point per round from blood loss. Lose 3 points of CON permanently.\\
+        7  & Heart stops in shock! Lose consciousness for the next D10 combat rounds, falls prone and can not move. Lose 2 points of CON permanently.\\
+        8  & Spine broken. The character permanently paralysed below the neck (odd result on dice) or the torso (even result on dice). Half DEX permanently.\\
+        9  & Left Arm badly broken and becomes useless permanently. Automatically drop any held items.\\
+        10 & Right Arm badly broken and becomes useless permanently. Automatically drop any held items.\\
+        \hline
+\end{rpg-table}
+\end{center}
+\end{table}
 
 
 \subsection{Fatal Wounds}
@@ -487,11 +497,12 @@ The rider of a mount unused to combat must make a Riding Skill test at the start
 On success the horse is treated as a trained mount for the remainder of the Combat Round. 
 On failure the horse flees combat (use the Sprint action) at every opportunity for the remainder of the Combat Round. 
 
-\subsection{Two Weapon Use}
+\subsection{Second Weapon or Shield}
 A character wielding two weapons or a weapon and a shield may use the off-hand item to either: 
 \begin{rpg-list}
-\item Parry one additional attack per Combat Round (over and above the normal Reaction allowance)
-\item Gain a single bonus Close Combat Attack action. This bonus attack is at -20\% Close Combat Skill. The second attack occurs at half the character’s combat order. Also this may only be a normal Close Combat Attack, not a special attack like All Out Attack, Disarming Attack, Great Attack, etc.
+\item Gain an additional Parry or Opportunity attack per Combat Round (over and above the normal Reaction allowance)
+\item Gain a single bonus Close Combat Attack action. This bonus attack is at -20\% Close Combat Skill and may only be a normal Close Combat Attack, not a special attack like All Out Attack, Disarming Attack, Great Attack, etc.
+%\item Gain a single bonus Close Combat Attack action. This bonus attack is at -20\% Close Combat Skill. The second attack occurs at half the character’s combat order. Also this may only be a normal Close Combat Attack, not a special attack like All Out Attack, Disarming Attack, Great Attack, etc.
 \end{rpg-list}
 
 % TO ADD if enough space!
@@ -507,8 +518,21 @@ A character wielding two weapons or a weapon and a shield may use the off-hand i
 %\end{figure}
 
 
+\subsection{Combat Skills above 100\%}
+When two combatants have skills above 100\% battle may start to become repetitive, i.e. attacks will succeed but dodges/parries will also succeed thus a lot of time may be wasted in back and forth rolling until someone rolls a critical or a fumble.
 
-%\subsection{Combat Skills above 100\%}
+Instead, an opposed skill check may be roll to determine the winner of the \emph{contest} immediately. See page~\pageref{ssec:opposed-tests-over-100} for more on opposed skill tests of over 100\%.
+
+%\vspace{6em}
+
+\begin{figure}%[H]
+\begin{center}
+\includegraphics[scale=0.4]{img/ai-images/adventurers-and-tower.png}
+\end{center}
+\end{figure}
+
+
+
 %A character with over 100\% can split his skill to perform multiple attacks and parries or dodges. The skill percentage can be split anyway the character wants but no attack can be less that 50\%. If you split an attack (close or ranged) you cannot use any special attacks (e.g. Disarm, Great Attack, Aim, etc).
 
 %\begin{rpg-examplebox}

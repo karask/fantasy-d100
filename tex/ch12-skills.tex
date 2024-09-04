@@ -118,7 +118,6 @@ Any skill which is modified to 0 or less will automatically fail when tested. Ro
 
 Any skill which is modified to 100\% or greater will automatically succeed when tested. Roll the dice anyway since the character can still critical (10\% of the modified skill) or fumble if the player rolls a 00.
 
-%Masters in a skill (characters with 100\%+ unmodified) never fumble on a skill.
 
 
 \begin{rpg-examplebox}
@@ -213,15 +212,16 @@ If Rurik rolls a 65 and the watchman rolls 75, then even though both fail, Rurik
 Character’s with Skills over 100\% are considered Masters in their fields and under normal circumstances do not fail and quite often perform tasks that are considered impossible by normal people.
 
 \subsection{Opposed Tests}
-In opposed skill tests characters with skills over 100\% are already considered to have succeeded. Therefore to be beaten his opponent needs to score a critical success. Of course the Master may also roll a critical, in which case the highest roll wins.
+\label{ssec:opposed-tests-over-100}
+In opposed skill tests a character with a skill over 100\% (after applying modifiers) will reduce the difference of their skill to 100 from all participants, including themselves. 
 
 
 \begin{rpg-examplebox}
-Grazum The Blackheart, an evil Orc Warlord is a Master Wrestler with an Athletics skill of 120\%.  Rurik recklessly challenges him to an arm wrestling contest. Rurik, who has an Athletics skill of 60\%, will automatically lose against Grazum unless Rurik rolls a critical success (6\% or lower).
+  Grazum The Blackheart, an evil Orc Warlord is a Master Wrestler with an Athletics skill of 120\%.  Rurik, with an Athletics skill of 60\%, recklessly challenges him to an arm wrestling contest. In this opposed skill roll both skills will be reduced by 20\% (100\% and 40\% respectively) and then apply the opposed roll normally.
 \end{rpg-examplebox}
 
 \section{Assistance}
-Characters will often have the opportunity to help each other during various skill tests. If one or more characters can assist and make a significant contribution then the skill test is one level easier. On rare occasions the assistance will make the skill test two levels easier (GMs discretion).  The assisting character or characters must have the appropriate helping skill at a suitable level determined by the Gamemaster. How high this needs to be is usually dependant on the Difficulty of the test. In most cases as long as the assisting character has a skill of at least Apprentice level (26\%+) then they can help.
+Characters will often have the opportunity to help each other during various skill tests. If one or more characters can assist and make a significant contribution then the skill test is one level easier. On rare occasions the assistance will make the skill test two levels easier (GMs discretion). The assisting character or characters must have the appropriate helping skill at a suitable level determined by the Gamemaster. How high this needs to be is usually dependant on the Difficulty of the test. In most cases as long as the assisting character has a skill of at least Apprentice level (26\%+) then they can help.
 
 \begin{rpg-examplebox}
 Rurik is trying to force open an old and mouldy door. If Abnon with an Athletics of 50\% helps him, Rob adds +20\% to Rurik’s Athletics.
@@ -252,6 +252,7 @@ This skill deals with the art of hitting things and defending the character with
 \subsection{Craft ($INT+10$)}
 The Craft skill is actually several separate skills (such as armourer, baker, basket weaver, blacksmith, bowyer, brewer, butcher etc) grouped under a single heading which must be improved separately. It measures the character’s ability to make and repair items.
 As a very rough guide it takes one day per 50 SP to produce an item. The base cost of the item, in materials needed, is 50\% of the listed finished cost.
+
 
 \subsection{Culture ($INT+10/INT$)}
 Each Culture skill is used to provide information about the common world view of that group of people (or creatures). This includes history, politics, weather cycles, geography, superstitions and popular mythology. 
@@ -311,7 +312,7 @@ The Language skill is a separate skill for each language the character knows. Th
 
 Every character with a Language skill of 50\% or more is fluent in that language, although they are likely to have an accent if it is not their native language. 
 
-A score in a Language skill of 80\% or more will mean the character can also read and write in that language.
+%A score in a Language skill of 76\% (Language Expert) or more will mean the character can also read and write in that language.
 
 
 \subsection{Lore ($INT$)}
