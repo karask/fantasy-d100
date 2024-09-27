@@ -177,8 +177,8 @@ The character need not speak the same language as the opponent they are trying t
         Success  & Failure         & Attacker hits, defender takes damage rolled minus armour points.\\
         Success  & Success         & If dodging defender avoids the attack. If parrying then if attacker’s weapon smaller or equal in size to defender’s weapon all damage avoided. If parrying weapon is a rank smaller half damage, if two ranks smaller then no damage can be avoided.\\
         Success  & Critical        & Defender avoids attack and takes no damage. If parrying the weapon size penalty does not come into it.\\
-        Critical & Fumble          & Attacker does maximum damage and ignores defender’s armour. Defender fumbles.\\
-        Critical & Failure         & Attacker does maximum damage and ignores defender’s armour.\\
+        Critical & Fumble          & Attacker does two of: maximum damage, ignore armour, trip, disarm, knock-back, knockout, free attack. Defender fumbles.\\
+        Critical & Failure         & Attacker does two of: maximum damage, ignore armour, trip, disarm, knock-back, knockout, free attack.\\ 
         Critical & Success         & Similar to Success:Failure above.\\
 %        Critical & Success         & Attacker does maximum damage minus defender’s armour points.\\
         Critical & Critical        & Similar to Success:Success above.\\
@@ -414,9 +414,11 @@ These actions operate under special circumstances and are not necessarily part o
 
 If the D100 attack roll is not only lower than the attack skill, but also equal to or lower than the character’s critical score with that skill, then the attack is considered a critical hit. 
 
-In close combat a critical hit can cause two of the following effects: normal damage (can be selected twice for double weapon damage, 1D8 becomes 2D8), ignore armour, free attack, trip, disarm, knock-back or knockout.
+In close combat a critical hit can cause two of the following effects: do maximum damage (including the damage modifier, unless it is negative), ignore armour, free attack, trip, disarm, knock-back or knockout.
 
-In ranged combat a critical hit can also cause two effects but only normal damage (can be selected twice) and ignore armour effects are allowed.
+In ranged combat a critical hit will do maximum damage (including the damage modifier, unless it is negative) and ignore armour.
+
+When parrying a successful attack with a critical parry you can block all damage regardless of the weapon size difference.
 %A critical hit automatically causes maximum damage for the weapon and maximum Damage Modifiers. If the character has a negative damage modifier (i.e. -1D4 or –1D6) it is not rolled for a critical hit. Critical hits also ignore armour.
 
 \begin{rpg-examplebox}
