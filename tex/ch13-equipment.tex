@@ -65,7 +65,7 @@ All Close Combat weapons use the Close Combat skill. Each close combat weapon is
 \begin{description}
 	\item[Type:] This shows how the weapon is wielded and other special rules (see Close Combat Weapon Types on page~\pageref{sssec:close-combat-weapon-types}).
 	\item[Damage Dice:] The damage the weapon deals on a successful attack. 
-	\item[STR/DEX:] The minimum STR and DEX scores needed to easily wield this weapon. If either of the Characteristics are below these minimums, a –20\% maximum penalty is applied to a character’s skill when attacking and parrying with this weapon. 
+	\item[STR/DEX:] The minimum STR and DEX scores needed to easily wield this weapon. If either of the Characteristics are below these minimums, a Penalty die (-1P) is applied to a character’s skill when attacking and parrying with this weapon. 
 	\item[ENC:] The weapon’s Encumbrance. The weight and bulk of the weapon. 
 	\item[Size:] Weapons are rated in the following size categories: Light, Medium, Heavy and Huge. Weapons need to be of the same category or larger to block all damage. If the defending weapon is one category less they block half damage. If two categories less they cannot block the damage.
 	\item[Cost:] The cost in silver pieces to purchase this weapon. 
@@ -128,8 +128,8 @@ Each ranged weapon is characterised by the following qualities:
 \begin{description}
 	\item[Type:] This shows how the weapon is wielded and other special rules (see Ranged Combat Weapon Types on page~\pageref{sssec:ranged-combat-weapon-types}).
 	\item[Damage Dice:] The damage the weapon deals on a successful attack. 
-	\item[Range:] This is the effective range of the weapon. A target within the weapon’s range may be attacked without penalty. A target within double the weapon’s range may be attacked, but the attacker’s effective Weapon skill is halved (before other modifiers are applied). Attacks against targets beyond double the weapon’s range automatically fail.
-	\item[STR/DEX:] The minimum STR and DEX scores required to easily wield this weapon. If either of the Characteristics are below these minimums, a maximum –20\% penalty is applied to a character’s skill when attacking and parrying with this weapon.
+	\item[Range:] This is the effective range of the weapon. A target within the weapon’s range may be attacked without penalty. A target within double the weapon’s range may be attacked, but the attacker rolls with two Penalty dice (-2P). Attacks against targets beyond double the weapon’s range automatically fail.
+	\item[STR/DEX:] The minimum STR and DEX scores required to easily wield this weapon. If either of the Characteristics are below these minimums, a Penalty die (-1P) is applied to a character’s roll when attacking and parrying with this weapon.
 	\item[ENC:] The weapon’s Encumbrance. The weight and bulk of the weapon. 
 	\item[Cost:] The cost in silver pieces to purchase this weapon.
 \end{description}
@@ -305,10 +305,10 @@ Also note that:
 
 \begin{description}
 	\item[Backpack:] It can hold 20 ENC of equipment. 
-	\item[Block \& Tackle:] Adds +20\% to Mechanisms tests to make or disarm large traps and makes Engineering tests possible in some circumstances. It requires at least 10m of rope to function. 
+	\item[Block \& Tackle:] Adds a Bonus die (+1B) to Mechanisms tests to make or disarm large traps and makes Engineering tests possible in some circumstances. It requires at least 10m of rope to function. 
 	\item[Candle, 1 Hour:]  A candle illuminates a one metre radius. Any wind stronger than a slight breeze will extinguish a candle. 
-	\item[Climbing Kit:]  A climbing kit provides a bonus of +20\% to any Athletics skill tests made to climb. 
-	\item[Crowbar:] Adds +20\% to brute force Athletics tests. If used as a weapon, it is considered a club (wielded with a –20\% penalty). 
+	\item[Climbing Kit:]  A climbing kit provides a Bonus die (+1B) to any Athletics skill tests made to climb. 
+	\item[Crowbar:] Adds a Bonus die (+1B) to brute force Athletics tests. If used as a weapon, it is considered a club (wielded with a Penalty die -1P). 
 \end{description}
 
 
@@ -320,22 +320,22 @@ Also note that:
 
 
 \begin{description}
-	\item[Fishing Kit:] The fishing kit grants a character a +20\% bonus to his Natural Lore test to catch fish. 
+	\item[Fishing Kit:] The fishing kit grants a character a Bonus die (+1B) to his Natural Lore test to catch fish. 
 	\item[Flint \& Tinder:] A character with flint and tinder can build a fire in one minute under normal conditions without having to roll his Natural Lore skill. 
 	\item[Grappling Hook:] It will support the weight of 50 ENC or 50 SIZ, or any combination thereof. 
-	\item[Hammer:] If used as a weapon, it is treated as a club (wielded with a –20\% penalty). Hammers may be used on inanimate objects without being destroyed. 
+	\item[Hammer:] If used as a weapon, it is treated as a club (wielded with a Penalty die -1P). Hammers may be used on inanimate objects without being destroyed. 
 	\item[Lantern:] A lantern provides clear illumination out to a three metre radius. It will burn for two hours on a flask of oil. 
-	\item[Lock Picks:] Adds +20\% to Mechanisms tests to unlock a locking device. 
-	\item[Mining Pick:] If used as a weapon, it is considered a club (wielded with a –20\% penalty). Mining picks may be used on inanimate objects without being destroyed. 
+	\item[Lock Picks:] Adds a Bonus die (+1B) to Mechanisms tests to unlock a locking device. 
+	\item[Mining Pick:] If used as a weapon, it is considered a club (wielded with a Penalty die -1P). Mining picks may be used on inanimate objects without being destroyed. 
 	\item[Oil, Flask:] A flask of oil is enough to fuel a lantern for two hours or, if broken on the ground and ignited, enough to sustain a small fire for one minute. 
 	\item[Quiver:] Quivers can hold up to 30 arrows or crossbow bolts. 
 	\item[Rope, 10 Metres:] A standard rope can support the weight of 50 ENC or 50 SIZ, or any combination thereof. 
 	\item[Sack, Large:] Able to hold 10 ENC of equipment. 
 	\item[Sack, Small:] A small sack can hold 5 ENC of equipment. 
-	\item[Scythe:] If used as a weapon, it is considered a polearm (wielded with a –20\% penalty). 
+	\item[Scythe:] If used as a weapon, it is considered a polearm (wielded with a Penalty die -1P). 
 	\item[Slingbag:] It can carry 15 ENC of equipment. 
-	\item[Spade:] If used as a weapon, it is considered a club (wielded with a –20\% penalty). 
-	\item[Torch, 1 Hour:] It will burn for one hour. A torch illuminates a three metre radius. If used as a weapon, it is considered a club (wielded with a –20\% penalty), except that it does not inflict normal damage – instead, it inflicts 1D4 fire damage and a fumble or critical hit will also extinguish the brand. 
+	\item[Spade:] If used as a weapon, it is considered a club (wielded with a Penalty die -1P). 
+	\item[Torch, 1 Hour:] It will burn for one hour. A torch illuminates a three metre radius. If used as a weapon, it is considered a club (wielded with a Penalty die -1P), except that it does not inflict normal damage – instead, it inflicts 1D4 fire damage and a fumble or critical hit will also extinguish the brand. 
 	\item[Waterskin:] A waterskin can hold enough water to sustain an adventurer for two days.
 \end{description}
 
