@@ -2,3 +2,7 @@ Need to install:
 $ sudo apt install texlive-xetex 
 
 $ xelatex fantasy-d100.tex
+
+To make smaller pdf:
+$ gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dPDFSETTINGS=/printer -sOutputFile=FC-v1.4.1-printer.pdf fantasy-crux.pdf 
+
