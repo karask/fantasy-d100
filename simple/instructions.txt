@@ -1,0 +1,2 @@
+# Compile
+typst compile --root . simple/FantasyD100Simple.typ simple/FantasyD100Simple.pdf
