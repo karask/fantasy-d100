@@ -19,7 +19,7 @@
 
 \fancyhead{
     \begin{tikzpicture}[remember picture,overlay]
-        \node[inner sep=0pt] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{lib/book/img/background}};
+        \node[inner sep=0pt] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{\rpgBackgroundImage}};
     \end{tikzpicture}
 }
 
@@ -58,7 +58,7 @@
     \thispagestyle{fancy}
     \fancyhead{
         \begin{tikzpicture}[remember picture,overlay]
-            \node[inner sep=0pt] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{lib/book/img/background}};
+            \node[inner sep=0pt] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{\rpgBackgroundImage}};
             \node[inner sep=0pt,anchor=north west] at (current page.north west) {\includegraphics[width=.5\paperwidth]{lib/book/img/header-chapter}};
             \node[xscale=-1, inner sep=0pt, anchor=north west] at (current page.north east) {\includegraphics[width=.5\paperwidth]{lib/book/img/header-chapter}};
         \end{tikzpicture}

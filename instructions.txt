@@ -1,8 +1,21 @@
 Need to install:
 $ sudo apt install texlive-xetex 
 
-$ xelatex fantasy-d100.tex
+To build both compressed PDFs:
+$ make
+
+The PDF version is read from VERSION. To make a new release, edit VERSION and
+run make.
+
+This creates:
+- FC-v<version>-printer.pdf using lib/book/img/background-empty.jpg
+- FC-v<version>-papyrous.pdf using lib/book/img/background-papyrous.jpg
+
+For a one-off version override:
+$ make VERSION=v1.4.2
+
+To build the default PDF manually:
+$ xelatex fantasy-crux.tex
 
 To make smaller pdf:
-$ gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dPDFSETTINGS=/printer -sOutputFile=FC-v1.4.1-printer.pdf fantasy-crux.pdf 
-
+$ gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dPDFSETTINGS=/printer -sOutputFile=FC-v<version>-printer.pdf fantasy-crux.pdf 
